@@ -1,4 +1,4 @@
-# 01: Search (Suchfunktion)
+# 01: Search
 
 Ausgewählte Sprache: Deutsch
 
