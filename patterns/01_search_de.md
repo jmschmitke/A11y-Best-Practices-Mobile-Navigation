@@ -1,5 +1,9 @@
 # 01: Search (Suchfunktion)
 
+Ausgewählte Sprache: Deutsch
+
+Andere Sprachen: [Englisch](01_search_en.md)
+
 ## 1. Kontext und Problemstellung
 
 ### Nutzungskontext
