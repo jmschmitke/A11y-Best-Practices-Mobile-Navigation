@@ -6,6 +6,18 @@ Andere Sprachen: tbd
 
 ---
 
+<details>
+  <summary><b>Inhaltsverzeichnis Pattern</b> (Klicken zum Ausklappen)</summary>
+  <br>
+
+  * [Search](01_search_de.md)
+  * Footer & Header <b>(Aktuell ausgewählt)</b>
+  * [Modal (Popup)](03_modal_popup_de.md)
+
+</details>
+
+---
+
 ## 1. Kontext und Problemstellung
 
 ### Nutzungskontext
