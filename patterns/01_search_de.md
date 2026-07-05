@@ -9,6 +9,7 @@ Andere Sprachen: [Englisch](01_search_en.md)
 <details>
   <summary><b>Inhaltsverzeichnis Pattern</b> (Klicken zum Ausklappen)</summary>
   <br>
+  
   * Search <b>(Aktuell ausgewählt)</b>
   * [Footer & Header](02_footer_header_de.md)
   * [Modal (Popup)](03_modal_popup_de.md)
