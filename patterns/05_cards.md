@@ -13,8 +13,8 @@ Andere Sprachen: tbd
   * [Search](01_search_de.md)
   * [Footer & Header](02_footer_header_de.md)
   * [Modal (Popup)](03_modals_de.md)
-  * [Tabs (Registerkarten)](04_tabs_de.md)
-  * Cards (Karten-Komponenten) <b>(Aktuell ausgewählt)</b>
+  * [Tabs](04_tabs_de.md)
+  * Cards <b>(Aktuell ausgewählt)</b>
 
 </details>
 
