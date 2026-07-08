@@ -13,6 +13,8 @@ Andere Sprachen: [Englisch](01_search_en.md)
   * Search <b>(Aktuell ausgewählt)</b>
   * [Footer & Header](02_footer_header_de.md)
   * [Modal (Popup)](03_modal_popup_de.md)
+  * [Tabs](04_tabs.md)
+  * [Cards](05_cards.md)
 
 </details>
 
