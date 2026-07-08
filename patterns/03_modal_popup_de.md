@@ -13,6 +13,8 @@ Andere Sprachen: tbd
   * [Search](01_search_de.md)
   * [Footer & Header](02_footer_header_de.md)
   * Modal (Popup) <b>(Aktuell ausgewählt)</b>
+  * [Tabs](04_tabs.md)
+  * [Cards](05_cards.md)
 
 </details>
 
