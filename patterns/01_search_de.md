@@ -70,6 +70,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 2. **Fokus 2 (Bedingt):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
 3. **Fokus 3:** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
 
+---
+
 ## 4. Implementierung (SwiftUI)
 
 ### Good Pattern (Positivbeispiel)
