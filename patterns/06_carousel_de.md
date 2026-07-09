@@ -27,8 +27,8 @@ Andere Sprachen: tbd
 Carousels – z.B. als Image-Slider, Pager oder Banner-Rotator – präsentieren eine Reihe von Inhalten (meist Bilder, Teaser oder Cards) auf demselben visuellen Raum. Nutzende können sich sequenziell durch die Elemente wischen oder klicken. Da sich Inhalte hierbei teilweise außerhalb des sichtbaren Bildschirms befinden oder automatisch rotieren, bergen Carousels extrem hohe Barrieren, wenn sie nicht präzise für assistive Technologien optimiert werden.
 
 ### Typische Barrieren in der Praxis
-* **Die „Autoplay-Falle“**: Automatisch rotierende Carousels, die sich nicht pausieren lassen, machen eine App für viele Menschen unbedienbar. Nutzende mit kognitiven Einschränkungen oder geringer Lesegeschwindigkeit werden gestresst, wenn der Text verschwindet, bevor sie ihn erfasst haben. Screenreader-Nutzende werden desorientiert, wenn sich der Inhalt unter ihrem Fokus plötzlich von alleine austauscht.
-* **Unsichtbare Inhalte**: Befindet sich ein Element außerhalb des sichtbaren Bereichs, wird es von Screenreadern oft komplett ignoriert oder fälschlicherweise als fokussierbar erfasst, obwohl es visuell abgeschnitten ist. Ohne eine klare Ansage der Gesamtanzahl (z. B. „Element 2 von 5“) wissen blinde Nutzende nicht, dass weitere Inhalte existieren.
+* **Autoplay-Falle**: Automatisch rotierende Carousels, die sich nicht pausieren lassen, machen eine App für viele Menschen unbedienbar. Nutzende mit kognitiven Einschränkungen oder geringer Lesegeschwindigkeit werden gestresst, wenn der Text verschwindet, bevor sie ihn erfasst haben. Screenreader-Nutzende werden desorientiert, wenn sich der Inhalt unter ihrem Fokus plötzlich von alleine austauscht.
+* **Unsichtbare Inhalte**: Befindet sich ein Element außerhalb des sichtbaren Bereichs, wird es von Screenreadern oft komplett ignoriert oder fälschlicherweise als fokussierbar erfasst, obwohl es visuell abgeschnitten ist. Ohne eine klare Ansage der Gesamtanzahl (z.B. „Element 2 von 5“) wissen blinde Nutzende nicht, dass weitere Inhalte existieren.
 * **Unzugängliche Seitenindikatoren**: Die kleinen Punkte (Page Indicator Dots) am unteren Rand eines Sliders werden oft als rein dekorative Elemente oder mit nicht-assistiven Custom-Views gebaut. Sie besitzen dann keine Rolle, kein Label und sind weder für VoiceOver noch für externe Tastaturen ansteuerbar.
 * **Wisch-Zwang**: Verlässt sich ein Carousel ausschließlich auf die Touch-Geste des horizontalen Wischens, schließt es Menschen mit motorischen Einschränkungen aus, die die App über Schaltersteuerung, Tastatur oder Eyetracker bedienen.
 
@@ -53,11 +53,11 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Visuelle Gestaltung und Kontraste
 * **Explizite Navigationselemente**: Nicht auf Gesten verlassen. Ein barrierefreies Carousel benötigt visuelle Vor- und Zurück-Buttons oder klar definierte, klickbare Seitenindikatoren, damit die Steuerung präzise und barrierefrei bleibt.
-* **Kontrast der Indikatoren**: Die Page-Indicator-Punkte müssen einen Kontrast von mindestens 3:1 zum Hintergrund aufweisen. Der aktive Punkt muss sich zusätzlich durch Form, Größe oder einen deutlich stärkeren Kontrast (z. B. 4,5:1 beim Text-Label) von den inaktiven Punkten abheben.
+* **Kontrast der Indikatoren**: Die Page-Indicator-Punkte müssen einen Kontrast von mindestens 3:1 zum Hintergrund aufweisen. Der aktive Punkt muss sich zusätzlich durch Form, Größe oder einen deutlich stärkeren Kontrast (z.B. 4,5:1 beim Text-Label) von den inaktiven Punkten abheben.
 * **Visueller Pause-Button**: Wenn Autoplay active ist, muss ein dauerhaft sichtbarer Pause-Button angeboten werden. Alternativ muss die Rotation dauerhaft stoppen, sobald der Screenreader-Fokus das Carousel betritt oder ein Nutzer die Komponente berührt.
 
 ### Interaktionsdesign und Touch-Targets
-* **Umgang mit Klickflächen**: Da die Indikator-Punkte visuell oft sehr klein designt werden (z. B. 8x8 pt), muss ihre physische Touch-Fläche im Code unsichtbar auf mindestens 44x44 pt vergrößert werden. Alternativ empfiehlt es sich, die Punkte rein dekorativ zu schalten und stattdessen größere Pfeiltasten zu verwenden.
+* **Umgang mit Klickflächen**: Da die Indikator-Punkte visuell oft sehr klein designt werden (z.B. 8x8 pt), muss ihre physische Touch-Fläche im Code unsichtbar auf mindestens 44x44 pt vergrößert werden. Alternativ empfiehlt es sich, die Punkte rein dekorativ zu schalten und stattdessen größere Pfeiltasten zu verwenden.
 * **Barrierefreies Scroll-Verhalten**: Beim manuellen Wischen sollte das Carousel präzise auf dem nächsten Element einrasten, damit Inhalte nicht halb abgeschnitten am Bildschirmrand stehen bleiben.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
