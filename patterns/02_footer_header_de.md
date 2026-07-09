@@ -73,6 +73,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 3. **Fokus 3:** Der Hauptinhalt (Main Content) des Screens.*
 3. **Fokus 4:** Die Tab-Bar im Footer. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
 
+---
+
 ## 4. Implementierung (SwiftUI)
 
 ### Good Pattern (Positivbeispiel)
