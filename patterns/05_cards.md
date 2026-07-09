@@ -46,6 +46,8 @@ Cards gehören zu den flexibelsten und am häufigsten verwendeten UI-Design-Must
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Jedes Tab muss die Rolle „Registerkarte“ (tab) und den Zustand „ausgewählt“ (falls ausgewählt) korrekt mitsenden. |
 | **Statusmeldung** | 4.1.3 Status Messages | 11.4.1.3 | Falls im Hintergrund Informationen neu geladen werden, muss dies der assistiven Technologie mitgeteilt werden. |
 
+---
+
 ## 2. Relevante Richtlinien und Standards
 
 Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterien der **WCAG 2.2** und der Regelung innerhalb von Kapitel 11 der **EN 301 549**.
