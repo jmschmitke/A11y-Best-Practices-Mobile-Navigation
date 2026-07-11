@@ -174,10 +174,9 @@ struct BadHeaderFooterView: View {
     var body: some View {
         VStack(spacing: 0) {
             // --- CUSTOM HEADER ---
-            // BARRIERE 1: Feste Höhe von 55pt. Wenn "Dynamic Type" den Text vergrößert, bricht das Layout.
+            // BARRIERE: Feste Höhe von 55pt. Wenn "Dynamic Type" den Text vergrößert, bricht das Layout.
             HStack {
-                // BARRIERE 2: Kein nativer Button, sondern nur ein Image mit Geste.
-                // Es gibt kein visuelles oder auditives Feedback für Screenreader.
+                // BARRIERE: Kein nativer Button, sondern nur ein Image mit Geste. Es gibt kein visuelles oder auditives Feedback für Screenreader.
                 Image(systemName: "chevron.left")
                     .font(.body)
                     .frame(width: 20, height: 20) // Touch-Target viel zu klein (< 44x44pt)!
@@ -185,8 +184,7 @@ struct BadHeaderFooterView: View {
                 
                 Spacer()
                 
-                // BARRIERE 3: Text ist nicht als Überschrift (Heading) deklariert.
-                // Ein Screenreader erkennt die strukturelle Hierarchie nicht.
+                // BARRIERE: Text ist nicht als Überschrift (Heading) deklariert.  Ein Screenreader erkennt die strukturelle Hierarchie nicht.
                 Text("Kontodetails und Einstellungen")
                     .font(.headline)
                     .lineLimit(1) // Schneidet Text gnadenlos mit "..." ab
@@ -202,8 +200,7 @@ struct BadHeaderFooterView: View {
             .background(Color(.systemBackground))
             
             // --- HAUPTINHALT ---
-            // BARRIERE 4: Eine unendliche ScrollView ohne Fokus-Management.
-            // VoiceOver-Nutzer können sich in den Daten verlieren und erreichen den Footer schwer.
+            // BARRIERE: Eine unendliche ScrollView ohne Fokus-Management. VoiceOver-Nutzer können sich in den Daten verlieren und erreichen den Footer schwer.
             ScrollView {
                 VStack(spacing: 15) {
                     ForEach(1...30, id: \.self) { index in
@@ -217,7 +214,7 @@ struct BadHeaderFooterView: View {
             }
             
             // --- CUSTOM FOOTER ---
-            // BARRIERE 5: Reine Icon-Navigation ohne Text-Labels.
+            // BARRIERE: Reine Icon-Navigation ohne Text-Labels.
             HStack {
                 Spacer()
                 Image(systemName: "house.fill")
