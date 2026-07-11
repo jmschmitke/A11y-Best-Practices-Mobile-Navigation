@@ -96,10 +96,8 @@ struct GoodNativeSearchView: View {
             }
             .navigationTitle("Katalog")
             
-            // BEST PRACTICE: Der native Modifier erfüllt automatisch entsprechende Richtlinien.
-            // Touch-Targets (44pt) und Fokus-Management werden vom System garantiert.
-            // Hinweis: Das System nutzt den 'prompt'-Parameter ("Katalog durchsuchen...") 
-            // automatisch als Accessibility-Label für VoiceOver. Ein manuelles Label ist nicht nötig.
+            // BEST PRACTICE: Der native Modifier erfüllt automatisch entsprechende Richtlinien. Touch-Targets (44pt) und Fokus-Management werden vom System garantiert.
+            // Hinweis: Das System nutzt den 'prompt'-Parameter ("Katalog durchsuchen...") automatisch als Accessibility-Label für VoiceOver. Ein manuelles Label ist nicht nötig.
             .searchable(text: $searchText, prompt: "Katalog durchsuchen...")
         }
     }
@@ -117,20 +115,20 @@ struct BadSearchView: View {
     
     var body: some View {
         VStack {
-            // FEHLER 1: Keine semantische Gruppierung. VoiceOver liest Lupe, Textfeld 
+            // BARRIERE: Keine semantische Gruppierung. VoiceOver liest Lupe, Textfeld 
             // und Löschen-Button als völlig separate, unzusammenhängende Elemente vor.
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                 
-                // FEHLER 2: Kein explizites Accessibility-Label.
-                // FEHLER 3: Falscher Tastatur-Typ. Es wird standardmäßig "Return" statt "Suchen" angezeigt.
+                // BARRIERE: Kein explizites Accessibility-Label.
+                // BARRIERE: Falscher Tastatur-Typ. Es wird standardmäßig "Return" statt "Suchen" angezeigt.
                 TextField("Suchen", text: $searchText)
                     .textFieldStyle(PlainTextFieldStyle())
                 
                 if !searchText.isEmpty {
-                    // FEHLER 4: Touch-Target viel zu klein (ca. 15x15pt statt der geforderten 44x44pt).
-                    // FEHLER 5: onTapGesture statt Button. VoiceOver erkennt es nicht als klickbares Steuerelement
+                    // BARRIERE: Touch-Target viel zu klein (ca. 15x15pt statt der geforderten 44x44pt).
+                    // BARRIERE: onTapGesture statt Button. VoiceOver erkennt es nicht als klickbares Steuerelement
                     Image(systemName: "xmark.circle.fill")
                         .resizable()
                         .frame(width: 15, height: 15)
