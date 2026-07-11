@@ -1,4 +1,4 @@
-# 08: Navigation Structure & Layout
+# 08: Navigationsstruktur & Layout
 
 Ausgewählte Sprache: Deutsch
 
@@ -40,7 +40,7 @@ Eine konsistente Navigationsstruktur und ein logisches, vorhersehbares Seitenlay
 
 Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterien der **WCAG 2.2** und der Regelung innerhalb von Kapitel 11 der **EN 301 549**.
 
-| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Navigation-Pattern |
+| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Navigations-Pattern |
 | :--- | :--- | :--- | :--- |
 | **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Layout-Bereiche müssen durch semantische Regionen/Landmarks (Kopfzeile, Navigation, Hauptinhalt, Fußzeile) ausgezeichnet sein. |
 | **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Die programmatische Fokus- und Lesereihenfolge (Code-Struktur) muss exakt der visuellen Leserichtung von oben nach unten, links nach rechts entsprechen. |
