@@ -10,15 +10,16 @@ Andere Sprachen: tbd
   <summary><b>Inhaltsverzeichnis Pattern</b> (Klicken zum Ausklappen)</summary>
   <br>
 
-  * [Search](01_search_de.md)
-  * [Footer & Header](02_footer_header_de.md)
-  * [Modal (Popup)](03_modals_de.md)
-  * [Tabs (Registerkarten)](04_tabs_de.md)
-  * [Cards (Karten-Komponenten)](05_cards_de.md)
-  * [Carousel (Karussell / Slider)](06_carousel_de.md)
-  * [Gestures (Gesten-Steuerung)](07_gestures_de.md)
-  * [Navigation Structure & Layout](08_navigation_layout_de.md)
-  * Filtering Items <b>(Aktuell ausgewählt)</b>
+  * [Suche](01_search_de.md)
+  * [Fußzeile & Kopfzeile](02_footer_header_de.md)
+  * [Popup](03_modals_de.md)
+  * [Tabs](04_tabs_de.md)
+  * [Cards](05_cards_de.md)
+  * [Karussel](06_carousel_de.md)
+  * [Gesten](07_gestures_de.md)
+  * [Navigationsstruktur & Layout](08_navigation_layout_de.md)
+  * Filter <b>(Aktuell ausgewählt)</b>
+  * [Eingabefehler](10_showing_input_error_de.md)
 
 </details>
 
@@ -180,3 +181,8 @@ struct BadFilteringView: View {
     }
 }
 ```
+
+---
+
+## 5. Implementierung (Kotlin)
+Wird noch erstellt...
