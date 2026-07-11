@@ -1,4 +1,4 @@
-# 10: Showing Input Error
+# 10: Eingabefehler
 
 Ausgewählte Sprache: Deutsch
 
@@ -42,7 +42,7 @@ Eingabemasken und Formulare (z.B. bei der Registrierung, beim Checkout oder bei 
 
 Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterien der **WCAG 2.2** und der Regelung innerhalb von Kapitel 11 der **EN 301 549**.
 
-| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Fehler-Pattern |
+| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Eingabefehler-Pattern |
 | :--- | :--- | :--- | :--- |
 | **Nutzung von Farbe** | 1.4.1 Use of Color | 11.1.4.1 | Fehler dürfen niemals ausschließlich über einen Farbwechsel (z. B. roter Rahmen) signalisiert werden. |
 | **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Wird der Fokus nach dem Absenden manipuliert (z. B. zur Fehlerbox verschoben), muss diese Reihenfolge logisch sein. |
