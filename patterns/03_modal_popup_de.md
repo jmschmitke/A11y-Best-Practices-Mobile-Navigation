@@ -12,7 +12,6 @@ Andere Sprachen: tbd
 
   * [Suche](01_search_de.md)
   * [Fußzeile & Kopfzeile](02_footer_header_de.md)
-  * [Popup](03_modals_de.md)
   * Popup <b>(Aktuell ausgewählt)</b>
   * [Tabs](04_tabs_de.md)
   * [Cards](05_cards_de.md)
