@@ -154,7 +154,7 @@ struct BadCarouselView: View {
                 }
             }
             
-            // Barriere: Custom Page Indicator Punkte mit einer viel zu kleinen Größe (8x8)
+            // BARRIERE: Custom Page Indicator Punkte mit einer viel zu kleinen Größe (8x8)
             HStack {
                 ForEach(items.indices, id: \.self) { index in
                     Circle()
