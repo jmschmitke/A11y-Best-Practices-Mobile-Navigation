@@ -185,5 +185,7 @@ struct BadErrorView: View {
 }
 ```
 
+---
+
 ## 5. Implementierung (Kotlin)
 Wird noch erstellt...
