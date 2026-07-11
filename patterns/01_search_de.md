@@ -56,6 +56,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Eindeutige Zuteilung von Name, Rolle und Status. |
 | **Assistive Technologien** | - | 11.5.2.4 / 11.5.2.5 | Korrekte Übermittlung der Steuerelement-Typen an die Accessibility-API. |
 
+
+
 ---
 
 ## 3. Design-Spezifikationen (UI/UX)
@@ -162,3 +164,16 @@ struct BadSearchView: View {
 
 ## 5. Implementierung (Kotlin)
 Wird noch erstellt...
+
+---
+
+## 6. Quellen und weiterführende Links
+
+* **Internationale Standards:**
+  * [WCAG 2.2 Richtlinien (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines.
+  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – Europäische Norm für Barrierefreiheitsanforderungen.
+
+* **Apple Human Interface Guidelines (HIG):**
+  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
+  * [Apple HIG – Searching](https://developer.apple.com/design/human-interface-guidelines/searching) – Übergreifende Design-Prinzipien und Platzierung von Suchfunktionen in iOS.
+  * [Apple HIG – Search fields](https://developer.apple.com/design/human-interface-guidelines/search-fields) – Spezifikationen für die visuelle Gestaltung, Platzhalter und Interaktion von Suchfeldern.
