@@ -9,12 +9,17 @@ Andere Sprachen: [Englisch](01_search_en.md)
 <details>
   <summary><b>Inhaltsverzeichnis Pattern</b> (Klicken zum Ausklappen)</summary>
   <br>
-  
-  * Search <b>(Aktuell ausgewählt)</b>
-  * [Footer & Header](02_footer_header_de.md)
-  * [Modal (Popup)](03_modal_popup_de.md)
-  * [Tabs](04_tabs.md)
-  * [Cards](05_cards.md)
+
+  * Suche <b>(Aktuell ausgewählt)</b>
+  * [Fußzeile & Kopfzeile](02_footer_header_de.md)
+  * [Popup](03_modals_de.md)
+  * [Tabs](04_tabs_de.md)
+  * [Cards](05_cards_de.md)
+  * [Karussel](06_carousel_de.md)
+  * [Gesten](07_gestures_de.md)
+  * [Navigationsstruktur & Layout](08_navigation_layout_de.md)
+  * [Filter](09_filtering_items_de.md)
+  * [Eingabefehler](10_showing_input_error_de.md)
 
 </details>
 
@@ -152,3 +157,8 @@ struct BadSearchView: View {
     }
 }
 ```
+
+---
+
+## 5. Implementierung (Kotlin)
+Wird noch erstellt...
