@@ -1,4 +1,4 @@
-# 02: Footer & Header
+# 02: Fußzeile & Kopfzeile
 
 Ausgewählte Sprache: Deutsch
 
@@ -23,13 +23,13 @@ Andere Sprachen: tbd
 ## 1. Kontext und Problemstellung
 
 ### Nutzungskontext
-Header und Footer bilden den strukturellen Rahmen einer App. Der Header dient meist der Orientierung (Anzeige des aktuellen Screen-Namens, Zurück-Button, Profil- oder Einstellungs-Icons). Der Footer verankert die primären Navigationsziele der App auf der obersten Ebene oder bietet kontextuelle Aktionen am unteren Bildschirmrand. Da diese Elemente permanent sichtbar sind, müssen sie maximale Konsistenz und fehlerfreie Zugänglichkeit garantieren.
+Fußzeile und Kopfzeile bilden den strukturellen Rahmen einer App. Die Kopfzeile dient meist der Orientierung (Anzeige des aktuellen Screen-Namens, Zurück-Button, Profil- oder Einstellungs-Icons). Die Fußzeile verankert die primären Navigationsziele der App auf der obersten Ebene oder bietet kontextuelle Aktionen am unteren Bildschirmrand. Da diese Elemente permanent sichtbar sind, müssen sie maximale Konsistenz und fehlerfreie Zugänglichkeit garantieren.
 
 ### Typische Barrieren in der Praxis
-* **Layout-Bruch bei Textvergrößerung**: Wenn Nutzende die Systemschriftgröße (Dynamic Type) stark erhöhen, kollidieren statisch programmierte Titel und Icons im Header. Text wird unleserlich abgeschnitten oder Steuerelemente überlagern sich, wodurch wichtige Funktionen unbedienbar werden.
-* **Kognitive Hürden durch reine Icon-Navigation**: Aus Platzgründen wird im Footer oft auf Text-Labels unter den Navigations-Symbolen verzichtet. Für blinde, sehbehinderte oder kognitiv eingeschränkte Menschen sind abstrakte Symbole ohne eindeutige Textbeschreibung jedoch kaum fehlerfrei zu interpretieren.
-* **Unerreichbare Touch-Targets an den Bildschirmrändern**: Da Header ganz oben und Footer ganz unten platziert sind, rutschen interaktive Buttons gefährlich nah an die physischen Displayränder. Ohne eine großzügige, unsichtbare Klickfläche von mindestens 44x44pt sind sie motorisch extrem schwer zu treffen.
-* **Unlogische Fokus-Reihenfolge und Navigationsfallen**: Wenn Inhaltsbereiche scrollbar sind, verlieren Apps oft die Kontrolle über den linearen Lesefluss von Screenreadern. Nutzende geraten beim Wischen in Endlosschleifen innerhalb des Hauptinhalts und können den Footer oder die Tab-Bar überhaupt nicht mehr erreichen.
+* **Layout-Bruch bei Textvergrößerung**: Wenn Nutzende die Systemschriftgröße (Dynamic Type) stark erhöhen, kollidieren statisch programmierte Titel und Icons in der  Kopfzeile. Text wird unleserlich abgeschnitten oder Steuerelemente überlagern sich, wodurch wichtige Funktionen unbedienbar werden.
+* **Kognitive Hürden durch reine Icon-Navigation**: Aus Platzgründen wird in der Fußzeile oft auf Text-Labels unter den Navigations-Symbolen verzichtet. Für blinde, sehbehinderte oder kognitiv eingeschränkte Menschen sind abstrakte Symbole ohne eindeutige Textbeschreibung jedoch kaum fehlerfrei zu interpretieren.
+* **Unerreichbare Touch-Targets an den Bildschirmrändern**: Da die Kopfzeile ganz oben und Fußzeile ganz unten platziert sind, rutschen interaktive Buttons gefährlich nah an die physischen Displayränder. Ohne eine großzügige, unsichtbare Klickfläche von mindestens 44x44pt sind sie motorisch extrem schwer zu treffen.
+* **Unlogische Fokus-Reihenfolge und Navigationsfallen**: Wenn Inhaltsbereiche scrollbar sind, verlieren Apps oft die Kontrolle über den linearen Lesefluss von Screenreadern. Nutzende geraten beim Wischen in Endlosschleifen innerhalb des Hauptinhalts und können die Fußzeile oder die Tab-Bar überhaupt nicht mehr erreichen.
 
 ---
 
@@ -38,18 +38,18 @@ Header und Footer bilden den strukturellen Rahmen einer App. Der Header dient me
 Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterien der **WCAG 2.2** und der Regelung innerhalb von Kapitel 11 der **EN 301 549**.
 
 
-| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Header/Footer-Pattern |
+| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Fußzeile/Kopfzeile-Pattern |
 | :--- | :--- | :--- | :--- |
 | **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Programmatische Kennzeichnung von Kopf- und Fußzeilen als strukturelle Container. |
-| **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Logischer, linearer Lesefluss (Header -> Hauptinhalt -> Footer) ohne Navigationsfallen. |
+| **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Logischer, linearer Lesefluss (Kopfzeile -> Hauptinhalt -> Fußzeile) ohne Navigationsfallen. |
 | **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Texte, Icons und visuelle Trennlinien (Separators) müssen sich scharf vom Hintergrund abheben. |
 | **Text vergrößern** | 1.4.4 Resize Text | 11.1.4.4 | Leisten müssen mit skalierenden Texten (Dynamic Type) wachsen, ohne Inhalt abzuschneiden. |
-| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Volle Erreichbarkeit und Bedienbarkeit der Tabs und Header-Buttons per externer Tastatur. |
-| **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Der Fokuspfad darf nicht in scrollbaren Inhalten gefangen sein, sondern muss den Footer erreichen. |
-| **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Deutlicher visueller Fokusrahmen um ausgewählte Tabs oder Header-Aktionen bei Tastaturnavigation. |
+| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Volle Erreichbarkeit und Bedienbarkeit der Tabs und Kopfzeile-Buttons per externer Tastatur. |
+| **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Der Fokuspfad darf nicht in scrollbaren Inhalten gefangen sein, sondern muss die Fußzeile erreichen. |
+| **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Deutlicher visueller Fokusrahmen um ausgewählte Tabs oder Kopfzeile-Aktionen bei Tastaturnavigation. |
 | **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Jedes Icon an den kritischen Bildschirmrändern benötigt eine Klickfläche von mind. 44x44pt. |
 | **Bei Fokus** | 3.2.1 On Focus | 11.3.2.1 | Das bloße Ansteuern eines Tabs via Screenreader darf noch keinen automatischen Screen-Wechsel auslösen. |
-| **Konsistente Navigation** | 3.2.3 Consistent Navigation | - | Die Anordnung und Position des Footers muss auf jeder Hierarchieebene der App identisch bleiben. |
+| **Konsistente Navigation** | 3.2.3 Consistent Navigation | - | Die Anordnung und Position der Fußzeile muss auf jeder Hierarchieebene der App identisch bleiben. |
 | **Konsistente Identifikation** | 3.2.4 Consistent Identification | - | Systemweite Symbole (z. B. Profil, Home) müssen auf jedem Screen denselben Namen tragen. |
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Eindeutige Zuteilung der Rolle „Tab“ und korrekte Meldung des Status („ausgewählt“ vs. „nicht ausgewählt“). |
 | **Assistive Technologien** | - | 11.5.2.4 / 11.5.2.5 | Korrekte Übermittlung der Leisten- und Containertypen an die native Accessibility-API des OS. |
@@ -59,26 +59,26 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 3. Design-Spezifikationen (UI/UX)
 
 ### Visuelle Gestaltung und Kontraste
-* **Dynamic Type Support**: Header und Footer dürfen keine feste, statische Höhe in pt besitzen. Sie müssen dynamisch mitwachsen, wenn Nutzende die Systemschriftgröße ändern. Text-Labels in der TabBar dürfen bei maximaler Vergrößerung zweizeilig werden oder in ein vertikales Stack-Layout wechseln.
-* **Zwingende Text-Kombination**: Jedes Icon im Footer muss von einem permanenten, gut lesbaren Text-Label begleitet werden. Reine Icon-Navigation ist unzulässig.
-* **Kontrastlinien**: Da Header und Footer oft farblich mit dem Hauptinhalt verschmelzen, ist eine visuelle Trennlinie (Separator) mit einem Kontrast von mindestens 3:1 zum Hintergrund zwingend erforderlich, um die strukturellen Zonen der App kognitiv klar abzugrenzen.
+* **Dynamic Type Support**: Kopfzeile und Fußzeile dürfen keine feste, statische Höhe in pt besitzen. Sie müssen dynamisch mitwachsen, wenn Nutzende die Systemschriftgröße ändern. Text-Labels in der TabBar dürfen bei maximaler Vergrößerung zweizeilig werden oder in ein vertikales Stack-Layout wechseln.
+* **Zwingende Text-Kombination**: Jedes Icon in der Fußzeile muss von einem permanenten, gut lesbaren Text-Label begleitet werden. Reine Icon-Navigation ist unzulässig.
+* **Kontrastlinien**: Da Kopfzeile und Fußzeile oft farblich mit dem Hauptinhalt verschmelzen, ist eine visuelle Trennlinie (Separator) mit einem Kontrast von mindestens 3:1 zum Hintergrund zwingend erforderlich, um die strukturellen Zonen der App kognitiv klar abzugrenzen.
 
 ### Interaktionsdesign und Touch-Targets
-* **Safe Area Einbettung**: Elemente im Header und Footer müssen strikt innerhalb der vom System vorgegebenen Safe Area liegen, um Überlagerungen mit der Statusleiste (oben) oder dem Home-Indicator (unten) zu verhindern.
-* **Touch-Flächen**: Jedes interaktive Element (z. B. der „Edit“-Button im Header oder ein Tab im Footer) muss eine physische Touch-Fläche von mindestens 44 x 44 pt garantieren. Bei 4-5 Tabs im Footer teilt sich die Breite meist automatisch auf, die Höhe muss jedoch strikt eingehalten werden.
+* **Safe Area Einbettung**: Elemente in der Kopfzeile und Fußzeile müssen strikt innerhalb der vom System vorgegebenen Safe Area liegen, um Überlagerungen mit der Statusleiste (oben) oder dem Home-Indicator (unten) zu verhindern.
+* **Touch-Flächen**: Jedes interaktive Element (z. B. der „Edit“-Button in der Kopfzeile oder ein Tab in der Fußzeile) muss eine physische Touch-Fläche von mindestens 44 x 44 pt garantieren. Bei 4-5 Tabs in der Fußzeile teilt sich die Breite meist automatisch auf, die Höhe muss jedoch strikt eingehalten werden.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1:** Der Header-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
-2. **Fokus 2 (Bedingt):** Optionale Funktionstasten im Header (links/rechts) von links nach rechts geordnet.*
+1. **Fokus 1:** Der Kopfzeilen-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
+2. **Fokus 2 (Bedingt):** Optionale Funktionstasten in der Kopfzeile (links/rechts) von links nach rechts geordnet.*
 3. **Fokus 3:** Der Hauptinhalt (Main Content) des Screens.*
-3. **Fokus 4:** Die Tab-Bar im Footer. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
+3. **Fokus 4:** Die Tab-Bar in der Fußzeile. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
 
 ---
 
 ## 4. Implementierung (SwiftUI)
 
 ### Good Pattern (Positivbeispiel)
-Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung eines Footers und Headders, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
+Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung einer Fußzeile und Kopfzeile, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
 ```swift
 import SwiftUI
 
@@ -89,7 +89,7 @@ struct GoodHeaderFooterView: View {
         // Native TabView für die korrekte Rolle
         TabView(selection: $selectedTab) {
             
-            // Hauptbereich mit integriertem Header
+            // Hauptbereich mit integrierter Kopfzeile
             NavigationStack {
                 ScrollView {
                     VStack(spacing: 15) {
@@ -140,7 +140,7 @@ struct GoodHeaderFooterView: View {
                     }
                 }
             }
-            // Text-Icon-Kombination im Footer.
+            // Text-Icon-Kombination in der Fußzeile.
             // Das System meldet Zustand ("ausgewählt") und Index ("1 von 2") automatisch an VoiceOver.
             .tabItem {
                 Image(systemName: "house.fill")
@@ -164,7 +164,7 @@ struct GoodHeaderFooterView: View {
 ```
 
 ### Bad Pattern (Negativbeispiel)
-Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung eines Footers und Headers. Sie ignoriert zentrale Vorgaben bezüglich Höhe von Buttons, nativer Implementierung der Syntax sowie Fokus-Management des Screenreaders.
+Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung einer Fußzeile und Kopfzeile Sie ignoriert zentrale Vorgaben bezüglich Höhe von Buttons, nativer Implementierung der Syntax sowie Fokus-Management des Screenreaders.
 ```swift
 import SwiftUI
 
@@ -173,7 +173,7 @@ struct BadHeaderFooterView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // --- CUSTOM HEADER ---
+            // Benutzerdefinierte Kopfzeile
             // BARRIERE: Feste Höhe von 55pt. Wenn "Dynamic Type" den Text vergrößert, bricht das Layout.
             HStack {
                 // BARRIERE: Kein nativer Button, sondern nur ein Image mit Geste. Es gibt kein visuelles oder auditives Feedback für Screenreader.
@@ -200,7 +200,7 @@ struct BadHeaderFooterView: View {
             .background(Color(.systemBackground))
             
             // --- HAUPTINHALT ---
-            // BARRIERE: Eine unendliche ScrollView ohne Fokus-Management. VoiceOver-Nutzer können sich in den Daten verlieren und erreichen den Footer schwer.
+            // BARRIERE: Eine unendliche ScrollView ohne Fokus-Management. VoiceOver-Nutzer können sich in den Daten verlieren und erreichen die Fußzeile schwer.
             ScrollView {
                 VStack(spacing: 15) {
                     ForEach(1...30, id: \.self) { index in
@@ -213,7 +213,7 @@ struct BadHeaderFooterView: View {
                 .padding()
             }
             
-            // --- CUSTOM FOOTER ---
+            // Benutzerdefinierte Fußzeile
             // BARRIERE: Reine Icon-Navigation ohne Text-Labels.
             HStack {
                 Spacer()
