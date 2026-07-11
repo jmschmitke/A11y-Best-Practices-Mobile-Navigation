@@ -80,9 +80,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Verschachtelte Interaktionen**: Enthält eine Karte mehrere unabhängige Aktionen (z.B. die Karte öffnet den Artikel, aber ein kleines Icon-Button speichert ihn als Favorit), müssen diese Elemente visuell und technisch klar separiert werden. Der Favoriten-Button benötigt eine eigene physische Touch-Fläche von mindestens 44 x 44 pt und darf sich nicht mit dem Klickbereich der restlichen Karte überschneiden.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1 (Die gesamte Card als Einheit):** Der Screenreader erfasst die Card als ein einziges Element. VoiceOver liest den gesamten Inhalt in einer logischen, zusammenhängenden Kette vor: „[Titel des Artikels], Überschrift. [Kurzbeschreibung]. Taste/Link.“ 
-2. **Fokus 2 (Optionale Zusatzaktionen):** Nur wenn die Card verschachtelte, sekundäre Elemente besitzt (z.B. einen separaten „Löschen“- oder „Favorit“-Button), springt der Fokus als nächstes exakt auf dieses Steuerelement.
-3. **Fokus 3 (Nächste Card):** Der Fokus verlässt die Card vollständig und springt zur nächsten Card in der Liste. Redundante Zwischenstopps auf Texten oder dekorativen Bildern innerhalb der ersten Karte werden übersprungen.
+* **Fokus 1 (Die gesamte Card als Einheit):** Der Screenreader erfasst die Card als ein einziges Element. VoiceOver liest den gesamten Inhalt in einer logischen, zusammenhängenden Kette vor: „[Titel des Artikels], Überschrift. [Kurzbeschreibung]. Taste/Link.“ 
+* **Fokus 2 (Optionale Zusatzaktionen):** Nur wenn die Card verschachtelte, sekundäre Elemente besitzt (z.B. einen separaten „Löschen“- oder „Favorit“-Button), springt der Fokus als nächstes exakt auf dieses Steuerelement.
+* **Fokus 3 (Nächste Card):** Der Fokus verlässt die Card vollständig und springt zur nächsten Card in der Liste. Redundante Zwischenstopps auf Texten oder dekorativen Bildern innerhalb der ersten Karte werden übersprungen.
 
 ---
 
