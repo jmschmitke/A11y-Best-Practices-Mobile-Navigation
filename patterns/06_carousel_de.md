@@ -42,8 +42,13 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | :--- | :--- | :--- | :--- |
 | **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Die Slider-Elemente müssen strukturell als zusammenhängende Gruppe oder Liste definiert sein. |
 | **Automatisches Aktualisieren** | 2.2.2 Pause, Stop, Hide | 11.2.2.2 | Jedes Carousel, das automatisch startet und länger als 5 Sekunden rotiert, MUSS einen gut erreichbaren Pause-Button besitzen. |
+| **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Der Text auf der Info muss sich vom Hintergrund abheben (mind. 4,5:1). Text auf Bild-Overlays benötigt oft schattierte Hintergründe. |
+| **Text vergrößern** | 1.4.4 Resize Text | 11.1.4.4 | Carousels dürfen keine feste Höhe haben. Bei Dynamic Type muss das Carousel vertikal mitwachsen, ohne Text abzuschneiden oder zu überlagern. |
+| **Nicht-Text-Kontrast** | 1.4.11 Non-Text Contrast | 11.1.4.11 | Der Kontrast der Rahmenlinien zum Hintergrund muss mindestens 3:1 betragen. |
 | **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Der Folienwechsel muss über Tastatur (z. B. Pfeiltasten oder explizite Vor-/Zurück-Buttons) möglich sein. |
 | **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Elemente außerhalb des sichtbaren Bildschirms dürfen erst in die Fokus-Reihenfolge gelangen, wenn sie aktiv hineingescrollt wurden. |
+| **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Beim Fokussieren eines Inhaltes per Tastatur muss diese  Info einen deutlich erkennbaren Fokusrahmen erhalten. |
+| **Zeigergesten** | 2.5.1 Pointer Gestures | 11.2.5.1 | Wenn das Carousel eine Wisch-Geste unterstützt, muss das Vor- und Zurückblättern auch über eine einfache Zeigerinteraktion möglich sein. |
 | **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Visuelle Steuerungselemente (Pfeile, Punkte, Pause-Button) benötigen eine Touch-Fläche von mind. 44x44pt. |
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Der aktuelle Zustand (z. B. „Folie 1 von 4“) und die Steuerungsknöpfe müssen eindeutige Namen und Rollen besitzen. |
 
