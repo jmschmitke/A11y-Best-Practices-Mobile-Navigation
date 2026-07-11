@@ -24,7 +24,7 @@ Andere Sprachen: tbd
 
 ### Nutzungskontext
 Tabs – oft auch als Registerkarten oder Tab-Bars bezeichnet – dienen der Strukturierung und hierarchischen Aufteilung von Inhalten auf einer gemeinsamen Ebene.
-Nutzer können zwischen verschiedenen Ansichten oder Datensätzen wechseln (z. B. "Profil", "Einstellungen", "Sicherheit"), ohne den aktuellen Kontext einer Seite oder App-Sektion vollständig zu verlassen.
+Nutzer können zwischen verschiedenen Ansichten oder Datensätzen wechseln (z.B. "Profil", "Einstellungen", "Sicherheit"), ohne den aktuellen Kontext einer Seite oder App-Sektion vollständig zu verlassen.
 Da Tabs zu den am häufigsten genutzten Navigationselementen gehören, ist ihre fehlerfreie Bedienung durch assistive Technologien und alternative Eingabemethoden äußerst wichtig.
 
 ### Typische Barrieren in der Praxis
@@ -45,7 +45,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Nutzunv von Farbe** | 1.4.1 Use of Color | 11.1.4.1 | Der aktive Tab darf nicht nur durch Farbe als aktiver Tab gekennzeichnet sein. |
 | **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Sowohl der Text der Tabs als auch die visuelle Markierung des aktiven Zustands benötigen ausreichenden Kontrast zum Hintergrund. |
 | **Text vergrößern** | 1.4.4 Resize Text | 11.1.4.4 | Bei Dynamic Type müssen Tabs lesbar bleiben, dürfen Text nicht abschneiden und bei Bedarf horizontal scrollen. |
-| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Tabs müssen vollständig per Tastatur (z. B. Wechsel via Pfeiltasten) bedienbar sein. |
+| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Tabs müssen vollständig per Tastatur (z.B. Wechsel via Pfeiltasten) bedienbar sein. |
 | **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Nach dem Verlassen der Tab-Leiste muss der Fokus direkt auf das erste interaktive Element des *aktiven* Tab-Inhalts springen. |
 | **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Der aktuell fokussierte Tab benötigt einen deutlich sichtbaren und kontrastreichen Fokusrahmen. |
 | **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Jedes einzelne Tab-Element benötigt eine physische Klick- und Touchfläche von mindestens 44x44pt. |
@@ -57,17 +57,17 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 3. Design-Spezifikationen (UI/UX)
 
 ### Visuelle Gestaltung und Kontraste
-* **Kennzeichnung des aktiven Zustands**: Der ausgewählte Tab darf sich nicht *ausschließlich* durch eine Farbänderung vom inaktiven Tab unterscheiden. Es muss zusätzlich eine visuelle Formkomponente genutzt werden, wie z. B. eine dicke Unterstreichung, ein kontraststarker Rahmen oder eine gefüllte Hintergrundform.
+* **Kennzeichnung des aktiven Zustands**: Der ausgewählte Tab darf sich nicht *ausschließlich* durch eine Farbänderung vom inaktiven Tab unterscheiden. Es muss zusätzlich eine visuelle Formkomponente genutzt werden, wie z.B. eine dicke Unterstreichung, ein kontraststarker Rahmen oder eine gefüllte Hintergrundform.
 * **Dynamic Type & Überlauf-Verhalten**: Tab-Leisten dürfen Text niemals hart abschneiden oder mittels `...` (Ellipse) unleserlich machen, wenn die Systemschriftart vergrößert wird. Bei Platzmangel muss die Tab-Leiste automatisch zu einem horizontal wisch- und scrollbaren Element werden.
 
 ### Interaktionsdesign und Touch-Targets
-* **Touch-Flächen**: Jedes Tab stellt ein eigenständiges Steuerelement dar. Die Berührungsfläche muss, selbst wenn der Text kurz ist (z. B. "Info"), künstlich durch Padding auf mindestens 44 x 44 pt ausgedehnt werden, um Fehlbedienungen bei motorischen Einschränkungen zu minimieren.
+* **Touch-Flächen**: Jedes Tab stellt ein eigenständiges Steuerelement dar. Die Berührungsfläche muss, selbst wenn der Text kurz ist (z.B. "Info"), künstlich durch Padding auf mindestens 44 x 44 pt ausgedehnt werden, um Fehlbedienungen bei motorischen Einschränkungen zu minimieren.
 * **Tastatur-Verhalten**: Die Tab-Leiste als Ganzes nimmt genau *einen* Stopp in der normalen Tab-Reihenfolge ein. Befindet sich der Tastaturfokus auf der Tab-Leiste, wechseln Nutzende den aktiven Tab mithilfe der `Pfeiltaste Links` und `Pfeiltaste Rechts`. Ein Druck auf die `Tab`-Taste springt direkt am Ende der Tab-Leiste vorbei hinein in den Inhalt des aktuell ausgewählten Tabs.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1:** Das aktuell ausgewählte Tab-Element in der Tab-Leiste. VoiceOver liest sofort: „[Name des Tabs], Registerkarte, ausgewählt, [Index] von [Gesamtanzahl]“ (z. B. *„Einstellungen, Registerkarte, ausgewählt, 2 von 3“*).
-2. **Fokus 2:** Beim Weiterwischen/Weitertabben springt der Fokus direkt auf das erste Element (Überschrift, Text oder Button) innerhalb des dazugehörigen, neu geladenen Inhaltsbereichs.
-3. **Fokus 3:** Weitere Elemente innerhalb des Inhaltsbereichs von oben nach unten, bevor der Fokus den gesamten Tab-Container verlässt.
+1. **Fokus 1 (Tab-Element):** Das aktuell ausgewählte Tab-Element in der Tab-Leiste. VoiceOver liest sofort: „[Name des Tabs], Registerkarte, ausgewählt, [Index] von [Gesamtanzahl]“ (z.B. *„Einstellungen, Registerkarte, ausgewählt, 2 von 3“*).
+2. **Fokus 2 (Nächste Element):** Beim Weiterwischen/Weitertabben springt der Fokus direkt auf das erste Element (Überschrift, Text oder Button) innerhalb des dazugehörigen, neu geladenen Inhaltsbereichs.
+3. **Fokus 3 (Weiterer Inhaltsbereich):** Weitere Elemente innerhalb des Inhaltsbereichs von oben nach unten, bevor der Fokus den gesamten Tab-Container verlässt.
 
 ---
 
