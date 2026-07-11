@@ -13,7 +13,6 @@ Andere Sprachen: tbd
   * [Suche](01_search_de.md)
   * [Fußzeile & Kopfzeile](02_footer_header_de.md)
   * [Popup](03_modals_de.md)
-  * [Tabs](04_tabs_de.md)
   * Tabs <b>(Aktuell ausgewählt)</b>
   * [Cards](05_cards_de.md)
   * [Karussel](06_carousel_de.md)
