@@ -10,11 +10,17 @@ Andere Sprachen: tbd
   <summary><b>Inhaltsverzeichnis Pattern</b> (Klicken zum Ausklappen)</summary>
   <br>
 
-  * [Search](01_search_de.md)
-  * Footer & Header <b>(Aktuell ausgewählt)</b>
-  * [Modal (Popup)](03_modal_popup_de.md)
-  * [Tabs](04_tabs.md)
-  * [Cards](05_cards.md)
+  * [Suche](01_search_de.md)
+  * [Fußzeile & Kopfzeile](02_footer_header_de.md)
+  * Fußzeile & Kopfzeile <b>(Aktuell ausgewählt)</b>
+  * [Popup](03_modals_de.md)
+  * [Tabs](04_tabs_de.md)
+  * [Cards](05_cards_de.md)
+  * [Karussel](06_carousel_de.md)
+  * [Gesten](07_gestures_de.md)
+  * [Navigationsstruktur & Layout](08_navigation_layout_de.md)
+  * [Filter](09_filtering_items_de.md)
+  * [Eingabefehler](10_showing_input_error_de.md)
 
 </details>
 
@@ -232,3 +238,8 @@ struct BadHeaderFooterView: View {
     }
 }
 ```
+
+---
+
+## 5. Implementierung (Kotlin)
+Wird noch erstellt...
