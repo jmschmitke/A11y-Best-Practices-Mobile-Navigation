@@ -200,3 +200,6 @@ Wird noch erstellt...
 
 * **Apple Human Interface Guidelines (HIG):**
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
+  * [Apple HIG - Text Fields](https://developer.apple.com/design/human-interface-guidelines/text-fields) - Richtlinien für die Darstellung von Eingabefeldern.
+  * [Apple HIG – Feedback](https://developer.apple.com/design/human-interface-guidelines/feedback) – Vorgaben für die Bereitstellung von klaren Rückmeldungen an den Nutzer.
+  * [Apple HIG - Entering data](https://developer.apple.com/design/human-interface-guidelines/entering-data) - Best Practice für die Verarbeitung von Daten bei Eingabe.
