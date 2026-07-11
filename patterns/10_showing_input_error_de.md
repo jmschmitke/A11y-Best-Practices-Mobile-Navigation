@@ -44,11 +44,11 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 | Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Eingabefehler-Pattern |
 | :--- | :--- | :--- | :--- |
-| **Nutzung von Farbe** | 1.4.1 Use of Color | 11.1.4.1 | Fehler dürfen niemals ausschließlich über einen Farbwechsel (z. B. roter Rahmen) signalisiert werden. |
-| **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Wird der Fokus nach dem Absenden manipuliert (z. B. zur Fehlerbox verschoben), muss diese Reihenfolge logisch sein. |
+| **Nutzung von Farbe** | 1.4.1 Use of Color | 11.1.4.1 | Fehler dürfen niemals ausschließlich über einen Farbwechsel (z.B. roter Rahmen) signalisiert werden. |
+| **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Wird der Fokus nach dem Absenden manipuliert (z.B. zur Fehlerbox verschoben), muss diese Reihenfolge logisch sein. |
 | **Beschriftungen** | 2.4.6 Headings and Labels | 11.2.4.6 | Beschriftungen von Feldern sowie Fehlermeldungen selbst müssen hinreichend klar, präzise und beschreibend sein. |
 | **Fehlererkennung** | 3.3.1 Error Identification | 11.3.3.1 | Wenn ein Fehler erkannt wird, muss das fehlerhafte Element identifiziert und der Fehler dem Nutzer in Textform beschrieben werden. |
-| **Beschriftungen/Anweisungen** | 3.3.2 Labels or Instructions | 11.3.3.2 | Pflichtfelder oder erforderliche Formate (z. B. Passwort-Regeln) müssen vor der Eingabe klar deklariert sein, um Fehler im Vorfeld zu minimieren. |
+| **Beschriftungen/Anweisungen** | 3.3.2 Labels or Instructions | 11.3.3.2 | Pflichtfelder oder erforderliche Formate (z.B. Passwort-Regeln) müssen vor der Eingabe klar deklariert sein, um Fehler im Vorfeld zu minimieren. |
 | **Fehlerkorrektur (Hilfe)** | 3.3.3 Error Suggestion | 11.3.3.3 | Wenn ein Fehler erkannt wird und Vorschläge zur Korrektur bekannt sind, müssen diese dem Nutzer verständlich bereitgestellt werden. |
 | **Fehlervermeidung (Rechtliche/Finanzielle Daten)** | 3.3.4 Error Prevention (Legal, Financial, Data) | 11.3.3.4 | Bei Verträgen, Käufen oder Datenlöschungen müssen Eingaben überprüfbar, korrigierbar oder widerrufbar sein. |
 | **Hilfe** | 3.3.5 Help | - | Kontextbezogene Hilfe für die Fehlermeldung muss vorhanden sein. |
@@ -71,9 +71,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Erweiterte Verknüpfung**: Technisch muss das Eingabefeld so programmiert sein, dass die Fehlermeldung als Beschreibungstext des Feldes hinterlegt ist (z.B. im Web via `aria-describedby` oder in Native Mobile über das Verknüpfen der Accessibility-Labels). 
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1 (Nach Klick auf Absenden):** Das Formular bricht ab, der Fokus springt an den Anfang der Fehler-Sammelbox. VoiceOver liest vor: *„Das Formular konnte nicht gesendet werden. 2 Fehler enthalten. Liste mit 2 Einträgen. Erstens: Passwort zu kurz, Link. Zweitens...“*
-2. **Fokus 2 (Sprung zum Feld):** Der Nutzer aktiviert den ersten Link in der Fehlerbox. Der Fokus springt direkt in das fehlerhafte Textfeld.
-3. **Fokus 3 (Das fehlerhafte Feld):** Da das Feld mit der Fehlermeldung verknüpft ist, liest der Screenreader sofort die Rolle und den Fehler in einem Stück vor: *„Passwort, sicheres Textfeld, fehlerhafte Eingabe. Das Passwort muss mindestens 8 Zeichen lang sein.“*
+* **Fokus 1 (Nach Klick auf Absenden):** Das Formular bricht ab, der Fokus springt an den Anfang der Fehler-Sammelbox. VoiceOver liest vor: *„Das Formular konnte nicht gesendet werden. 2 Fehler enthalten. Liste mit 2 Einträgen. Erstens: Passwort zu kurz, Link. Zweitens...“*
+* **Fokus 2 (Sprung zum Feld):** Der Nutzer aktiviert den ersten Link in der Fehlerbox. Der Fokus springt direkt in das fehlerhafte Textfeld.
+* **Fokus 3 (Das fehlerhafte Feld):** Da das Feld mit der Fehlermeldung verknüpft ist, liest der Screenreader sofort die Rolle und den Fehler in einem Stück vor: *„Passwort, sicheres Textfeld, fehlerhafte Eingabe. Das Passwort muss mindestens 8 Zeichen lang sein.“*
 
 ---
 
@@ -133,7 +133,7 @@ struct GoodErrorView: View {
     private func validateForm() {
         if !email.contains("@") || email.count < 5 {
             // Präzise Fehlerbeschreibung mit konkreter Hilfestellung
-            errorMessage = "Bitte geben Sie eine gültige E-Mail-Adresse ein (z. B. name@domain.de)."
+            errorMessage = "Bitte geben Sie eine gültige E-Mail-Adresse ein (z.B. name@domain.de)."
             
             // Versetzt den Fokus automatisch in das fehlerhafte Feld
             // VoiceOver liest dadurch sofort: "E-Mail-Adresse, Textfeld, fehlerhafte Eingabe. Bitte geben Sie..."
