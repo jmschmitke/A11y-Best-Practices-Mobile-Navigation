@@ -82,10 +82,8 @@ struct GoodNativeSearchView: View {
             }
             .navigationTitle("Catalog")
             
-            // BEST PRACTICE: The native modifier automatically fulfills relevant guidelines.
-            // Touch targets (44pt) and focus management are guaranteed by the system.
-            // Note: The system automatically uses the 'prompt' parameter ("Search catalog...") 
-            // as an accessibility label for VoiceOver. A manual label is not necessary.
+            // BEST PRACTICE: The native modifier automatically fulfills relevant guidelines. Touch targets (44pt) and focus management are guaranteed by the system.
+            // Note: The system automatically uses the 'prompt' parameter ("Search catalog...") as an accessibility label for VoiceOver. A manual label is not necessary.
             .searchable(text: $searchText, prompt: "Search catalog...")
         }
     }
@@ -103,20 +101,20 @@ struct BadSearchView: View {
     
     var body: some View {
         VStack {
-            // ERROR 1: No semantic grouping. VoiceOver reads the magnifying glass, text field, 
+            // BARRIER: No semantic grouping. VoiceOver reads the magnifying glass, text field, 
             // and clear button as completely separate, disconnected elements.
             HStack {
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
                 
-                // ERROR 2: No explicit accessibility label.
-                // ERROR 3: Wrong keyboard type. "Return" is shown by default instead of "Search".
+                // BARRIER: No explicit accessibility label.
+                // BARRIER: Wrong keyboard type. "Return" is shown by default instead of "Search".
                 TextField("Search", text: $searchText)
                     .textFieldStyle(PlainTextFieldStyle())
                 
                 if !searchText.isEmpty {
-                    // ERROR 4: Touch target is much too small (approx. 15x15pt instead of the required 44x44pt).
-                    // ERROR 5: onTapGesture instead of Button. VoiceOver does not recognize it as a clickable control.
+                    // BARRIER: Touch target is much too small (approx. 15x15pt instead of the required 44x44pt).
+                    // BARRIER: onTapGesture instead of Button. VoiceOver does not recognize it as a clickable control.
                     Image(systemName: "xmark.circle.fill")
                         .resizable()
                         .frame(width: 15, height: 15)
