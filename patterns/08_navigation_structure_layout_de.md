@@ -46,12 +46,12 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Die programmatische Fokus- und Lesereihenfolge (Code-Struktur) muss exakt der visuellen Leserichtung von oben nach unten, links nach rechts entsprechen. |
 | **Ausrichtung** | 1.3.4 Orientation | 11.1.3.4 | Die App darf die Anzeige nicht starr auf Hoch- oder Querformat sperren, es sei denn, es ist technisch zwingend erforderlich. |
 | **Reflow (Anpassbarer Inhalt)** | 1.4.10 Reflow | 11.1.4.10 | Das Layout muss bis zu einer extremen Vergrößerung bzw. in Hoch- und Querformat funktionieren, ohne dass Inhalte verloren gehen oder horizontal gescrollt werden muss (außer bei Tabellen/Karten). |
-| **Blöcke überspringen** | 2.4.1 Bypass Blocks | 11.2.4.1 | Es müssen Mechanismen (z. B. Skip-to-Content-Links) bereitgestellt werden, um wiederkehrende Navigationsblöcke direkt zu überspringen. |
+| **Blöcke überspringen** | 2.4.1 Bypass Blocks | 11.2.4.1 | Es müssen Mechanismen (z.B. Skip-to-Content-Links) bereitgestellt werden, um wiederkehrende Navigationsblöcke direkt zu überspringen. |
 | **Seite mit Titel** | 2.4.2 Page Titled | 11.2.4.2 | Jede Seite/Ansicht muss einen eindeutigen, aussagekräftigen Titel haben. |
-| **Mehrere Wege** | 2.4.5 Multiple Ways | 11.2.4.5 | Inhalte müssen über mehr als einen Weg auffindbar sein (z. B. Kombination aus globaler Navigation, Suchfunktion und einer Sitemap/Footer-Übersicht). |
+| **Mehrere Wege** | 2.4.5 Multiple Ways | 11.2.4.5 | Inhalte müssen über mehr als einen Weg auffindbar sein (z.B. Kombination aus globaler Navigation, Suchfunktion und einer Sitemap/Footer-Übersicht). |
 | **Standort** | 2.4.8 Location | 11.2.4.8 | Informationen über den aktuellen Standort innerhalb einer Reihe von Seiten müssen verfügbar sein. |
 | **Konsistente Navigation** | 3.2.3 Consistent Navigation | 11.3.2.3 | Navigationsmechanismen, die sich über mehrere Seiten wiederholen, müssen bei jedem Auftreten an derselben relativen Position stehen. |
-| **Konsistente Identifikation** | 3.2.4 Consistent Identification | 11.3.2.4 | Komponenten mit derselben Funktionalität (z. B. das Einstellungs-Icon oder der Home-Button) müssen app-weit identisch benannt und gestaltet sein. |
+| **Konsistente Identifikation** | 3.2.4 Consistent Identification | 11.3.2.4 | Komponenten mit derselben Funktionalität (z.B. das Einstellungs-Icon oder der Home-Button) müssen app-weit identisch benannt und gestaltet sein. |
 
 ---
 
@@ -67,11 +67,11 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Tastatur-Landmarken-Navigation**: Die App- oder Webstruktur muss so implementiert sein, dass Nutzende assistiver Technologien mithilfe von Schnelltasten (z.B. Taste `R` bei NVDA/JAWS oder dem Rotor bei VoiceOver) direkt von Landmarke zu Landmarke springen können (z.B. direkt zum Hauptinhalt oder direkt zur Suche).
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1 (Sprunglink / Optional im Web):** Beim ersten Druck auf die `Tab`-Taste erscheint ganz oben ein visuell eingeblendeter Button „Direkt zum Hauptinhalt springen“. Wird dieser aktiviert, überspringt der Fokus die komplette Navigation.
-2. **Fokus 2 (Kopfzeile / Header Landmark):** Wird der Sprunglink übergangen, wandert der Fokus logisch in die Kopfzeile. Screenreader kündigen die Zone an: „Banner / Kopfzeile, Gruppe“.
-3. **Fokus 3 (Navigationsbereich / Navigation Landmark):** Der Fokus arbeitet sich sequenziell durch die Menüpunkte der primären Navigation.
-4. **Fokus 4 (Hauptinhalt / Main Landmark):** Der Fokus verlässt die Navigation und betritt den Kerninhalt der aktuellen Seite. Screenreader sagen an: „Hauptinhalt, Region“.
-5. **Fokus 5 (Fußzeile / Footer Landmark):** Schließlich werden die ergänzenden Links im Footer angesteuert.
+* **Fokus 1 (Sprunglink / Optional im Web):** Beim ersten Druck auf die `Tab`-Taste erscheint ganz oben ein visuell eingeblendeter Button „Direkt zum Hauptinhalt springen“. Wird dieser aktiviert, überspringt der Fokus die komplette Navigation.
+* **Fokus 2 (Kopfzeile / Header Landmark):** Wird der Sprunglink übergangen, wandert der Fokus logisch in die Kopfzeile. Screenreader kündigen die Zone an: „Banner / Kopfzeile, Gruppe“.
+* **Fokus 3 (Navigationsbereich / Navigation Landmark):** Der Fokus arbeitet sich sequenziell durch die Menüpunkte der primären Navigation.
+* **Fokus 4 (Hauptinhalt / Main Landmark):** Der Fokus verlässt die Navigation und betritt den Kerninhalt der aktuellen Seite. Screenreader sagen an: „Hauptinhalt, Region“.
+* **Fokus 5 (Fußzeile / Footer Landmark):** Schließlich werden die ergänzenden Links im Footer angesteuert.
 
 ---
 
