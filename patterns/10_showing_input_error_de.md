@@ -76,3 +76,111 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 3. **Fokus 3 (Das fehlerhafte Feld):** Da das Feld mit der Fehlermeldung verknüpft ist, liest der Screenreader sofort die Rolle und den Fehler in einem Stück vor: *„Passwort, sicheres Textfeld, fehlerhafte Eingabe. Das Passwort muss mindestens 8 Zeichen lang sein.“*
 
 ---
+
+## 4. Implementierung (SwiftUI)
+
+### Good Pattern (Positivbeispiel)
+Dieses Beispiel nutzt die Mehrkanalanzeige (Farbe + Icon + Text). Die Fehlermeldung ist präzise formuliert, wird über .accessibilityInputLabels und .accessibilityHint fest an das Eingabefeld gekoppelt und bei Fehlereintritt direkt via Screenreader-Ankündigung gemeldet.
+```swift
+import SwiftUI
+
+struct GoodErrorView: View {
+    @State private var email = ""
+    @State private var errorMessage: String? = nil
+    
+    // Fokus-Steuerung vorbereiten, um den Nutzer gezielt zum Fehler zu leiten
+    @FocusState private var isEmailFieldFocused: Bool
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("E-Mail-Adresse")
+                .font(.headline)
+            
+            TextField("beispiel@domain.de", text: $email)
+              .keyboardType(.emailAddress)
+              .autocapitalization(.none)
+              .padding()
+              .overlay(
+                  RoundedRectangle(cornerRadius: 8)
+                      .stroke(errorMessage != nil ? Color.red : Color.secondary)
+              )
+              // Fügt das Wort "Fehler" direkt an das Label an
+              .accessibilityLabel(errorMessage != nil ? "Fehler: E-Mail-Adresse" : "E-Mail-Adresse")
+              // Verknüpft die konkrete Fehlermeldung direkt als akustischen Hinweis für das Feld
+              .accessibilityHint(errorMessage ?? "")
+              .focused($isEmailFieldFocused)
+            
+            // Mehrkanalanzeige (Icon + Text) und konkreter Korrekturhinweis
+            if let error = errorMessage {
+                HStack(spacing: 6) {
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .foregroundColor(.red)
+                    Text(error)
+                        .foregroundColor(.red)
+                        .font(.callout)
+                }
+                .accessibilityHidden(true) // Da der Text bereits im Hint des TextFields liegt
+            }
+            
+            Button("Registrierung abschließen") {
+                validateForm()
+            }
+            .buttonStyle(.borderedProminent)
+        }
+        .padding()
+    }
+    
+    private func validateForm() {
+        if !email.contains("@") || email.count < 5 {
+            // Präzise Fehlerbeschreibung mit konkreter Hilfestellung
+            errorMessage = "Bitte geben Sie eine gültige E-Mail-Adresse ein (z. B. name@domain.de)."
+            
+            // Versetzt den Fokus automatisch in das fehlerhafte Feld
+            // VoiceOver liest dadurch sofort: "E-Mail-Adresse, Textfeld, fehlerhafte Eingabe. Bitte geben Sie..."
+            isEmailFieldFocused = true
+            
+            // Zusätzliches haptisches & akustisches Signal für die Barrierefreiheit absenden
+            AccessibilityNotification.Announcement("Formular konnte nicht gesendet werden. Bitte prüfen Sie die Eingabe.")
+                .post()
+        } else {
+            errorMessage = nil
+            // Formular erfolgreich absenden...
+        }
+    }
+}
+```
+
+
+### Bad Pattern (Negativbeispiel)
+Dieses Beispiel verlässt sich ausschließlich auf die Farbe Rot, um den Fehler anzuzeigen. Zudem wird die Fehlermeldung programmatisch nicht mit dem Eingabefeld verknüpft, und der Screenreader erhält beim Absenden keinerlei Rückmeldung über das Scheitern.
+```swift
+import SwiftUI
+
+struct BadErrorView: View {
+    @State private var email = ""
+    @State private var hasError = false
+
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("E-Mail-Adresse")
+            
+            // BARRIERE: Fehler wird ausschließlich über die Farbe Rot signalisiert. Für farbblinde oder blinde Nutzende ist dieser Zustand komplett unsichtbar.
+            TextField("", text: $email)
+                .padding()
+                .border(hasError ? Color.red : Color.gray, width: 2)
+            
+            Button("Absenden") {
+                if !email.contains("@") {
+                    // BARRIERE: Statusänderung wird asynchron nicht angesagt. Der Fokus bleibt auf dem Button, blinde Nutzer merken nichts.
+                    hasError = true
+                }
+            }
+        }
+        .padding()
+    }
+}
+
+#Preview {
+    BadErrorView()
+}
+```
