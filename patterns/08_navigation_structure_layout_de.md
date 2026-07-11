@@ -44,9 +44,12 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | :--- | :--- | :--- | :--- |
 | **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Layout-Bereiche müssen durch semantische Regionen/Landmarks (Kopfzeile, Navigation, Hauptinhalt, Fußzeile) ausgezeichnet sein. |
 | **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Die programmatische Fokus- und Lesereihenfolge (Code-Struktur) muss exakt der visuellen Leserichtung von oben nach unten, links nach rechts entsprechen. |
+| **Ausrichtung** | 1.3.4 Orientation | 11.1.3.4 | Die App darf die Anzeige nicht starr auf Hoch- oder Querformat sperren, es sei denn, es ist technisch zwingend erforderlich. |
 | **Reflow (Anpassbarer Inhalt)** | 1.4.10 Reflow | 11.1.4.10 | Das Layout muss bis zu einer extremen Vergrößerung bzw. in Hoch- und Querformat funktionieren, ohne dass Inhalte verloren gehen oder horizontal gescrollt werden muss (außer bei Tabellen/Karten). |
 | **Blöcke überspringen** | 2.4.1 Bypass Blocks | 11.2.4.1 | Es müssen Mechanismen (z. B. Skip-to-Content-Links) bereitgestellt werden, um wiederkehrende Navigationsblöcke direkt zu überspringen. |
+| **Seite mit Titel** | 2.4.2 Page Titled | 11.2.4.2 | Jede Seite/Ansicht muss einen eindeutigen, aussagekräftigen Titel haben. |
 | **Mehrere Wege** | 2.4.5 Multiple Ways | 11.2.4.5 | Inhalte müssen über mehr als einen Weg auffindbar sein (z. B. Kombination aus globaler Navigation, Suchfunktion und einer Sitemap/Footer-Übersicht). |
+| **Standort** | 2.4.8 Location | 11.2.4.8 | Informationen über den aktuellen Standort innerhalb einer Reihe von Seiten müssen verfügbar sein. |
 | **Konsistente Navigation** | 3.2.3 Consistent Navigation | 11.3.2.3 | Navigationsmechanismen, die sich über mehrere Seiten wiederholen, müssen bei jedem Auftreten an derselben relativen Position stehen. |
 | **Konsistente Identifikation** | 3.2.4 Consistent Identification | 11.3.2.4 | Komponenten mit derselben Funktionalität (z. B. das Einstellungs-Icon oder der Home-Button) müssen app-weit identisch benannt und gestaltet sein. |
 
