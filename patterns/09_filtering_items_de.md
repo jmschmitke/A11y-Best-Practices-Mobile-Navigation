@@ -75,3 +75,108 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 4. **Fokus 4 (Der Listeneinstieg):** Der Fokus wandert direkt zur Überschrift der Ergebnisliste, um das sequenzielle Auslesen der gefilterten Daten zu ermöglichen.
 
 ---
+
+## 4. Implementierung (SwiftUI)
+
+### Good Pattern (Positivbeispiel)
+Dieses Beispiel nutzt native Toggle-Komponenten, die zu einer Gruppe zusammengefasst sind. Die Trefferzahl wird barrierefrei übersprochen und die Statusänderung wird via AccessibilityNotification direkt an den Screenreader gemeldet.
+```swift
+import SwiftUI
+
+struct GoodFilteringView: View {
+    let categories = ["Elektronik", "Mode", "Bücher"]
+    @State private var selectedCategory: String? = nil
+    @State private var resultCount = 42
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            // Programmatische Gruppierung der zusammengehörigen Filterelemente
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Kategorie auswählen")
+                    .font(.headline)
+                
+                ForEach(categories, id: \.self) { category in
+                    let isSelected = selectedCategory == category
+                    
+                    // Natives Steuerelement liefert korrekte Rolle und Zustand
+                    Toggle(isOn: Binding(
+                        get: { isSelected },
+                        set: { _ in applyFilter(category) }
+                    )) {
+                        VStack(alignment: .leading) {
+                            Text(category)
+                            Text("12 Treffer") // Visuell sauber getrennt
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .toggleStyle(.button) // Macht das gesamte Element zur barrierefreien Klickfläche
+                    .frame(minHeight: 44) // Garantiert die Mindest-Touch-Größe
+                    .accessibilityLabel("\(category), 12 verfügbare Ergebnisse") // Verhindert das Vorlesen fragmentierter Zahlen
+                }
+            }
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel("Filteroptionen")
+            
+            Text("\(resultCount) Ergebnisse gefunden")
+                .font(.body)
+                .bold()
+        }
+        .padding()
+    }
+    
+    private func applyFilter(_ category: String) {
+        if selectedCategory == category {
+            selectedCategory = nil
+            resultCount = 42
+        } else {
+            selectedCategory = category
+            resultCount = 12
+        }
+        
+        // Teilt dem Screenreader die Änderung asynchron mit, ohne den Fokus zu klauen
+        AccessibilityNotification.Announcement("Liste aktualisiert. \(resultCount) Ergebnisse verfügbar.")
+            .post()
+    }
+}
+```
+
+
+### Bad Pattern (Negativbeispiel)
+Dieses Beispiel filtert die Liste im Hintergrund, ohne dass blinde Nutzer es bemerken. Die Trefferzahl ist unvollständig beschriftet, die Touch-Fläche ist viel zu klein und die starre Anordnung führt bei großen Schriften zu Layoutfehlern.
+Swift
+```swift
+import SwiftUI
+
+struct BadFilteringView: View {
+    let categories = ["Elektronik", "Mode", "Bücher"]
+    @State private var selectedCategory: String? = nil
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Text("Filter:")
+                .font(.subheadline)
+            
+            HStack {
+                ForEach(categories, id: \.self) { category in
+                    HStack {
+                        // BARRIERE: Kein nativer Button/Toggle, für Tastatur/VoiceOver unsichtbar.
+                        Image(systemName: selectedCategory == category ? "checkmark.square" : "square")
+                        
+                        // BARRIERE: Trefferzahl ("(12)") ohne Kontext an Text angehängt.
+                        Text("\(category) (12)") 
+                    }
+                    .font(.footnote) // BARRIERE: Zu kleine Schrift, bricht bei Skalierung.
+                    .onTapGesture {
+                        // BARRIERE: Löst Live-Filterung ohne jede Screenreader-Rückmeldung aus.
+                        selectedCategory = (selectedCategory == category) ? nil : category
+                    }
+                    // BARRIERE: Kein Padding, Touch-Target liegt weit unter 44x44 pt.
+                }
+            }
+            
+            Text("Ergebnisse werden unten angezeigt...")
+        }
+    }
+}
+```
