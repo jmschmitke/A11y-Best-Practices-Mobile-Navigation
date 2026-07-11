@@ -72,3 +72,100 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 4. **Ignorieren inaktiver Elemente:** Elemente, die sich aktuell unsichtbar außerhalb des Bildschirms befinden, werden komplett vom Fokus-Fluss ausgeschlossen (`accessibilityHidden(true)`), bis sie aktiv hineingescrollt werden.
 
 ---
+
+## 4. Implementierung (SwiftUI)
+
+### Good Pattern (Positivbeispiel)
+Dieses Beispiel zeigt eine barrierefreie Implementierung. Es nutzt eine TabView im Page-Stil. Unsichtbare Seiten werden nativ vor dem Screenreader verborgen. Zusätzlich sind explizite, ausreichend große Buttons zur Steuerung verbaut, und das gesamte Konstrukt ist für VoiceOver als logische Gruppe erkennbar.
+```swift
+import SwiftUI
+
+struct GoodCarouselView: View {
+    let items = ["Angebot 1", "Angebot 2", "Angebot 3"]
+    @State private var currentIndex = 0
+
+    var body: some View {
+        VStack(spacing: 16) {
+            // Native Page-TabView: Regelt Barrierefreiheit für Folien-Zustände automatisch
+            TabView(selection: $currentIndex) {
+                ForEach(items.indices, id: \.self) { index in
+                    Text(items[index])
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.blue)
+                        .tag(index)
+                }
+            }
+            .tabViewStyle(.page(indexDisplayMode: .never)) // Versteckt unzugängliche native Dots
+            .frame(height: 150)
+            // Zusammenfassen zu einer barrierefreien Gruppe
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("Karussell, Highlight-Themen. \(items[currentIndex]), Element \(currentIndex + 1) von \(items.count)")
+            
+            // Alternative Steuerungselemente (Pfeiltasten)
+            HStack(spacing: 40) {
+                Button(action: { if currentIndex > 0 { currentIndex -= 1 } }) {
+                    Image(systemName: "chevron.left")
+                        .frame(width: 44, height: 44) // WCAG 2.5.8: Mindest-Touch-Fläche
+                }
+                .accessibilityLabel("Vorheriges Element")
+                .disabled(currentIndex == 0)
+
+                Button(action: { if currentIndex < items.count - 1 { currentIndex += 1 } }) {
+                    Image(systemName: "chevron.right")
+                        .frame(width: 44, height: 44)
+                }
+                .accessibilityLabel("Nächstes Element")
+                .disabled(currentIndex == items.count - 1)
+            }
+        }
+        .padding()
+    }
+}
+```
+
+
+### Bad Pattern (Negativbeispiel)
+Dieses Beispiel zeigt eine mangelhafte Implementierung mittels HStack-ScrollView. Es zwingt zum Wischen, versteckt unsichtbare Elemente nicht vor dem VoiceOver und nutzt sehr kleine Custom-Punkte zur Steuerung abseits der Wischgesten.
+```swift
+import SwiftUI
+
+struct BadCarouselView: View {
+    let items = ["Angebot 1", "Angebot 2", "Angebot 3"]
+    @State private var currentIndex = 0
+
+    var body: some View {
+        VStack {
+            ScrollViewReader { proxy in
+                // BARRIERE: ScrollView fängt Fokus für inaktive Elemente ein, kein Einrasten
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        ForEach(items.indices, id: \.self) { index in
+                            Text(items[index])
+                                .frame(width: 300, height: 150)
+                                .background(Color.red)  // BARRIERE: Schlechter Kontrast
+                                .id(index)
+                        }
+                    }
+                }
+                .onChange(of: currentIndex) { newValue in
+                    withAnimation {
+                        proxy.scrollTo(newValue, anchor: .center)
+                    }
+                }
+            }
+            
+            // Barriere: Custom Page Indicator Punkte mit einer viel zu kleinen Größe (8x8)
+            HStack {
+                ForEach(items.indices, id: \.self) { index in
+                    Circle()
+                        .fill(currentIndex == index ? Color.black : Color.gray)
+                        .frame(width: 8, height: 8)
+                        .onTapGesture { 
+                            currentIndex = index // Ändert jetzt den Index beim Klicken
+                        }
+                }
+            }
+        }
+    }
+}
+```
