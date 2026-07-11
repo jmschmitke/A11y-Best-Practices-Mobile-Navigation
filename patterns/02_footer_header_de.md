@@ -50,7 +50,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Jedes Icon an den kritischen Bildschirmrändern benötigt eine Klickfläche von mind. 44x44pt. |
 | **Bei Fokus** | 3.2.1 On Focus | 11.3.2.1 | Das bloße Ansteuern eines Tabs via Screenreader darf noch keinen automatischen Screen-Wechsel auslösen. |
 | **Konsistente Navigation** | 3.2.3 Consistent Navigation | - | Die Anordnung und Position der Fußzeile muss auf jeder Hierarchieebene der App identisch bleiben. |
-| **Konsistente Identifikation** | 3.2.4 Consistent Identification | - | Systemweite Symbole (z. B. Profil, Home) müssen auf jedem Screen denselben Namen tragen. |
+| **Konsistente Identifikation** | 3.2.4 Consistent Identification | - | Systemweite Symbole (z.B. Profil, Home) müssen auf jedem Screen denselben Namen tragen. |
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Eindeutige Zuteilung der Rolle „Tab“ und korrekte Meldung des Status („ausgewählt“ vs. „nicht ausgewählt“). |
 | **Assistive Technologien** | - | 11.5.2.4 / 11.5.2.5 | Korrekte Übermittlung der Leisten- und Containertypen an die native Accessibility-API des OS. |
 
@@ -65,13 +65,13 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Interaktionsdesign und Touch-Targets
 * **Safe Area Einbettung**: Elemente in der Kopfzeile und Fußzeile müssen strikt innerhalb der vom System vorgegebenen Safe Area liegen, um Überlagerungen mit der Statusleiste (oben) oder dem Home-Indicator (unten) zu verhindern.
-* **Touch-Flächen**: Jedes interaktive Element (z. B. der „Edit“-Button in der Kopfzeile oder ein Tab in der Fußzeile) muss eine physische Touch-Fläche von mindestens 44 x 44 pt garantieren. Bei 4-5 Tabs in der Fußzeile teilt sich die Breite meist automatisch auf, die Höhe muss jedoch strikt eingehalten werden.
+* **Touch-Flächen**: Jedes interaktive Element (z.B. der „Edit“-Button in der Kopfzeile oder ein Tab in der Fußzeile) muss eine physische Touch-Fläche von mindestens 44 x 44 pt garantieren. Bei 4-5 Tabs in der Fußzeile teilt sich die Breite meist automatisch auf, die Höhe muss jedoch strikt eingehalten werden.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1:** Der Kopfzeilen-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
-2. **Fokus 2 (Bedingt):** Optionale Funktionstasten in der Kopfzeile (links/rechts) von links nach rechts geordnet.*
-3. **Fokus 3:** Der Hauptinhalt (Main Content) des Screens.*
-3. **Fokus 4:** Die Tab-Bar in der Fußzeile. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
+1. **Fokus 1 (Kopfzeile Titel):** Der Kopfzeilen-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
+2. **Fokus 2 (Kopfzeile Tasten):** Optionale Funktionstasten in der Kopfzeile (links/rechts) von links nach rechts geordnet.*
+3. **Fokus 3 (Inhalt):** Der Hauptinhalt (Main Content) des Screens.*
+3. **Fokus 4 (Fußzeile):** Die Tab-Bar in der Fußzeile. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
 
 ---
 
