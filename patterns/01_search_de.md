@@ -66,9 +66,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Systemkonforme Tastatursteuerung:** Bei der Aktivierung des Suchfelds muss programmatisch der korrekte virtuelle Tastatur-Typ aufgerufen werden. Die Aktionstaste unten rechts auf der Software-Tastatur muss als „Suchen“ konfiguriert sein, anstatt als standardmäßiger Zeilenumbruch.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1:** Das Suchfeld (TextField). Sprachausgabe: *„Suche, Textfeld, Bearbeiten möglich. [Platzhalter-Text].“*
-* **Fokus 2 (Bedingt):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
-* **Fokus 3:** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
+* **Fokus 1 (Suchfeld):** Das Suchfeld (TextField). Sprachausgabe: *„Suche, Textfeld, Bearbeiten möglich. [Platzhalter-Text].“*
+* **Fokus 2 (Löschbutton):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
+* **Fokus 3 (Ergebnisse):** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
 
 ---
 
