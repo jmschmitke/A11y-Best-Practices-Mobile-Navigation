@@ -43,7 +43,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 | Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Filter-Pattern |
 | :--- | :--- | :--- | :--- |
-| **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Zusammengehörige Filter (z. B. alle Farb-Optionen) müssen programmatisch gruppiert sein (z. B. via `Group`-Trait oder `<fieldset>`). |
+| **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Zusammengehörige Filter (z.B. alle Farb-Optionen) müssen programmatisch gruppiert sein (z.B. via `Group`-Trait oder `<fieldset>`). |
 | **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Ausgewählte Filter-Tags (Chips) und Zähler benötigen ausreichenden Kontrast (mind. 4,5:1 für Text, 3:1 für die Chip-Begrenzung). |
 | **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Jedes Filterelement muss vollständig per Tastatur/Switch-Control bedienbar sein. |
 | **Keine Tastatur-Falle** | 2.1.2 No Keyboard Trap | 11.2.1.2 | Wird ein Filter-Panel geöffnet, darf der Tastaturfokus beim Schließen nicht darin gefangen bleiben. |
@@ -51,7 +51,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Die Checkboxen und die „X“-Icons zum Löschen des Filters müssen die Mindestgröße einhalten, um Fehlklicks zu vermeiden. |
 | **Keine unerwartete Kontextänderung** | 3.2.1 On Focus / 3.2.2 On Input | 11.3.2.1 / .2 | Das Auswählen eines Filters darf niemals automatisch den Fokus versetzen oder ein unerwartetes modales Fenster öffnen. |
 | **Statusmeldungen** | 4.1.3 Status Messages | 11.4.1.3 | Aktualisierungen der Ergebnisliste durch Filterung müssen über eine Live-Region (`AccessibilityNotification` oder `accessibilityLiveRegion`) angekündigt werden. |
-| **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Jedes Steuerelement (z. B. ein einklappbares Filter-Akkordeon) muss seinen Zustand („erweitert“ / „reduziert“) und seine Rolle korrekt mitsenden. |
+| **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Jedes Steuerelement (z.B. ein einklappbares Filter-Akkordeon) muss seinen Zustand („erweitert“ / „reduziert“) und seine Rolle korrekt mitsenden. |
 
 ---
 
@@ -69,10 +69,10 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Touch-Targets bei Checkboxen**: Da Filterlisten oft eng beschrieben sind, muss die gesamte Zeile (Text + Checkbox) als Klickfläche fungieren. Das Touch-Target muss die Mindestgröße von 44x44 pt pro Option erfüllen.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1 (Die Filter-Steuerung):** Der Nutzer bewegt sich durch die Kontrollkästchen. VoiceOver liest den erweiterten Kontext vor: *„Kategorie, Mode. Kontrollkästchen nicht markiert, 15 Treffer“*. 
-2. **Fokus 2 (Die Statusmeldung):** Sobald ein Filter aktiviert wird, feuert im Hintergrund eine barrierefreie Ankündigung (Live-Region). Ohne den Fokus des Nutzers zu bewegen, spricht VoiceOver im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
-3. **Fokus 3 (Die Filter-Chips):** Nach Verlassen des Filter-Panels erreicht der Tastaturfokus die aktiven Filter-Tags, um diese bei Bedarf einzeln zu entfernen (*„Filter Mode löschen, Schaltfläche“*).
-4. **Fokus 4 (Der Listeneinstieg):** Der Fokus wandert direkt zur Überschrift der Ergebnisliste, um das sequenzielle Auslesen der gefilterten Daten zu ermöglichen.
+* **Fokus 1 (Filter-Steuerung):** Der Nutzer bewegt sich durch die Kontrollkästchen. VoiceOver liest den erweiterten Kontext vor: *„Kategorie, Mode. Kontrollkästchen nicht markiert, 15 Treffer“*. 
+* **Fokus 2 (Statusmeldung):** Sobald ein Filter aktiviert wird, feuert im Hintergrund eine barrierefreie Ankündigung (Live-Region). Ohne den Fokus des Nutzers zu bewegen, spricht VoiceOver im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
+* **Fokus 3 (Filter-Chips):** Nach Verlassen des Filter-Panels erreicht der Tastaturfokus die aktiven Filter-Tags, um diese bei Bedarf einzeln zu entfernen (*„Filter Mode löschen, Schaltfläche“*).
+* **Fokus 4 (Listeneinstieg):** Der Fokus wandert direkt zur Überschrift der Ergebnisliste, um das sequenzielle Auslesen der gefilterten Daten zu ermöglichen.
 
 ---
 
