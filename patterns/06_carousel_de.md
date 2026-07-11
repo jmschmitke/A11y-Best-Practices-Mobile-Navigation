@@ -95,7 +95,7 @@ struct GoodCarouselView: View {
                 ForEach(items.indices, id: \.self) { index in
                     Text(items[index])
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
-                        .background(Color.blue)
+                        .background(Color.cyan)
                         .tag(index)
                 }
             }
