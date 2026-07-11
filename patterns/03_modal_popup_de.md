@@ -24,13 +24,13 @@ Andere Sprachen: tbd
 
 ### Nutzungskontext
 Popups – oft auch als Modals, Bottom Sheets oder Dialogfenster bezeichnet – unterbrechen den regulären App-Flow, um die ungeteilte Aufmerksamkeit der Nutzenden auf eine kritische Aktion oder Information zu lenken.
-Sie werden häufig für Bestätigungen (z. B. Löschvorgänge), Dateneingaben (z. B. "Neuen Eintrag erstellen") oder wichtige Systemmeldungen genutzt. Da sie sich visuell über den bestehenden Inhalt legen, stellen sie eine massive Veränderung des Kontexts dar und müssen für assistive Technologien absolut unmissverständlich umgesetzt sein.
+Sie werden häufig für Bestätigungen (z.B. Löschvorgänge), Dateneingaben (z.B. "Neuen Eintrag erstellen") oder wichtige Systemmeldungen genutzt. Da sie sich visuell über den bestehenden Inhalt legen, stellen sie eine massive Veränderung des Kontexts dar und müssen für assistive Technologien absolut unmissverständlich umgesetzt sein.
 
 ### Typische Barrieren in der Praxis
 * **Die Screenreader-Falle (Focus Trapping Missing)**: Wenn sich ein Popup öffnet, verbleibt der unsichtbare Fokus von Screenreadern (VoiceOver) oft im darunterliegenden Hauptinhalt. Blinde Nutzende "verirren" sich dann in Elementen, die visuell gar nicht mehr sichtbar oder interaktiv sind, und bemerken das geöffnete Popup überhaupt nicht.
 * **Fehlende oder unklare Schließoptionen**: Popups werden oft so gestaltet, dass man sie durch Tippen auf den abgedunkelten Hintergrund schließt. Ohne einen expliziten, barrierefreien "Schließen"-Button (oder ein "X") sind Tastaturnutzende oder Menschen mit motorischen oder kognitiven Einschränkungen in dem Dialog gefangen.
 * **Layout-Kollaps bei Dynamic Type**: Da Popups konstruktionsbedingt weniger Platz als der Vollbildmodus haben, führt eine Erhöhung der Systemschriftgröße schnell dazu, dass Text aus dem sichtbaren Bereich geschoben wird oder die "Abbrechen"- und "Bestätigen"-Buttons den Text gegenseitig überlagern und unlesbar machen.
-* **Unerwarteter Kontextwechsel ohne Ankündigung**: Wenn Popups automatisch und ohne direkte Nutzerinteraktion aufpoppen (z. B. Cookie-Banner, In-App-Werbung oder plötzliche Systemhinweise), desorientiert dies Menschen mit kognitiven Einschränkungen oder Screenreader-Nutzende massiv, wenn der aktuelle Fokus abrupt zerrissen wird.
+* **Unerwarteter Kontextwechsel ohne Ankündigung**: Wenn Popups automatisch und ohne direkte Nutzerinteraktion aufpoppen (z.B. Cookie-Banner, In-App-Werbung oder plötzliche Systemhinweise), desorientiert dies Menschen mit kognitiven Einschränkungen oder Screenreader-Nutzende massiv, wenn der aktuelle Fokus abrupt zerrissen wird.
 
 ---
 
@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Der Lesefluss muss zwingend innerhalb des Popups bleiben und darf nicht nach hinten ausbrechen. |
 | **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Der Dialog-Hintergrund muss sich scharf vom darunterliegenden (abgedunkelten) Inhalt abheben. |
 | **Text vergrößern** | 1.4.4 Resize Text | 11.1.4.4 | Der Inhalt im Popup muss scrollbar sein, falls Text durch Dynamic Type nicht mehr auf den Screen passt. |
-| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Das Popup muss komplett per Tastatur (z. B. Schließen via `Esc`-Taste) bedienbar sein. |
+| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Das Popup muss komplett per Tastatur (z.B. Schließen via `Esc`-Taste) bedienbar sein. |
 | **Keine Tastatur-Falle** | 2.1.2 No Keyboard Trap | 11.2.1.2 | Der Fokus darf das Popup erst verlassen, wenn es explizit geschlossen wurde (Focus Trap). |
 | **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Beim Öffnen MUSS der Fokus direkt auf das erste Element im Popup springen (nicht im Hintergrund verharren). |
 | **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Interaktive Elemente im Popup (Buttons, Felder) benötigen einen deutlich sichtbaren Fokusrahmen. |
@@ -66,10 +66,10 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Touch-Flächen**: Buttons wie "Abbrechen", "Speichern" oder das Schließen-Kreuz müssen eine physische Touch-Fläche von mindestens 44 x 44 pt aufweisen. 
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1:** Der Popup-Titel (deklariert als Überschrift). VoiceOver liest sofort beim Öffnen: „[Titel des Popups], Überschrift“. Das signalisiert Orientierung.
-2. **Fokus 2:** Der Inhalts-Text oder die Eingabefelder innerhalb des Popups (von oben nach unten).
-3. **Fokus 3:** Die Aktions-Buttons am unteren Rand des Popups (z. B. links „Abbrechen“, rechts „Bestätigen“).
-4. **Fokus 4:** Der Schließen-Button (falls dieser als separates Icon oben platziert ist). *Alternativ kann der Schließen-Button auch direkt als Fokus 2 nach der Überschrift angesteuert werden.*
+1. **Fokus 1 (Titel):** Der Popup-Titel (deklariert als Überschrift). VoiceOver liest sofort beim Öffnen: „[Titel des Popups], Überschrift“. Das signalisiert Orientierung.
+2. **Fokus 2 (Inhalt):** Der Inhalts-Text oder die Eingabefelder innerhalb des Popups (von oben nach unten).
+3. **Fokus 3 (Aktionsbuttons):** Die Aktions-Buttons am unteren Rand des Popups (z.B. links „Abbrechen“, rechts „Bestätigen“).
+4. **Fokus 4 (Schließen-Button):** Der Schließen-Button (falls dieser als separates Icon oben platziert ist). *Alternativ kann der Schließen-Button auch direkt als Fokus 2 nach der Überschrift angesteuert werden.*
 
 ---
 
