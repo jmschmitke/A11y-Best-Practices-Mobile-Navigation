@@ -68,10 +68,10 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Touch-Flächen**: Jedes interaktive Element (z.B. der „Edit“-Button in der Kopfzeile oder ein Tab in der Fußzeile) muss eine physische Touch-Fläche von mindestens 44 x 44 pt garantieren. Bei 4-5 Tabs in der Fußzeile teilt sich die Breite meist automatisch auf, die Höhe muss jedoch strikt eingehalten werden.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1 (Kopfzeile Titel):** Der Kopfzeilen-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
-2. **Fokus 2 (Kopfzeile Tasten):** Optionale Funktionstasten in der Kopfzeile (links/rechts) von links nach rechts geordnet.*
-3. **Fokus 3 (Inhalt):** Der Hauptinhalt (Main Content) des Screens.*
-3. **Fokus 4 (Fußzeile):** Die Tab-Bar in der Fußzeile. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
+* **Fokus 1 (Kopfzeile Titel):** Der Kopfzeilen-Titel (deklariert als Überschrift / Heading). VoiceOver liest: „[Titel], Überschrift“.*
+* **Fokus 2 (Kopfzeile Tasten):** Optionale Funktionstasten in der Kopfzeile (links/rechts) von links nach rechts geordnet.*
+* **Fokus 3 (Inhalt):** Der Hauptinhalt (Main Content) des Screens.*
+* **Fokus 4 (Fußzeile):** Die Tab-Bar in der Fußzeile. Beim Wechsel auf ein Element liest VoiceOver: „Home, Tab, 1 von 4, ausgewählt“. Der ausgewählte Zustand ist elementar!
 
 ---
 
