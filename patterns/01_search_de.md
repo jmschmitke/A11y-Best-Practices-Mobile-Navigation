@@ -27,7 +27,7 @@ Die Suchfunktion ist eines der zentralen Navigationselemente in mobilen Apps. Si
 
 ### Typische Barrieren in der Praxis
 * **Fehlende semantische Auszeichnung:** Ohne ein explizites, programmatisch verknüpftes Label oder einen barrierefreien Namen wird das Eingabefeld von assistiven Technologien lediglich als unbeschriftetes Textfeld ausgegeben. Nutzende mit Sehbeeinträchtigungen können den Zweck des Feldes somit nicht identifizieren.
-* **Fokusverlust und Desorientierung:** Bei der Aktivierung des Suchfelds öffnen sich in vielen Apps dynamisch neue Ansichten (z. B. Suchvorschläge) oder die Software-Tastatur blendet sich ein. Wird der Barrierefreiheits-Fokus in diesem Moment nicht explizit gesteuert, springt der Screenreader an eine unvorhersehbare Stelle. Dies führt zu kognitiver Desorientierung.
+* **Fokusverlust und Desorientierung:** Bei der Aktivierung des Suchfelds öffnen sich in vielen Apps dynamisch neue Ansichten (z.B. Suchvorschläge) oder die Software-Tastatur blendet sich ein. Wird der Barrierefreiheits-Fokus in diesem Moment nicht explizit gesteuert, springt der Screenreader an eine unvorhersehbare Stelle. Dies führt zu kognitiver Desorientierung.
 * **Unzureichende Touch-Targets:** Der integrierte „Löschen“-Button (X) sowie der „Abbrechen“-Button sind visuell oft sehr filigran gestaltet. Für Menschen mit motorischen Einschränkungen sind diese essenziellen Steuerelemente dadurch schwer oder gar nicht präzise zu aktivieren.
 * **Fehlendes Feedback bei Live-Ergebnissen:** Verändern sich Suchergebnisse dynamisch während der Eingabe, verbleibt der Fokus meist im Textfeld. Ohne Feedback bleibt die Aktualisierung der Trefferliste für blinde und sehbehinderte Nutzende unbemerkt.
 
@@ -47,7 +47,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 | **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Deutlicher visueller Rahmen um das Feld bei Tastaturnavigation. |
 | **Bei Fokus** | 3.2.1 On Focus | 11.3.2.1 | Die bloße Fokussierung darf keinen unerwarteten Kontextwechsel auslösen. |
 | **Bei Eingabe** | 3.2.2 On Input | 11.3.2.2 | Texteingabe darf die App-Struktur nicht unangekündigt verändern. |
-| **Beschriftungen/Anweisungen** | 3.3.2 Labels or Instructions | 11.3.3.2 | Bereitstellung klarer, permanenter Hilfestellungen (z. B. Suchkontext). |
+| **Beschriftungen/Anweisungen** | 3.3.2 Labels or Instructions | 11.3.3.2 | Bereitstellung klarer, permanenter Hilfestellungen (z.B. Suchkontext). |
 | **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Eindeutige Zuteilung von Name, Rolle und Status. |
 | **Assistive Technologien** | - | 11.5.2.4 / 11.5.2.5 | Korrekte Übermittlung der Steuerelement-Typen an die Accessibility-API. |
 
@@ -56,7 +56,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 3. Design-Spezifikationen (UI/UX)
 
 ### Visuelle Gestaltung und Kontraste
-* **Mehr als nur Icons:** Ein reines Lupen-Symbol ist für die Barrierefreiheit nicht ausreichend, da es kognitive Hürden aufwirft. Das Suchfeld *muss* permanent durch ein lesbares Text-Label (z. B. „Suche“) oder einen eindeutigen Platzhalter (z. B. „Katalog durchsuchen...“) definiert sein.
+* **Mehr als nur Icons:** Ein reines Lupen-Symbol ist für die Barrierefreiheit nicht ausreichend, da es kognitive Hürden aufwirft. Das Suchfeld *muss* permanent durch ein lesbares Text-Label (z.B. „Suche“) oder einen eindeutigen Platzhalter (z.B. „Katalog durchsuchen...“) definiert sein.
 * **Kontrastverhältnisse:** * Der eingegebene Text sowie der Platzhalter-Text müssen ein Kontrastverhältnis von mindestens **4,5:1** zum direkten Hintergrund des Suchfelds aufweisen.
   * Die visuelle Begrenzung (Rahmen/Hintergrundfläche) des Suchfelds muss ein Kontrastverhältnis von mindestens **3:1** zum umgebenden Hintergrund des Screens besitzen, um als interaktives Element erkennbar zu sein.
 
@@ -66,9 +66,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Systemkonforme Tastatursteuerung:** Bei der Aktivierung des Suchfelds muss programmatisch der korrekte virtuelle Tastatur-Typ aufgerufen werden. Die Aktionstaste unten rechts auf der Software-Tastatur muss als „Suchen“ konfiguriert sein, anstatt als standardmäßiger Zeilenumbruch.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-1. **Fokus 1:** Das Suchfeld (TextField). Sprachausgabe: *„Suche, Textfeld, Bearbeiten möglich. [Platzhalter-Text].“*
-2. **Fokus 2 (Bedingt):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
-3. **Fokus 3:** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
+* **Fokus 1:** Das Suchfeld (TextField). Sprachausgabe: *„Suche, Textfeld, Bearbeiten möglich. [Platzhalter-Text].“*
+* **Fokus 2 (Bedingt):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
+* **Fokus 3:** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
 
 ---
 
