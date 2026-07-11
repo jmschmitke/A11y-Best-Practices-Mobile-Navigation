@@ -1,4 +1,4 @@
-# 09: Filtering Items
+# 09: Filter
 
 Ausgewählte Sprache: Deutsch
 
@@ -41,7 +41,7 @@ Filter- und Sortierfunktionen sind essenziell, um große Datenmengen – wie Pro
 
 Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterien der **WCAG 2.2** und der Regelung innerhalb von Kapitel 11 der **EN 301 549**.
 
-| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Filtering-Pattern |
+| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Filter-Pattern |
 | :--- | :--- | :--- | :--- |
 | **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Zusammengehörige Filter (z. B. alle Farb-Optionen) müssen programmatisch gruppiert sein (z. B. via `Group`-Trait oder `<fieldset>`). |
 | **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Ausgewählte Filter-Tags (Chips) und Zähler benötigen ausreichenden Kontrast (mind. 4,5:1 für Text, 3:1 für die Chip-Begrenzung). |
