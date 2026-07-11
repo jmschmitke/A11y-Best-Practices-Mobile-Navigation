@@ -74,3 +74,81 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 5. **Fokus 5 (Fußzeile / Footer Landmark):** Schließlich werden die ergänzenden Links im Footer angesteuert.
 
 ---
+
+## 4. Implementierung (SwiftUI)
+
+### Good Pattern (Positivbeispiel)
+Dieses Beispiel nutzt die nativen Komponenten NavigationStack und TabView. Dadurch werden die Bereiche für Screenreader automatisch korrekt übersetzt, der Seitentitel wird dynamisch mitgeteilt, und das Layout bricht bei großen Schriften oder im Querformat nicht zusammen.
+```swift
+import SwiftUI
+
+struct GoodNavigationView: View {
+    var body: some View {
+        // Native TabView: Liefert konsistente Struktur und semantische Landmarks
+        TabView {
+            NavigationStack { // Nativer Stack: Regelt Fokus-Reihenfolge und Navigation
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 16) {
+                        Text("Hauptinhalt der App")
+                            .font(.body)
+                    }
+                    .padding()
+                }
+                // WCAG 2.4.2: Jede Ansicht erhält einen eindeutigen, programmatischen Titel
+                .navigationTitle("Dashboard")
+            }
+            .tabItem {
+                // Konsistente Identifikation und Text-Labels für Steuerelemente
+                Label("Home", systemImage: "house.fill")
+            }
+            
+            Text("Einstellungen")
+                .tabItem {
+                    Label("Einstellungen", systemImage: "gearshape")
+                }
+        }
+        // Kein Sperren der Orientierung, Layout fließt flexibel in Landscape und Portrait
+    }
+}
+```
+
+
+### Bad Pattern (Negativbeispiel)
+Dieses Beispiel erzwingt starre Höhen, wodurch Text bei großen Schriften (Dynamic Type) abgeschnitten wird. Es sperrt die App künstlich per Code in das Hochformat und ignoriert native, konsistente Navigationselemente zugunsten einer unbeschrifteten Custom-Leiste.
+```swift
+import SwiftUI
+
+struct BadNavigationView: View {
+    var body: some View {
+        VStack(spacing: 0) {
+            // BARRIERE: Starre Höhe schneidet Text bei Dynamic Type / Skalierung ab.
+            HStack {
+                Text("Mein Dashboard")
+                    .font(.headline)
+            }
+            .frame(height: 50)
+            
+            ScrollView {
+                VStack {
+                    Text("Hauptinhalt der App")
+                }
+            }
+            
+            // BARRIERE: Selbstgebaute Tab-Leiste ohne semantische Navigation-Rolle.
+            // BARRIERE: Icons besitzen keine Text-Labels oder Barrierefreiheits-Namen.
+            HStack {
+                Spacer()
+                Image(systemName: "house.fill")
+                Spacer()
+                Image(systemName: "gearshape")
+                Spacer()
+            }
+            .frame(height: 60) // BARRIERE: Fixe Höhe verhindert vertikales Mitwachsen
+        }
+        // BARRIERE: Starr erzwungene Orientierung.
+        .onAppear {
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        }
+    }
+}
+```
