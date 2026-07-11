@@ -69,3 +69,86 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 3. **Auswahl ohne visuelle Geste:** Der blinde oder motorisch eingeschränkte Nutzer navigiert durch wiederholtes Wischen nach oben/unten durch die Optionen (z.B. „Löschen“) und löst diese mit einem einfachen Doppeltippen barrierefrei aus, ohne die physische Wisch-Geste jemals auszuführen.
 
 ---
+
+## 4. Implementierung (SwiftUI)
+
+### Good Pattern (Positivbeispiel)
+Dieses Beispiel nutzt die nativen SwiftUI-Listenmechanismen. Dadurch wird die Wisch-Geste automatisch in eine barrierefreie VoiceOver-Aktion übersetzt. Zusätzlich wird das Zwei-Wege-Prinzip über einen dauerhaft sichtbaren, ausreichend großen Button bedient.
+```swift
+import SwiftUI
+
+struct GoodGestureView: View {
+    @State private var items = ["E-Mail 1", "E-Mail 2", "E-Mail 3"]
+
+    var body: some View {
+        List {
+            ForEach(items, id: \.self) { item in
+                HStack {
+                    Text(item)
+                    Spacer()
+                    
+                    // Einfache Klick-Alternative zum Ziehen/Wischen
+                    Button(action: { deleteItem(item) }) {
+                        Image(systemName: "trash")
+                            .foregroundColor(.red)
+                            .frame(width: 44, height: 44) // WCAG 2.5.8: Erfüllt Mindest-Touch-Größe
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("\(item) löschen") // WCAG 4.1.2: Eindeutiger Name
+                }
+                // Nativer Swipe: Übersetzt die Geste für VoiceOver automatisch in "Aktionen verfügbar"
+                .swipeActions(edge: .trailing) {
+                    Button(role: .destructive) {
+                        deleteItem(item)
+                    } label: {
+                        Label("Löschen", systemImage: "trash")
+                    }
+                }
+            }
+        }
+    }
+
+    private func deleteItem(_ item: String) {
+        items.removeAll { $0 == item }
+    }
+}
+```
+
+
+### Bad Pattern (Negativbeispiel)
+Dieses Beispiel implementiert das Wischen über eine selbstgebaute Drag-Geste. Es zwingt motorisch eingeschränkte Nutzende zu einer komplexen Pfadbewegung, bricht bei aktivem VoiceOver komplett und löst fälschlicherweise sofort beim ersten Kontakt aus.
+```swift
+import SwiftUI
+
+struct BadGestureView: View {
+    @State private var items = ["E-Mail 1", "E-Mail 2", "E-Mail 3"]
+    @State private var dragOffset: CGFloat = 0
+
+    var body: some View {
+        VStack {
+            ForEach(items, id: \.self) { item in
+                HStack {
+                    Text(item)
+                    Spacer()
+                }
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .offset(x: dragOffset)
+                .gesture(
+                    // BARRIERE: Komplexe Drag-Geste schließt motorisch eingeschränkte Menschen aus.
+                    // BARRIERE: Funktioniert nicht mit VoiceOver, da Wischgesten vom Screenreader abgefangen werden.
+                    DragGesture()
+                        .onChanged { value in
+                            // BARRIERE: Aktion reagiert sofort auf Bewegung statt auf das Loslassen.
+                            if value.translation.width < -100 {
+                                items.removeAll { $0 == item }
+                            }
+                        }
+                )
+            }
+        }
+    }
+}
+}
+```
