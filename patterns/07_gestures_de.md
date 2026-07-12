@@ -77,6 +77,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel nutzt die nativen SwiftUI-Listenmechanismen. Dadurch wird die Wisch-Geste automatisch in eine barrierefreie VoiceOver-Aktion übersetzt. Zusätzlich wird das Zwei-Wege-Prinzip über einen dauerhaft sichtbaren, ausreichend großen Button bedient.
+
+<figure>
+  <img src="screenshots_swiftui_de/07good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem eine Liste an E-Mails angezeigt wird. Neben jeder E-Mail befindet sich ein Löschen-Symbol. Ebenfalls ist die zweite E-Mail in der Liste aktuell nach links gewischt, um das Löschen zu bestätigen." width="20%">
+  <figcaption>Abb. 7.1: Barrierefreie Implementierung von Gesten</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -120,6 +128,14 @@ struct GoodGestureView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel implementiert das Wischen über eine selbstgebaute Drag-Geste. Es zwingt motorisch eingeschränkte Nutzende zu einer komplexen Pfadbewegung, bricht bei aktivem VoiceOver komplett und löst fälschlicherweise sofort beim ersten Kontakt aus.
+
+<figure>
+  <img src="screenshots_swiftui_de/07bad.png" alt="Screenshot des Negativbeispiels auf welchem eine Liste an E-Mails angezeigt wird. Diese lassen sich nur über die Wischgeste ohne Bestätigung löschen." width="20%">
+  <figcaption>Abb. 7.2: Barrierebehaftete Implementierung von Gesten</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
