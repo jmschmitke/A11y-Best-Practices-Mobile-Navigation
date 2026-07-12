@@ -71,7 +71,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Eingebettete Steuerelemente:** Der innerhalb des Textfelds platzierte „Clear“-Button (X) sowie der primäre „Abbrechen“-Button daneben müssen eine barrierefreie Klick- und Touch-Fläche von mindestens **44 x 44 Pixel** aufweisen, unabhängig von der tatsächlichen visuellen Icon-Größe.
 * **Systemkonforme Tastatursteuerung:** Bei der Aktivierung des Suchfelds muss programmatisch der korrekte virtuelle Tastatur-Typ aufgerufen werden. Die Aktionstaste unten rechts auf der Software-Tastatur muss als „Suchen“ konfiguriert sein, anstatt als standardmäßiger Zeilenumbruch.
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
 * **Fokus 1 (Suchfeld):** Das Suchfeld (TextField). Sprachausgabe: *„Suche, Textfeld, Bearbeiten möglich. [Platzhalter-Text].“*
 * **Fokus 2 (Löschbutton):** Der „Clear“-Button (wird erst aktiv, sobald Text existiert). Sprachausgabe: *„Text löschen, Button.“*
 * **Fokus 3 (Ergebnisse):** Die dynamisch geladene Liste der Suchergebnisse oder Suchvorschläge, linear von oben nach unten navigierbar.
