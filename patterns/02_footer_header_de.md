@@ -84,6 +84,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung einer Fußzeile und Kopfzeile, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
+
+<figure>
+  <img src="screenshots_swiftui_de/02good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein eine Übersicht dargestellt ist. In der Kopfzeile befindet sich ein Zurück-Button, eine Überschrift mit Kontodetails und ein Icon für die Einstellungen. Im Hauptbereich befindet sich eine Liste an Transaktionen. In der Fußzeile befindet sich die Navigation für die Übersicht, welche aktuell ausgewählt ist, und ein weiteres Menü für Karten." width="20%">
+  <figcaption>Abb. 2.1: Barrierefreie Implementierung der Fußzeile/Kopfzeile in SwiftUI.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -170,6 +178,14 @@ struct GoodHeaderFooterView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung einer Fußzeile und Kopfzeile Sie ignoriert zentrale Vorgaben bezüglich Höhe von Buttons, nativer Implementierung der Syntax sowie Fokus-Management des Screenreaders.
+
+<figure>
+  <img src="screenshots_swiftui_de/02bad.png" alt="Screenshot des Negativbeispiels auf welchem ein eine Übersicht dargestellt ist. In der Kopfzeile befindet sich eine Pfeiltaste nach Links, eine Überschrift mit Kontodetails und Einstellungen und ein Icon für die Einstellungen. Im Hauptbereich befindet sich eine Liste an Transaktionen. In der Fußzeile befindet sich die Navigation für die Übersicht. Die aktuelle Seite ist blau hervorgehoben" width="20%">
+  <figcaption>Abb. 2.2: Barrierebehaftete Implementierung der Fußzeile/Kopfzeile in SwiftUI.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
