@@ -81,6 +81,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel nutzt die nativen Komponenten NavigationStack und TabView. Dadurch werden die Bereiche für Screenreader automatisch korrekt übersetzt, der Seitentitel wird dynamisch mitgeteilt, und das Layout bricht bei großen Schriften oder im Querformat nicht zusammen.
+
+<figure>
+  <img src="screenshots_swiftui_de/08good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem eine Navigationsstruktur am unteren Bildschirmrand mit Home und Einstellungen zu sehen ist. Die Home-Seite ist aktuell ausgewählt und entsprechend hervorgehoben. Der Titel der  Seite lautet Dashboard." width="20%">
+  <figcaption>Abb. 8.1: Barrierefreie Implementierung der Navigationsstruktur und des Layouts.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -117,6 +125,14 @@ struct GoodNavigationView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel erzwingt starre Höhen, wodurch Text bei großen Schriften (Dynamic Type) abgeschnitten wird. Es sperrt die App künstlich per Code in das Hochformat und ignoriert native, konsistente Navigationselemente zugunsten einer unbeschrifteten Custom-Leiste.
+
+<figure>
+  <img src="screenshots_swiftui_de/08bad.png" alt="Screenshot des Negativbeispiels auf welchem eine Navigationsstruktur am unteren Bildschirmrand mit reinen Symbolen für Home und Einstellungen zu sehen ist. Die Home-Seite ist aktuell ausgewählt, jedoch nur leicht hervorgehoben. Der Titel der  Seite lautet Mein Dashboard." width="20%">
+  <figcaption>Abb. 8.2: Barrierebehaftete Implementierung der Navigationsstruktur und des Layouts.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
