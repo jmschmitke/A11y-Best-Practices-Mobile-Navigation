@@ -67,9 +67,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Bestätigung der Filter**: Verwende ein "Explizites Commit-Modell". Der Nutzer wählt in Ruhe seine Filter aus. Erst ein Klick auf einen fixierten Button am unteren Rand (*„3 Filter anwenden – 12 Ergebnisse anzeigen“*) schließt das Menü und filtert die Liste. Das verhindert permanente asynchrone Einbrüche.
 * **Touch-Targets bei Checkboxen**: Da Filterlisten oft eng beschrieben sind, muss die gesamte Zeile (Text + Checkbox) als Klickfläche fungieren. Das Touch-Target muss die Mindestgröße von 44x44 pt pro Option erfüllen.
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Filter-Steuerung):** Der Nutzer bewegt sich durch die Kontrollkästchen. VoiceOver liest den erweiterten Kontext vor: *„Kategorie, Mode. Kontrollkästchen nicht markiert, 15 Treffer“*. 
-* **Fokus 2 (Statusmeldung):** Sobald ein Filter aktiviert wird, startet im Hintergrund eine barrierefreie Ankündigung. Ohne den Fokus des Nutzers zu bewegen, spricht VoiceOver im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
+* **Fokus 1 (Filter-Steuerung):** Der Nutzer bewegt sich durch die Kontrollkästchen. Der Screenreader liest den erweiterten Kontext vor: *„Kategorie, Mode. Kontrollkästchen nicht markiert, 15 Treffer“*. 
+* **Fokus 2 (Statusmeldung):** Sobald ein Filter aktiviert wird, startet im Hintergrund eine barrierefreie Ankündigung. Ohne den Fokus des Nutzers zu bewegen, spricht der Screenreader im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
 * **Fokus 3 (Filter-Chips):** Nach Verlassen des Filter-Panels erreicht der Tastaturfokus die aktiven Filter-Tags, um diese bei Bedarf einzeln zu entfernen (*„Filter Mode löschen, Schaltfläche“*).
 * **Fokus 4 (Listeneinstieg):** Der Fokus wandert direkt zur Überschrift der Ergebnisliste, um das sequenzielle Auslesen der gefilterten Daten zu ermöglichen.
 
