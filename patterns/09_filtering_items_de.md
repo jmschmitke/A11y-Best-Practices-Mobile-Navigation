@@ -31,8 +31,8 @@ Andere Sprachen: tbd
 Filter- und Sortierfunktionen sind essenziell, um große Datenmengen – wie Produktlisten in Onlineshops, Suchergebnisse oder Buchungsportale – handhabbar zu machen. Sie bestehen meist aus einer Kombination verschiedener UI-Elemente: Checkboxen für Kategorien, native oder Custom-Dropdowns für Sortierungen (z.B. "Preis aufsteigend"), Schiebereglern für Preisspannen und "Filter löschen"-Buttons. Da das Aktivieren eines Filters die darunterliegende Datenstruktur direkt manipuliert und Einträge dynamisch hinzufügt oder entfernt, müssen diese Änderungen für assistive Technologien in Echtzeit nachvollziehbar sein.
 
 ### Typische Barrieren in der Praxis
-* **asynchrone Desorientierung**: In modernen Single-Page-Apps oder nativen Apps filtert sich die Liste im Hintergrund oft automatisch, sobald eine Checkbox angewählt wird. Ein Screenreader-Nutzer bekommt davon jedoch nichts mit. Er verbleibt starr auf der Checkbox, während sich die Anzahl der Suchergebnisse unbemerkt reduziert.
-* **Fokus-Verlust-Falle**: Wird nach dem Klick auf einen Filter ein asynchrones Neuladen der gesamten Liste erzwungen, springt der Fokus oft an den Seitenanfang zurück. Der Nutzer verliert seine Position und muss sich mühsam wieder zurück zum Filterbereich navigieren.
+* **asynchrone Desorientierung**: In modernen Apps filtert sich die Liste im Hintergrund oft automatisch, sobald eine Checkbox angewählt wird. Ein Screenreader-Nutzer bekommt davon jedoch nichts mit. Er verbleibt starr auf der Checkbox, während sich die Anzahl der Suchergebnisse unbemerkt ändert.
+* **Fokus-Verlust-Falle**: Wird nach dem Klick auf einen Filter ein asynchrones Neuladen der gesamten Liste erzwungen, springt der Fokus oft an den Seitenanfang zurück. Der Nutzer verliert seine Position und muss sich wieder zurück zum Filterbereich navigieren.
 * **Unzugängliche Filter-Zähler**: Neben Filtern steht häufig die Anzahl der Treffer in Klammern (z.B. *„Elektronik (12)“*). Werden diese Zahlen als reiner Text ohne Kontext aneinandergehängt, liest ein Screenreader vor: *„Elektronik, Kontrollkästchen nicht markiert, zwölf“*. Es bleibt unklar, ob „zwölf“ die Anzahl, eine Artikelnummer oder eine ID ist.
 * **Tastatur-Sackgassen in komplexen Menüs**: Filter-Panels werden auf Mobilgeräten oft als modale Overlays oder ausklappbare Akkordeons dargestellt. Wenn diese visuell einblenden, der Tastaturfokus aber im Hintergrund der App gefangen bleibt, sind die Filter für alternative Eingabemethoden physisch nicht erreichbar.
 
@@ -61,17 +61,15 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ### Visuelle Gestaltung und Kontraste
 * **Permanente Statusanzeige**: Welche Filter aktuell aktiv sind, darf nicht nur innerhalb eines versteckten Menüs ersichtlich sein. Aktive Filter müssen oberhalb der Ergebnisliste als visuelle "Chips" oder "Tags" dargestellt werden. Jeder dieser Chips benötigt ein integriertes "X"-Symbol zum schnellen Löschen.
 * **Eindeutige Treffer-Anzeigen**: Der Zähler für die Gesamtergebnisse muss visuell prominent platziert sein. Ändert sich der Wert, sollte die Zahl kurzzeitig visuell hervorgehoben werden, um kognitiv eingeschränkten Nutzenden die Änderung zu signalisieren.
-* **Barrierefreie Slider**: Wenn Schieberegler für numerische Werte verwendet werden, müssen zusätzlich zwei klassische Eingabefelder als Textfelder bereitgestellt werden, da Schieberegler motorisch extrem schwer präzise einzustellen sind.
+* **Barrierefreie Slider**: Wenn Schieberegler für numerische Werte verwendet werden, müssen zusätzlich zwei klassische Eingabefelder als Textfelder bereitgestellt werden, da Schieberegler motorisch schwer präzise einzustellen sind.
 
 ### Interaktionsdesign und Touch-Targets
-* **Bestätigungs-Modus vs. Live-Filtering**: 
-  * **Auf Mobile (Empfohlen)**: Verwende ein "Explizites Commit-Modell". Der Nutzer wählt in Ruhe seine Filter aus. Erst ein Klick auf einen fixierten Button am unteren Rand (*„3 Filter anwenden – 12 Ergebnisse anzeigen“*) schließt das Menü und filtert die Liste. Das verhindert permanente asynchrone Einbrüche.
-  * **Auf Desktop**: Wird Live-Filtering genutzt, darf die Ergebnisliste während des Ladens nicht flackern. Ein Ladeindikator (Spinner) muss barrierefrei deklariert werden.
+* **Bestätigung der Filter**: Verwende ein "Explizites Commit-Modell". Der Nutzer wählt in Ruhe seine Filter aus. Erst ein Klick auf einen fixierten Button am unteren Rand (*„3 Filter anwenden – 12 Ergebnisse anzeigen“*) schließt das Menü und filtert die Liste. Das verhindert permanente asynchrone Einbrüche.
 * **Touch-Targets bei Checkboxen**: Da Filterlisten oft eng beschrieben sind, muss die gesamte Zeile (Text + Checkbox) als Klickfläche fungieren. Das Touch-Target muss die Mindestgröße von 44x44 pt pro Option erfüllen.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
 * **Fokus 1 (Filter-Steuerung):** Der Nutzer bewegt sich durch die Kontrollkästchen. VoiceOver liest den erweiterten Kontext vor: *„Kategorie, Mode. Kontrollkästchen nicht markiert, 15 Treffer“*. 
-* **Fokus 2 (Statusmeldung):** Sobald ein Filter aktiviert wird, feuert im Hintergrund eine barrierefreie Ankündigung (Live-Region). Ohne den Fokus des Nutzers zu bewegen, spricht VoiceOver im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
+* **Fokus 2 (Statusmeldung):** Sobald ein Filter aktiviert wird, startet im Hintergrund eine barrierefreie Ankündigung. Ohne den Fokus des Nutzers zu bewegen, spricht VoiceOver im Hintergrund: *„Liste aktualisiert. 3 Ergebnisse verfügbar.“*
 * **Fokus 3 (Filter-Chips):** Nach Verlassen des Filter-Panels erreicht der Tastaturfokus die aktiven Filter-Tags, um diese bei Bedarf einzeln zu entfernen (*„Filter Mode löschen, Schaltfläche“*).
 * **Fokus 4 (Listeneinstieg):** Der Fokus wandert direkt zur Überschrift der Ergebnisliste, um das sequenzielle Auslesen der gefilterten Daten zu ermöglichen.
 
