@@ -35,7 +35,7 @@ Da Tabs zu den am häufigsten genutzten Navigationselementen gehören, ist ihre 
 ### Typische Barrieren in der Praxis
 * **Fehlender Zustandsstatus**: Blinde oder sehbehinderte Nutzende können visuell hervorgehobene Tabs oft nicht als "aktiviert" wahrnehmen. Wenn die Barrierefreiheits-API den Zustand nicht explizit als „ausgewählt“ an assistive Technologien übergibt, bleibt unklar, welcher Inhalt gerade auf dem Bildschirm dargestellt wird.
 * **Unklare Rollenverteilung**: Häufig werden Tabs technisch als einfache Aneinanderreihung von Standard-Buttons implementiert. Für Screenreader-Nutzende geht dadurch der semantische Zusammenhang verloren; sie erkennen nicht, dass diese Steuerelemente eine zusammengehörige Gruppe bilden und exklusiv den darunterliegenden Inhalt steuern.
-* **Tastatur-Navigations-Sackgasse**: Bei der Bedienung mit externen Tastaturen werden Tabs oft fälschlicherweise so programmiert, dass man jeden einzelnen Tab per `Tab`-Taste anspringen muss, statt die standardisierte Navigation über die Pfeiltasten zu ermöglichen. Dies verlangsamt den Bedienfluss massiv.
+* **Tastatur-Navigations-Sackgasse**: Bei der Bedienung mit externen Tastaturen werden Tabs oft fälschlicherweise so programmiert, dass man jeden einzelnen Tab per `Tab`-Taste anspringen muss, statt die standardisierte Navigation über die Pfeiltasten zu ermöglichen. Dies verlangsamt den Bedienfluss.
 * **Fehlende Fokusüberführung**: Beim Aktivieren eines Tabs wird der Inhalt darunter dynamisch ausgetauscht. Verbleibt der Fokus nach dem Klick starr auf dem Tab-Element, ohne dass Screenreader das Laden des neuen Inhalts signalisieren, merken Nutzende oft nicht, dass sich die angezeigten Daten geändert haben.
 ---
 
@@ -62,12 +62,12 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 3. Design-Spezifikationen (UI/UX)
 
 ### Visuelle Gestaltung und Kontraste
-* **Kennzeichnung des aktiven Zustands**: Der ausgewählte Tab darf sich nicht *ausschließlich* durch eine Farbänderung vom inaktiven Tab unterscheiden. Es muss zusätzlich eine visuelle Formkomponente genutzt werden, wie z.B. eine dicke Unterstreichung, ein kontraststarker Rahmen oder eine gefüllte Hintergrundform.
+* **Kennzeichnung des aktiven Zustands**: Der ausgewählte Tab darf sich nicht ausschließlich durch eine Farbänderung vom inaktiven Tab unterscheiden. Es muss zusätzlich eine visuelle Formkomponente genutzt werden, wie z.B. eine dicke Unterstreichung, ein kontraststarker Rahmen oder eine gefüllte Hintergrundform.
 * **Dynamic Type & Überlauf-Verhalten**: Tab-Leisten dürfen Text niemals hart abschneiden oder mittels `...` (Ellipse) unleserlich machen, wenn die Systemschriftart vergrößert wird. Bei Platzmangel muss die Tab-Leiste automatisch zu einem horizontal wisch- und scrollbaren Element werden.
 
 ### Interaktionsdesign und Touch-Targets
 * **Touch-Flächen**: Jedes Tab stellt ein eigenständiges Steuerelement dar. Die Berührungsfläche muss, selbst wenn der Text kurz ist (z.B. "Info"), künstlich durch Padding auf mindestens 44 x 44 pt ausgedehnt werden, um Fehlbedienungen bei motorischen Einschränkungen zu minimieren.
-* **Tastatur-Verhalten**: Die Tab-Leiste als Ganzes nimmt genau *einen* Stopp in der normalen Tab-Reihenfolge ein. Befindet sich der Tastaturfokus auf der Tab-Leiste, wechseln Nutzende den aktiven Tab mithilfe der `Pfeiltaste Links` und `Pfeiltaste Rechts`. Ein Druck auf die `Tab`-Taste springt direkt am Ende der Tab-Leiste vorbei hinein in den Inhalt des aktuell ausgewählten Tabs.
+* **Tastatur-Verhalten**: Die Tab-Leiste als Ganzes nimmt genau einen Stopp in der normalen Tab-Reihenfolge ein. Befindet sich der Tastaturfokus auf der Tab-Leiste, wechseln Nutzende den aktiven Tab mithilfe der `Pfeiltaste Links` und `Pfeiltaste Rechts`. Ein Druck auf die `Tab`-Taste springt direkt am Ende der Tab-Leiste vorbei hinein in den Inhalt des aktuell ausgewählten Tabs.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
 * **Fokus 1 (Tab-Element):** Das aktuell ausgewählte Tab-Element in der Tab-Leiste. VoiceOver liest sofort: „[Name des Tabs], Registerkarte, ausgewählt, [Index] von [Gesamtanzahl]“ (z.B. *„Einstellungen, Registerkarte, ausgewählt, 2 von 3“*).
