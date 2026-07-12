@@ -95,6 +95,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt eine barrierefreie Implementierung. Die gesamte Karte ist ein einziges Touch-Target. Die inneren Texte werden für den Screenreader kombiniert, das Bild wird als dekorativ ausgeblendet, und der Favoriten-Button ist als separates Element sauber zugänglich.
+
+<figure>
+  <img src="screenshots_swiftui_de/05good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem eine Card angezeigt wird mit einer Überschrift und Text sowie ein Herz-Symbol als Favoritenbutton am rechten, unteren Rand der Card." width="20%">
+  <figcaption>Abb. 5.1: Barrierefreie Implementierung der Card</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -163,6 +171,14 @@ struct GoodCardView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine mangelhafte Implementierung mittels starrer Container, nicht deklarierter Bild-Alternativtexte und fehlender Fokus-Kombination.
+
+<figure>
+  <img src="screenshots_swiftui_de/05bad.png" alt="Screenshot des Negativbeispiels auf welchem eine Card angezeigt wird mit einer Überschrift und Text sowie ein Herz-Symbol als Favoritenbutton am linken, unteren Rand der Card und ein Mehr erfahren Button unten rechts." width="20%">
+  <figcaption>Abb. 5.2: Barrierebehaftete Implementierung der Card</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
