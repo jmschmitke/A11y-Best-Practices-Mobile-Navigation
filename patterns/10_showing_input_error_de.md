@@ -81,6 +81,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel nutzt die Mehrkanalanzeige (Farbe + Icon + Text). Die Fehlermeldung ist präzise formuliert, wird über .accessibilityInputLabels und .accessibilityHint fest an das Eingabefeld gekoppelt und bei Fehlereintritt direkt via Screenreader-Ankündigung gemeldet.
+
+<figure>
+  <img src="screenshots_swiftui_de/10good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem eine fehlerhafte Eingabe bei einem E-Mail-Feld angezeigt wird. Das Feld ist rot markiert und darunter befindet sich ein Text mit der Fehlerbeschreibung sowie ein Button, um die Registrierung abzuschließen." width="20%">
+  <figcaption>Abb. 10.1: Barrierefreie Implementierung von Eingabefehlern</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -153,6 +161,14 @@ struct GoodErrorView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel verlässt sich ausschließlich auf die Farbe Rot, um den Fehler anzuzeigen. Zudem wird die Fehlermeldung programmatisch nicht mit dem Eingabefeld verknüpft, und der Screenreader erhält beim Absenden keinerlei Rückmeldung über das Scheitern.
+
+<figure>
+  <img src="screenshots_swiftui_de/10bad.png" alt="Screenshot des Negativbeispiels auf welchem eine fehlerhafte Eingabe bei einem E-Mail-Feld angezeigt wird. Das Feld ist lediglich rot markiert ohne Fehlerbeschreibung sowie ein Button mit Absenden." width="20%">
+  <figcaption>Abb. 10.2: Barrierebehaftete Implementierung von Eingabefehlern</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
