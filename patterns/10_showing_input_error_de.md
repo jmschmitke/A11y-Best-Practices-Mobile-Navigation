@@ -67,8 +67,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Interaktionsdesign und Touch-Targets
 * **Fokus-Überführung bei Absendefehlern**: Schlägt das Absenden des Formulars fehl, muss der Fokus automatisch entweder auf die Fehler-Sammelbox am Seitenanfang oder direkt in das erste fehlerhafte Eingabefeld versetzt werden. Der Screenreader liest die Fehlermeldung dadurch sofort als Erstes vor.
-* **Keine voreilige Validierung**: Eingabefelder sollten während des Tippens nicht sofort aggressiv Fehler anzeigen (z.B. während der Nutzer noch dabei ist, seine E-Mail-Adresse einzutippen). Die Validierung darf erst erfolgen, wenn das Feld verlassen wird (`Blur`-Event / Fokusverlust) oder das Formular abgesendet wird.
-* **Erweiterte Verknüpfung**: Technisch muss das Eingabefeld so programmiert sein, dass die Fehlermeldung als Beschreibungstext des Feldes hinterlegt ist (z.B. im Web via `aria-describedby` oder in Native Mobile über das Verknüpfen der Accessibility-Labels). 
+* **Keine voreilige Validierung**: Eingabefelder sollten während des Tippens nicht sofort Fehler anzeigen (z.B. während der Nutzer noch dabei ist, seine E-Mail-Adresse einzutippen). Die Validierung darf erst erfolgen, wenn das Feld verlassen wird (`Blur`-Event / Fokusverlust) oder das Formular abgesendet wird.
+* **Erweiterte Verknüpfung**: Technisch muss das Eingabefeld so programmiert sein, dass die Fehlermeldung als Beschreibungstext des Feldes hinterlegt ist.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
 * **Fokus 1 (Nach Klick auf Absenden):** Das Formular bricht ab, der Fokus springt an den Anfang der Fehler-Sammelbox. VoiceOver liest vor: *„Das Formular konnte nicht gesendet werden. 2 Fehler enthalten. Liste mit 2 Einträgen. Erstens: Passwort zu kurz, Link. Zweitens...“*
