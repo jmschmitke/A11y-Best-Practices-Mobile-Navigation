@@ -82,6 +82,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung eines Popups, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
+
+<figure>
+  <img src="screenshots_swiftui_de/03good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Popup zu erkennen ist. Die Überschrift lautet Eintrag löschen. Daneben befindet sich ein X-Button zum Schließen des Popups. Darunter befindet sich ein Text mit der Frage, ob man den Eintrag wirklich löschen möchte. Ein hervorgehobener Button mit Eintrag unwiderruflich löschen sowie ein Abbrechen-Button." width="20%">
+  <figcaption>Abb. 3.1: Barrierefreie Implementierung des Popups.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -177,6 +185,13 @@ struct MainContentView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung eines Popups. Sie ignoriert zentrale Vorgaben bezüglich Accessibility-Label, Fokusfalle sowie einen fehlenden Schließen-Button.
+
+<figure>
+  <img src="screenshots_swiftui_de/03bad.png" alt="Screenshot des Negativbeispiels mit nativer Implementierung auf welchem ein Popup zu erkennen ist. Die Überschrift lautet Eintrag löschen. Darunter befindet sich ein Text mit der Frage, ob man den Eintrag wirklich löschen möchte. Ein hervorgehobener Button Löschen-Button befindet sich darunter." width="20%">
+  <figcaption>Abb. 3.2: Barrierebehaftete Implementierung des Popups.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
 
 ```swift
 import SwiftUI
