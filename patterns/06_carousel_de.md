@@ -33,7 +33,7 @@ Karussele – z.B. als Image-Slider, Pager oder Banner-Rotator – präsentieren
 ### Typische Barrieren in der Praxis
 * **Autoplay-Falle**: Automatisch rotierende Karussele, die sich nicht pausieren lassen, machen eine App für bestimmte Zielgruppen unbedienbar. Nutzende mit kognitiven Einschränkungen oder geringer Lesegeschwindigkeit werden gestresst, wenn der Text verschwindet, bevor sie ihn erfasst haben. Screenreader-Nutzende werden desorientiert, wenn sich der Inhalt unter ihrem Fokus plötzlich von alleine austauscht.
 * **Unsichtbare Inhalte**: Befindet sich ein Element außerhalb des sichtbaren Bereichs, wird es von Screenreadern oft komplett ignoriert oder fälschlicherweise als fokussierbar erfasst, obwohl es visuell abgeschnitten ist. Ohne eine klare Ansage der Gesamtanzahl (z.B. „*Element 2 von 5*“) wissen blinde Nutzende nicht, dass weitere Inhalte existieren.
-* **Unzugängliche Seitenindikatoren**: Die Page-Indicator-Punkte am unteren Rand eines Sliders werden oft als rein dekorative Elemente oder mit nicht-assistiven Custom-Views gebaut. Sie besitzen dann keine Rolle, kein Label und sind weder für VoiceOver noch für externe Tastaturen ansteuerbar.
+* **Unzugängliche Seitenindikatoren**: Die Page-Indicator-Punkte am unteren Rand eines Sliders werden oft als rein dekorative Elemente oder mit nicht-assistiven Custom-Views gebaut. Sie besitzen dann keine Rolle, kein Label und sind weder für Screenreader noch für externe Tastaturen ansteuerbar.
 * **Wisch-Zwang**: Verlässt sich ein Karussel ausschließlich auf die Touch-Geste des horizontalen Wischens, schließt es Menschen mit motorischen Einschränkungen aus, die die App über Schaltersteuerung, Tastatur oder Eyetracker bedienen.
 
 ---
@@ -69,9 +69,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Umgang mit Klickflächen**: Da die Indikator-Punkte visuell oft sehr klein designt werden (z.B. 8x8 pt), muss ihre physische Touch-Fläche im Code unsichtbar auf mindestens 44x44 pt vergrößert werden. Alternativ empfiehlt es sich, die Punkte rein dekorativ zu schalten und stattdessen größere Pfeiltasten zu verwenden.
 * **Barrierefreies Scroll-Verhalten**: Beim manuellen Wischen sollte das Karussel präzise auf dem nächsten Element einrasten, damit Inhalte nicht halb abgeschnitten am Bildschirmrand stehen bleiben.
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Karussel als Ganzes):** Beim Betreten des Karussels kündigt VoiceOver das Element idealerweise als Gruppe an: „*Karussell, Highlight-Themen*“.
-* **Fokus 2 (Inhalt):** Der Fokus springt direkt auf das aktuell sichtbare Inhaltselement (z.B. die aktive Card). VoiceOver liest den Inhalt vor und fügt die Positionsangabe hinzu: „*[Inhalt], Element 1 von 3*“.
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
+* **Fokus 1 (Karussel als Ganzes):** Beim Betreten des Karussels kündigt der Screenreader das Element idealerweise als Gruppe an: „*Karussell, Highlight-Themen*“.
+* **Fokus 2 (Inhalt):** Der Fokus springt direkt auf das aktuell sichtbare Inhaltselement (z.B. die aktive Card). Der Screenreader liest den Inhalt vor und fügt die Positionsangabe hinzu: „*[Inhalt], Element 1 von 3*“.
 * **Fokus 3 & 4 (Weitere Interaktionselemente):** Danach folgen die Buttons „Nächstes Element“, „Vorheriges Element“ und der optionale „Pause“-Button.
 * **Ignorieren inaktiver Elemente:** Elemente, die sich aktuell unsichtbar außerhalb des Bildschirms befinden, werden komplett vom Fokus-Fluss ausgeschlossen (`accessibilityHidden(true)`), bis sie aktiv hineingescrollt werden.
 
@@ -80,7 +80,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 4. Implementierung (SwiftUI)
 
 ### Good Pattern (Positivbeispiel)
-Dieses Beispiel zeigt eine barrierefreie Implementierung. Es nutzt eine TabView im Page-Stil. Unsichtbare Seiten werden nativ vor dem Screenreader verborgen. Zusätzlich sind explizite, ausreichend große Buttons zur Steuerung verbaut, und das gesamte Konstrukt ist für VoiceOver als logische Gruppe erkennbar.
+Dieses Beispiel zeigt eine barrierefreie Implementierung. Es nutzt eine TabView im Page-Stil. Unsichtbare Seiten werden nativ vor dem Screenreader verborgen. Zusätzlich sind explizite, ausreichend große Buttons zur Steuerung verbaut, und das gesamte Konstrukt ist für den Screenreader als logische Gruppe erkennbar.
 
 <figure>
   <img src="screenshots_swiftui_de/06good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Karussel mit verschiedenen Karten angezeigt wird mit Angeboten. Es lässt sich darunter per Pfeiltasten zwischen den Karten wechseln." width="20%">
