@@ -81,6 +81,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel nutzt native Toggle-Komponenten, die zu einer Gruppe zusammengefasst sind. Die Trefferzahl wird barrierefrei übersprochen und die Statusänderung wird via AccessibilityNotification direkt an den Screenreader gemeldet.
+
+<figure>
+  <img src="screenshots_swiftui_de/09good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Filtermenü angezeigt wird, in welchem die Kategorien Elektronik, Mode und Bücher zur Auswahl stehen. Die Kategorie Elektronik ist ausgewählt. Darunter wird angezeigt, dass 12 Ergebnisse gefunden wurden." width="20%">
+  <figcaption>Abb. 9.1: Barrierefreie Implementierung von Filtern.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -145,6 +153,14 @@ struct GoodFilteringView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel filtert die Liste im Hintergrund, ohne dass blinde Nutzer es bemerken. Die Trefferzahl ist unvollständig beschriftet, die Touch-Fläche ist viel zu klein und die starre Anordnung führt bei großen Schriften zu Layoutfehlern.
+
+<figure>
+  <img src="screenshots_swiftui_de/09bad.png" alt="Screenshot des Negativbeispiels auf welchem ein Filtermenü angezeigt wird, in welchem die Kategorien Elektronik, Mode und Bücher zur Auswahl stehen. Die Kategorie Mode ist ausgewählt und wird durch einen kleinen Haken gekennzeichnet. Darunter wird angezeigt, dass Ergebnisse angezeigt werden, jedoch nicht wie viele." width="20%">
+  <figcaption>Abb. 9.2: Barrierebehaftete Implementierung von Filtern.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 Swift
 ```swift
 import SwiftUI
