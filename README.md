@@ -58,7 +58,7 @@ Um die Patterns nicht nur in der Theorie zu lesen, sondern auch am eigenen Gerä
 
 ## Technologien & Standards
 
-Die Library basiert plattformübergreifend auf modernen, deklarativen UI-Frameworks:
+Die Library basiert auf folgenden Richtlinien:
 *   [WCAG 2.2 (Web Content Accessibility Guidelines)](https://www.w3.org/TR/WCAG22/)
 *   [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf)
 *   [Apple HIG](https://developer.apple.com/design/human-interface-guidelines)
