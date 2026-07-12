@@ -63,9 +63,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 ## 3. Design-Spezifikationen (UI/UX)
 
 ### Visuelle Gestaltung und Kontraste
-* **Mehr als nur Icons:** Ein reines Lupen-Symbol ist für die Barrierefreiheit nicht ausreichend, da es kognitive Hürden aufwirft. Das Suchfeld *muss* permanent durch ein lesbares Text-Label (z.B. „Suche“) oder einen eindeutigen Platzhalter (z.B. „Katalog durchsuchen...“) definiert sein.
-* **Kontrastverhältnisse:** * Der eingegebene Text sowie der Platzhalter-Text müssen ein Kontrastverhältnis von mindestens **4,5:1** zum direkten Hintergrund des Suchfelds aufweisen.
-  * Die visuelle Begrenzung (Rahmen/Hintergrundfläche) des Suchfelds muss ein Kontrastverhältnis von mindestens **3:1** zum umgebenden Hintergrund des Screens besitzen, um als interaktives Element erkennbar zu sein.
+* **Mehr als nur Icons:** Ein reines Lupen-Symbol ist für die Barrierefreiheit nicht ausreichend, da es kognitive Hürden aufwirft. Das Suchfeld muss permanent durch ein lesbares Text-Label (z.B. „Suche“) oder einen eindeutigen Platzhalter (z.B. „Katalog durchsuchen...“) definiert sein.
+* **Kontrastverhältnisse:** Der eingegebene Text sowie der Platzhalter-Text müssen ein Kontrastverhältnis von mindestens **4,5:1** zum direkten Hintergrund des Suchfelds aufweisen. Die visuelle Begrenzung (Rahmen/Hintergrundfläche) des Suchfelds muss ein Kontrastverhältnis von mindestens **3:1** zum umgebenden Hintergrund des Screens besitzen, um als interaktives Element erkennbar zu sein.
 
 ### Interaktionsdesign und Touch-Targets
 * **44pt-Mindestgröße:** Das Eingabefeld muss eine vertikale Mindesthöhe von **44 Pixel** aufweisen.
