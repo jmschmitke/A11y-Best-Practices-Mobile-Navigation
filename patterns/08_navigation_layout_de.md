@@ -44,7 +44,7 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 | Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Navigations-Pattern |
 | :--- | :--- | :--- | :--- |
-| **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Layout-Bereiche müssen durch semantische Regionen/Landmarks (Kopfzeile, Navigation, Hauptinhalt, Fußzeile) ausgezeichnet sein. |
+| **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Layout-Bereiche müssen durch semantische Regionen (Kopfzeile, Navigation, Hauptinhalt, Fußzeile) ausgezeichnet sein. |
 | **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Die programmatische Fokus- und Lesereihenfolge (Code-Struktur) muss exakt der visuellen Leserichtung von oben nach unten, links nach rechts entsprechen. |
 | **Ausrichtung** | 1.3.4 Orientation | 11.1.3.4 | Die App darf die Anzeige nicht starr auf Hoch- oder Querformat sperren, es sei denn, es ist technisch zwingend erforderlich. |
 | **Reflow (Anpassbarer Inhalt)** | 1.4.10 Reflow | 11.1.4.10 | Das Layout muss bis zu einer extremen Vergrößerung bzw. in Hoch- und Querformat funktionieren, ohne dass Inhalte verloren gehen oder horizontal gescrollt werden muss (außer bei Tabellen/Karten). |
@@ -66,9 +66,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Interaktionsdesign und Touch-Targets
 * **Erreichbarkeit von Navigationselementen**: Navigationsmenüs müssen für Einhandbedienung optimiert sein. Es empfiehlt sich daher eine primäre Navigation am unteren Bildschirmrand, da die oberen Ecken für Menschen mit motorischen Einschränkungen schwer zu erreichen sind.
-* **Tastatur-Landmarken-Navigation**: Die Appstruktur muss so implementiert sein, dass Nutzende assistiver Technologien mithilfe von Schnelltasten direkt von Landmarke zu Landmarke springen können (z.B. direkt zum Hauptinhalt oder direkt zur Suche).
+* **Tastatur-Navigation**: Die Appstruktur muss so implementiert sein, dass Nutzende assistiver Technologien mithilfe von Schnelltasten direkt zu Sektionen springen können (z.B. direkt zum Hauptinhalt oder direkt zur Suche).
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
 * **Fokus 1 (Sprunglink):** Beim ersten Druck auf die `Tab`-Taste erscheint ganz oben ein visuell eingeblendeter Button „Direkt zum Hauptinhalt springen“. Wird dieser aktiviert, überspringt der Fokus die komplette Navigation.
 * **Fokus 2 (Kopfzeile):** Wird der Sprunglink übergangen, wandert der Fokus logisch in die Kopfzeile. Screenreader kündigen die Zone an: „*Banner / Kopfzeile, Gruppe*“.
 * **Fokus 3 (Navigationsbereich):** Der Fokus arbeitet sich sequenziell durch die Menüpunkte der primären Navigation.
@@ -94,7 +94,7 @@ import SwiftUI
 
 struct GoodNavigationView: View {
     var body: some View {
-        // Native TabView: Liefert konsistente Struktur und semantische Landmarks
+        // Native TabView: Liefert konsistente Struktur
         TabView {
             NavigationStack { // Nativer Stack: Regelt Fokus-Reihenfolge und Navigation
                 ScrollView {
@@ -209,7 +209,7 @@ Moderne mobile Betriebssysteme und Anwendungen setzen stark auf Touch-Gesten, um
 
 ### Typische Barrieren in der Praxis
 * **Gesten-Ausschluss**: Menschen mit motorischen Einschränkungen (z.B. Zittern/Tremor, Spastiken oder Arthritis) können komplexe Pfade, Mehrfinger-Gesten oder zeitkritische Interaktionen oft nicht präzise ausführen. Wenn das Löschen einer Mail ausschließlich per Swipe-Geste funktioniert, bleibt die Funktion für sie unerreichbar.
-* **Gesten-Konflikte mit dem Screenreader**: Wenn VoiceOver oder TalkBack aktiv sind, verändert das Betriebssystem die Standard-Gestenarchitektur fundamental. Ein Wischen nach links oder rechts navigiert nun den unsichtbaren Fokus von Element zu Element. Eigene, in der App programmierte Wisch-Gesten (z.B. um ein Menü hineinzuziehen) werden vom Screenreader „abgefangen“ und funktionieren nicht mehr.
+* **Gesten-Konflikte mit dem Screenreader**: Wenn der Screenreader aktiv ist, verändert das Betriebssystem die Standard-Gestenarchitektur fundamental. Ein Wischen nach links oder rechts navigiert nun den unsichtbaren Fokus von Element zu Element. Eigene, in der App programmierte Wisch-Gesten (z.B. um ein Menü hineinzuziehen) werden vom Screenreader „abgefangen“ und funktionieren nicht mehr.
 * **Fehlender Abbruch-Mechanismus**: Wenn eine Aktion sofort beim ersten Kontakt (`Touch Down`) und nicht erst beim Loslassen (`Touch Up`) ausgelöst wird, kommt es bei motorisch eingeschränkten Nutzenden zu massiven Fehlbedienungen. Es fehlt die Möglichkeit, den Finger vor dem Loslassen wegzuziehen, um die Aktion abzubrechen.
 * **Unbeabsichtigtes Auslösen durch Schütteln**: Manche Apps bieten Funktionen wie „Schütteln zum Melden eines Fehlers“ oder „Schütteln zum Rückgängigmachen“. Nutzer, die ihr Smartphone in einer Rollstuhlhalterung fixiert haben oder starke unwillkürliche Muskelbewegungen aufweisen, lösen diese Funktionen unabsichtlich aus.
 
@@ -241,11 +241,11 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Interaktionsdesign und Touch-Targets
 * **Verwendung von Touch-Up-Events**: Interaktionen grundsätzlich so programmieren, dass das System die Aktion beim Loslassen des Fingers (`onTapGesture` oder `Touch Up Inside`) verarbeitet. Befindet sich der Finger beim Loslassen außerhalb der ursprünglichen Klickfläche, wird das Event verworfen.
-* **Erweiterte Barrierefreiheits-Aktionen**: Für Screenreader-Nutzende müssen Gesten in die nativen „Accessibility Actions“ übersetzt werden. Anstatt auf einer Zeile zu wischen, führt ein Wischen mit dem Finger nach oben oder unten im VoiceOver-Modus durch die verfügbaren Aktionen (z.B. „Aktivieren“, „Löschen“, „Bearbeiten“).
+* **Erweiterte Barrierefreiheits-Aktionen**: Für Screenreader-Nutzende müssen Gesten in die nativen „Accessibility Actions“ übersetzt werden. Anstatt auf einer Zeile zu wischen, führt ein Wischen mit dem Finger nach oben oder unten im Screenreader-Modus durch die verfügbaren Aktionen (z.B. „Aktivieren“, „Löschen“, „Bearbeiten“).
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
 * **Fokus 1 (Steuerelement):** Der Fokus landet auf dem Element, welches eine Geste unterstützt (z.B. eine Tabellenzeile).
-* **Fokus 2 (Aktionen):** VoiceOver kündigt dem Nutzer sofort akustisch an, dass alternative Aktionen verfügbar sind: *"[Inhalt der Zeile], Aktionen verfügbar. Wischen Sie nach oben oder unten, um eine Aktion auszuwählen."*
+* **Fokus 2 (Aktionen):** Der Screenreader kündigt dem Nutzer sofort akustisch an, dass alternative Aktionen verfügbar sind: *"[Inhalt der Zeile], Aktionen verfügbar. Wischen Sie nach oben oder unten, um eine Aktion auszuwählen."*
 * **Fokus 3 (Auswahl ohne visuelle Geste):** Der blinde oder motorisch eingeschränkte Nutzer navigiert durch wiederholtes Wischen nach oben/unten durch die Optionen (z.B. „Löschen“) und löst diese mit einem einfachen Doppeltippen barrierefrei aus, ohne die physische Wisch-Geste jemals auszuführen.
 
 ---
