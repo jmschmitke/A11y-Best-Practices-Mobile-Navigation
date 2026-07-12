@@ -83,6 +83,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung einer Suchleiste, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
+
+<figure>
+  <img src="screenshots_swiftui_de/01good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche. Am unteren Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%">
+  <figcaption>Abb. 1.1: Barrierefreie Implementierung der Suchfunktion in SwiftUI.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -113,6 +121,14 @@ struct GoodNativeSearchView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung einer Suchleiste. Sie ignoriert zentrale Vorgaben bezüglich Semantik, Tastatursteuerung und Mindestgrößen für Touch-Ziele.
+
+<figure>
+  <img src="screenshots_swiftui_de/01bad.png" alt="Screenshot des Negativbeispiels auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche. Am oberen Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%">
+  <figcaption>Abb. 1.2: Barrierebehaftete Implementierung der Suchfunktion in SwiftUI.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
