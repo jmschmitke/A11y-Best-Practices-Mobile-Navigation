@@ -32,10 +32,10 @@ Popups – oft auch als Modals, Bottom Sheets oder Dialogfenster bezeichnet – 
 Sie werden häufig für Bestätigungen (z.B. Löschvorgänge), Dateneingaben (z.B. "Neuen Eintrag erstellen") oder wichtige Systemmeldungen genutzt. Da sie sich visuell über den bestehenden Inhalt legen, stellen sie eine massive Veränderung des Kontexts dar und müssen für assistive Technologien absolut unmissverständlich umgesetzt sein.
 
 ### Typische Barrieren in der Praxis
-* **Die Screenreader-Falle (Focus Trapping Missing)**: Wenn sich ein Popup öffnet, verbleibt der unsichtbare Fokus von Screenreadern (VoiceOver) oft im darunterliegenden Hauptinhalt. Blinde Nutzende "verirren" sich dann in Elementen, die visuell gar nicht mehr sichtbar oder interaktiv sind, und bemerken das geöffnete Popup überhaupt nicht.
+* **Screenreader-Falle**: Wenn sich ein Popup öffnet, verbleibt der unsichtbare Fokus von Screenreadern oft im darunterliegenden Hauptinhalt. Blinde Nutzende "verirren" sich dann in Elementen, die visuell gar nicht mehr sichtbar oder interaktiv sind, und bemerken das geöffnete Popup überhaupt nicht.
 * **Fehlende oder unklare Schließoptionen**: Popups werden oft so gestaltet, dass man sie durch Tippen auf den abgedunkelten Hintergrund schließt. Ohne einen expliziten, barrierefreien "Schließen"-Button (oder ein "X") sind Tastaturnutzende oder Menschen mit motorischen oder kognitiven Einschränkungen in dem Dialog gefangen.
 * **Layout-Kollaps bei Dynamic Type**: Da Popups konstruktionsbedingt weniger Platz als der Vollbildmodus haben, führt eine Erhöhung der Systemschriftgröße schnell dazu, dass Text aus dem sichtbaren Bereich geschoben wird oder die "Abbrechen"- und "Bestätigen"-Buttons den Text gegenseitig überlagern und unlesbar machen.
-* **Unerwarteter Kontextwechsel ohne Ankündigung**: Wenn Popups automatisch und ohne direkte Nutzerinteraktion aufpoppen (z.B. Cookie-Banner, In-App-Werbung oder plötzliche Systemhinweise), desorientiert dies Menschen mit kognitiven Einschränkungen oder Screenreader-Nutzende massiv, wenn der aktuelle Fokus abrupt zerrissen wird.
+* **Unerwarteter Kontextwechsel ohne Ankündigung**: Wenn Popups automatisch und ohne direkte Nutzerinteraktion aufpoppen (z.B. Cookie-Banner, In-App-Werbung oder plötzliche Systemhinweise), desorientiert dies Menschen mit kognitiven Einschränkungen oder Screenreader-Nutzende, wenn der aktuelle Fokus abrupt geändert wird.
 
 ---
 
@@ -63,8 +63,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Visuelle Gestaltung und Kontraste
 * **Dynamic Type & Scrollbarkeit**: Popups dürfen niemals eine feste vertikale Größe besitzen, die den Inhalt beschränkt. Sobald der Text durch die Systemschriftgröße wächst, muss der Inhaltsbereich des Popups automatisch in eine ScrollView übergehen, damit alle Texte und Buttons erreichbar bleiben.
-* **Hintergrund-Dimmer**: Um den Kontextwechsel visuell zu signalisieren, muss der Hintergrund hinter dem Popup abgedunkelt werden (Overlay-Kontrast). 
-* **Expliziter Schließen-Button**: Jedes Popup benötigt oben rechts oder oben links einen klar erkennbaren Button zum Schließen (Text "Schließen" oder ein valides Schließen-Icon). Ein Schließen *nur* durch Tippen außerhalb des Modals ist unzulässig.
+* **Hintergrund-Dimmer**: Um den Kontextwechsel visuell zu signalisieren, muss der Hintergrund hinter dem Popup abgedunkelt werden. 
+* **Expliziter Schließen-Button**: Jedes Popup benötigt oben rechts oder oben links einen klar erkennbaren Button zum Schließen (Text "Schließen" oder ein valides Schließen-Icon). Ein Schließen nur durch Tippen außerhalb des Modals ist nicht ausreichend.
 
 ### Interaktionsdesign und Touch-Targets
 * **Fokus-Falle**: Solange das Popup geöffnet ist, ist der Hintergrund blockiert. Wisch-Gesten des Screenreaders oder Tab-Sprünge der Tastatur dürfen sich ausschließlich im Kreis innerhalb des Popups bewegen.
