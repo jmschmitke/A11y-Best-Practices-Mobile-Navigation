@@ -81,6 +81,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt eine barrierefreie Implementierung. Es nutzt eine TabView im Page-Stil. Unsichtbare Seiten werden nativ vor dem Screenreader verborgen. Zusätzlich sind explizite, ausreichend große Buttons zur Steuerung verbaut, und das gesamte Konstrukt ist für VoiceOver als logische Gruppe erkennbar.
+
+<figure>
+  <img src="screenshots_swiftui_de/06good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Karussel mit verschiedenen Karten angezeigt wird mit Angeboten. Es lässt sich darunter per Pfeiltasten zwischen den Karten wechseln." width="20%">
+  <figcaption>Abb. 6.1: Barrierefreie Implementierung des Karussels</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -130,6 +138,14 @@ struct GoodCarouselView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine mangelhafte Implementierung mittels HStack-ScrollView. Es zwingt zum Wischen, versteckt unsichtbare Elemente nicht vor dem VoiceOver und nutzt sehr kleine Custom-Punkte zur Steuerung abseits der Wischgesten.
+
+<figure>
+  <img src="screenshots_swiftui_de/06bad.png" alt="Screenshot des Negativbeispiels auf welchem ein Karussel mit verschiedenen Karten angezeigt wird mit Angeboten. Es lässt sich per Wischgeste zwischen den Karten wechseln." width="20%">
+  <figcaption>Abb. 6.2: Barrierebehaftete Implementierung des Karussels</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
