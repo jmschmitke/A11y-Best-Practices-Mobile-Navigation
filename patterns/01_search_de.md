@@ -28,7 +28,7 @@ Andere Sprachen: [Englisch](01_search_en.md)
 ## 1. Kontext und Problemstellung
 
 ### Nutzungskontext
-Die Suchfunktion ist eines der zentralen Navigationselemente in mobilen Apps. Sie ermöglicht Nutzenden den direkten, zielgerichteten Zugriff auf spezifische Inhalte, Produkte oder Funktionen, ohne komplexe hierarchische Menüstrukturen durchlaufen zu müssen. Im mobilen Kontext besteht eine Suche typischerweise aus einem Texteingabefeld (*TextField*), einem Element zum Löschen des Textes (*Clear-Button*), einer Abbruchfunktion (*Cancel-Button*) sowie einer dynamischen Ergebnisliste.
+Die Suchfunktion ist eines der zentralen Navigationselemente in mobilen Apps. Sie ermöglicht Nutzenden den direkten, zielgerichteten Zugriff auf spezifische Inhalte, Produkte oder Funktionen, ohne komplexe hierarchische Menüstrukturen durchlaufen zu müssen. Im mobilen Kontext besteht eine Suche typischerweise aus einem Texteingabefeld, einem Element zum Löschen des Textes, einer Abbruchfunktion sowie einer dynamischen Ergebnisliste.
 
 ### Typische Barrieren in der Praxis
 * **Fehlende semantische Auszeichnung:** Ohne ein explizites, programmatisch verknüpftes Label oder einen barrierefreien Namen wird das Eingabefeld von assistiven Technologien lediglich als unbeschriftetes Textfeld ausgegeben. Nutzende mit Sehbeeinträchtigungen können den Zweck des Feldes somit nicht identifizieren.
