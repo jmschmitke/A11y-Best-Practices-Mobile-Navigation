@@ -70,8 +70,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Keine voreilige Validierung**: Eingabefelder sollten während des Tippens nicht sofort Fehler anzeigen (z.B. während der Nutzer noch dabei ist, seine E-Mail-Adresse einzutippen). Die Validierung darf erst erfolgen, wenn das Feld verlassen wird (`Blur`-Event / Fokusverlust) oder das Formular abgesendet wird.
 * **Erweiterte Verknüpfung**: Technisch muss das Eingabefeld so programmiert sein, dass die Fehlermeldung als Beschreibungstext des Feldes hinterlegt ist.
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Nach Klick auf Absenden):** Das Formular bricht ab, der Fokus springt an den Anfang der Fehler-Sammelbox. VoiceOver liest vor: *„Das Formular konnte nicht gesendet werden. 2 Fehler enthalten. Liste mit 2 Einträgen. Erstens: Passwort zu kurz, Link. Zweitens...“*
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
+* **Fokus 1 (Nach Klick auf Absenden):** Das Formular bricht ab, der Fokus springt an den Anfang der Fehler-Sammelbox. Der Screenreader liest vor: *„Das Formular konnte nicht gesendet werden. 2 Fehler enthalten. Liste mit 2 Einträgen. Erstens: Passwort zu kurz, Link. Zweitens...“*
 * **Fokus 2 (Sprung zum Feld):** Der Nutzer aktiviert den ersten Link in der Fehlerbox. Der Fokus springt direkt in das fehlerhafte Textfeld.
 * **Fokus 3 (Das fehlerhafte Feld):** Da das Feld mit der Fehlermeldung verknüpft ist, liest der Screenreader sofort die Rolle und den Fehler in einem Stück vor: *„Passwort, sicheres Textfeld, fehlerhafte Eingabe. Das Passwort muss mindestens 8 Zeichen lang sein.“*
 
