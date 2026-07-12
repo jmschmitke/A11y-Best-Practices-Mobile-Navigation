@@ -69,8 +69,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Touch-Flächen**: Jedes Tab stellt ein eigenständiges Steuerelement dar. Die Berührungsfläche muss, selbst wenn der Text kurz ist (z.B. "Info"), künstlich durch Padding auf mindestens 44 x 44 pt ausgedehnt werden, um Fehlbedienungen bei motorischen Einschränkungen zu minimieren.
 * **Tastatur-Verhalten**: Die Tab-Leiste als Ganzes nimmt genau einen Stopp in der normalen Tab-Reihenfolge ein. Befindet sich der Tastaturfokus auf der Tab-Leiste, wechseln Nutzende den aktiven Tab mithilfe der `Pfeiltaste Links` und `Pfeiltaste Rechts`. Ein Druck auf die `Tab`-Taste springt direkt am Ende der Tab-Leiste vorbei hinein in den Inhalt des aktuell ausgewählten Tabs.
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Tab-Element):** Das aktuell ausgewählte Tab-Element in der Tab-Leiste. VoiceOver liest sofort: „[Name des Tabs], Registerkarte, ausgewählt, [Index] von [Gesamtanzahl]“ (z.B. *„Einstellungen, Registerkarte, ausgewählt, 2 von 3“*).
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
+* **Fokus 1 (Tab-Element):** Das aktuell ausgewählte Tab-Element in der Tab-Leiste. Der Screenreader liest sofort: „[Name des Tabs], Registerkarte, ausgewählt, [Index] von [Gesamtanzahl]“ (z.B. *„Einstellungen, Registerkarte, ausgewählt, 2 von 3“*).
 * **Fokus 2 (Nächste Element):** Beim Weiterwischen/Weitertabben springt der Fokus direkt auf das erste Element (Überschrift, Text oder Button) innerhalb des dazugehörigen, neu geladenen Inhaltsbereichs.
 * **Fokus 3 (Weiterer Inhaltsbereich):** Weitere Elemente innerhalb des Inhaltsbereichs von oben nach unten, bevor der Fokus den gesamten Tab-Container verlässt.
 
