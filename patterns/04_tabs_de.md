@@ -80,6 +80,14 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 
 ### Good Pattern (Positivbeispiel)
 Dieses Beispiel zeigt die empfohlene, barrierefreie Implementierung unter Verwendung der nativen TabView. Sie erfüllt automatisch alle Anforderungen an Rolle, Wert, Tastaturfokus und Dynamic Type.
+
+<figure>
+  <img src="screenshots_swiftui_de/04good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem eine Profilübersichtsseite angezeigt wird mit einer Navigationsleiste am unteren Bildschirmrand für Profil und Einstellungen. Die Profilseite ist ausgewählt und hervorgehoben." width="20%">
+  <figcaption>Abb. 4.1: Barrierefreie Implementierung der Tabs.</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
@@ -133,6 +141,14 @@ struct TabTwoContentView: View {
 
 ### Bad Pattern (Negativbeispiel)
 Dieses Beispiel zeigt eine fehlerhafte Eigenbau-Variante mittels einer HStack und Standard-Buttons. Sie erzeugt massive Barrieren für Tastatur- und Screenreader-Nutzende.
+
+<figure>
+  <img src="screenshots_swiftui_de/04bad.png" alt="Screenshot des Negativbeispiels auf welchem eine Profilübersichtsseite angezeigt wird mit einer Navigationsleiste am oberen Bildschirmrand für Profil und Einstellungen. Die Profilseite ist ausgewählt und farbig hervorgehoben." width="20%">
+  <figcaption>Abb. 4.2: Barrierebehaftete Implementierung der Tabs</figcaption>
+</figure>
+
+#### SwiftUI-Code:
+
 ```swift
 import SwiftUI
 
