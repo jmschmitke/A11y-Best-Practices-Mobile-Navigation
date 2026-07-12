@@ -31,25 +31,10 @@ Andere Sprachen: tbd
 Cards gehören zu den flexibelsten und am häufigsten verwendeten UI-Design-Mustern in modernen Applikationen. Sie dienen als visuelle Container, die zusammengehörige Informationen zu einem einzigen Thema gruppieren – beispielsweise ein Produkt in einem Onlineshop, einen Artikel in einem News-Feed oder ein Dashboard-Element. Cards enthalten meist eine Kombination aus Bildern, Überschriften, Beschreibungstexten und interaktiven Elementen (wie Buttons oder Links). Da sie oft als kompakte Einstiegspunkte zu tiefergehenden Inhalten dienen, müssen sie für assistive Technologien strukturell starr zusammengehalten und eindeutig lesbar sein.
 
 ### Typische Barrieren in der Praxis
-* **Fokus-Fragmentierung**: Wenn eine Card nicht als zusammenhängendes Element deklariert ist, zerlegt ein Screenreader sie in ihre Einzelteile. VoiceOver springt dann separat auf das Bild, die Überschrift, den Text und den Button. Blinde Nutzende müssen sich mühsam durch 4–5 Einzelstopps wischen, um den Inhalt einer einzigen Karte zu verstehen.
+* **Fokus-Fragmentierung**: Wenn eine Card nicht als zusammenhängendes Element deklariert ist, zerlegt ein Screenreader sie in ihre Einzelteile. VoiceOver springt dann separat auf das Bild, die Überschrift, den Text und den Button. Blinde Nutzende müssen sich mühsam durch mehrere Einzelstopps wischen, um den Inhalt einer einzigen Karte zu verstehen.
 * **Redundante Textansagen**: Oft ist die gesamte Card klickbar und führt zum selben Ziel wie ein integrierter „Mehr erfahren“-Button oder ein verlinkter Titel. Ohne Optimierung liest ein Screenreader bei einer einzigen Card den Titel und den Button-Text doppelt vor.
 * **Barrierefreie Klick-Falle bei Bildern**: Cards nutzen häufig großflächige Hintergrundbilder oder Produktfotos. Besitzen diese Bilder keine oder unvollständige Alternativtexte, scheitert die Orientierung. Ist das Bild zudem separat klickbar, geraten Tastatur- und Screenreader-Nutzende in unnötige Zusatzschleifen.
-* **Fehlende Gruppen-Semantik bei Listen**: Cards treten selten allein auf, sondern meistens in Rastern (Grids) oder Listen (Feeds). Wenn diese Card-Sammlungen nicht semantisch als zusammengehörige Liste deklariert werden, fehlt Screenreader-Nutzenden die Orientierung, wie viele Elemente vorhanden sind (z.B. fehlt die Ansage „Element 1 von 12“).
-
-
-| Barrierefreiheits-Anforderung | WCAG 2.2 Kriterium | EN 301 549 | Relevanz für das Tabs-Pattern |
-| :--- | :--- | :--- | :--- |
-| **Informationen & Beziehungen** | 1.3.1 Info and Relationships | 11.1.3.1 | Die Tab-Leiste und die zugehörigen Inhaltsbereiche müssen logisch miteinander verknüpft sein. |
-| **Bedeutungsvolle Reihenfolge** | 1.3.2 Meaningful Sequence | 11.1.3.2 | Der Lesefluss muss logisch vom ausgewählten Tab direkt in den dazugehörigen Inhaltscontainer führen. |
-| **Nutzung von Farbe** | 1.4.1 Use of Color | 11.1.4.1 | Der aktive Tab darf nicht nur durch Farbe als aktiver Tab gekennzeichnet sein. |
-| **Kontrast (Minimum)** | 1.4.3 Contrast (Minimum) | 11.1.4.3 | Sowohl der Text der Tabs als auch die visuelle Markierung des aktiven Zustands benötigen ausreichenden Kontrast zum Hintergrund. |
-| **Text vergrößern** | 1.4.4 Resize Text | 11.1.4.4 | Bei Dynamic Type müssen Tabs lesbar bleiben, dürfen Text nicht abschneiden und bei Bedarf horizontal scrollen. |
-| **Tastatur-Bedienbarkeit** | 2.1.1 Keyboard | 11.2.1.1 | Tabs müssen vollständig per Tastatur (z.B. Wechsel via Pfeiltasten) bedienbar sein. |
-| **Fokus-Reihenfolge** | 2.4.3 Focus Order | 11.2.4.3 | Nach dem Verlassen der Tab-Leiste muss der Fokus direkt auf das erste interaktive Element des *aktiven* Tab-Inhalts springen. |
-| **Fokus sichtbar** | 2.4.7 Focus Visible | 11.2.4.7 | Der aktuell fokussierte Tab benötigt einen deutlich sichtbaren und kontrastreichen Fokusrahmen. |
-| **Zielgröße (Minimum)** | 2.5.8 Target Size (Min) | 11.2.5.8 | Jedes einzelne Tab-Element benötigt eine physische Klick- und Touchfläche von mindestens 44x44pt. |
-| **Name, Rolle, Wert** | 4.1.2 Name, Role, Value | 11.4.1.2 | Jedes Tab muss die Rolle „Registerkarte“ (tab) und den Zustand „ausgewählt“ (falls ausgewählt) korrekt mitsenden. |
-| **Statusmeldung** | 4.1.3 Status Messages | 11.4.1.3 | Falls im Hintergrund Informationen neu geladen werden, muss dies der assistiven Technologie mitgeteilt werden. |
+* **Fehlende Gruppen-Semantik bei Listen**: Cards treten selten allein auf, sondern meistens in Rastern oder Listen. Wenn diese Card-Sammlungen nicht semantisch als zusammengehörige Liste deklariert werden, fehlt Screenreader-Nutzenden die Orientierung, wie viele Elemente vorhanden sind (z.B. fehlt die Ansage „*Element 1 von 12*“).
 
 ---
 
@@ -81,11 +66,11 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Eindeutiger Fokusrahmen**: Interaktive Cards benötigen im fokussierten Zustand einen deutlich sichtbaren Rahmen, der die gesamte Karte umschließt. Ein reiner Farbwechsel der Karte oder ein sanfter Schatten-Effekt reicht als Fokus-Indikator nicht aus.
 
 ### Interaktionsdesign und Touch-Targets
-* **Kombiniertes Touch-Target**: Führt das Tippen auf eine Card zum selben Ziel wie der darin verbaute Textlink, sollte die *gesamte* Card als ein einziges, interaktives Element gestaltet werden. Das Padding der Karte dient dann gleichzeitig als Vergrößerung der Touch-Fläche (weit über den Mindeststandard von 44x44 pt hinaus).
+* **Kombiniertes Touch-Target**: Führt das Tippen auf eine Card zum selben Ziel wie der darin verbaute Textlink, sollte die gesamte Card als ein einziges, interaktives Element gestaltet werden. Das Padding der Karte dient dann gleichzeitig als Vergrößerung der Touch-Fläche (weit über den Mindeststandard von 44x44 pt hinaus).
 * **Verschachtelte Interaktionen**: Enthält eine Karte mehrere unabhängige Aktionen (z.B. die Karte öffnet den Artikel, aber ein kleines Icon-Button speichert ihn als Favorit), müssen diese Elemente visuell und technisch klar separiert werden. Der Favoriten-Button benötigt eine eigene physische Touch-Fläche von mindestens 44 x 44 pt und darf sich nicht mit dem Klickbereich der restlichen Karte überschneiden.
 
 ### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Die gesamte Card als Einheit):** Der Screenreader erfasst die Card als ein einziges Element. VoiceOver liest den gesamten Inhalt in einer logischen, zusammenhängenden Kette vor: „[Titel des Artikels], Überschrift. [Kurzbeschreibung]. Taste/Link.“ 
+* **Fokus 1 (Die gesamte Card als Einheit):** Der Screenreader erfasst die Card als ein einziges Element. VoiceOver liest den gesamten Inhalt in einer logischen, zusammenhängenden Kette vor: „*[Titel des Artikels], Überschrift. [Kurzbeschreibung]. Taste/Link.*“ 
 * **Fokus 2 (Optionale Zusatzaktionen):** Nur wenn die Card verschachtelte, sekundäre Elemente besitzt (z.B. einen separaten „Löschen“- oder „Favorit“-Button), springt der Fokus als nächstes exakt auf dieses Steuerelement.
 * **Fokus 3 (Nächste Card):** Der Fokus verlässt die Card vollständig und springt zur nächsten Card in der Liste. Redundante Zwischenstopps auf Texten oder dekorativen Bildern innerhalb der ersten Karte werden übersprungen.
 
