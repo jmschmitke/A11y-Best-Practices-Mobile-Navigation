@@ -70,8 +70,8 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 * **Fokus-Falle**: Solange das Popup geöffnet ist, ist der Hintergrund blockiert. Wisch-Gesten des Screenreaders oder Tab-Sprünge der Tastatur dürfen sich ausschließlich im Kreis innerhalb des Popups bewegen.
 * **Touch-Flächen**: Buttons wie "Abbrechen", "Speichern" oder das Schließen-Kreuz müssen eine physische Touch-Fläche von mindestens 44 x 44 pt aufweisen. 
 
-### Empfohlene Fokus-Reihenfolge (VoiceOver / Tastatur)
-* **Fokus 1 (Titel):** Der Popup-Titel (deklariert als Überschrift). VoiceOver liest sofort beim Öffnen: „*[Titel des Popups], Überschrift*“. Das signalisiert Orientierung.
+### Empfohlene Fokus-Reihenfolge (Screenreader / Tastatur)
+* **Fokus 1 (Titel):** Der Popup-Titel (deklariert als Überschrift). Der Screenreader liest sofort beim Öffnen: „*[Titel des Popups], Überschrift*“. Das signalisiert Orientierung.
 * **Fokus 2 (Inhalt):** Der Inhalts-Text oder die Eingabefelder innerhalb des Popups (von oben nach unten).
 * **Fokus 3 (Aktionsbuttons):** Die Aktions-Buttons am unteren Rand des Popups (z.B. *links „Abbrechen“, rechts „Bestätigen“*).
 * **Fokus 4 (Schließen-Button):** Der Schließen-Button (falls dieser als separates Icon oben platziert ist). *Alternativ kann der Schließen-Button auch direkt als Fokus 2 nach der Überschrift angesteuert werden.*
