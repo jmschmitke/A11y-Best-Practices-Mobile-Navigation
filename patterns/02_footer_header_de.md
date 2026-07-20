@@ -276,6 +276,9 @@ Wird noch erstellt...
   * [Apple HIG – Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) – Richtlinien zur Strukturierung, Element-Anzahl und Platzierung der Hauptnavigation in der Fußzeile.
   * [Apple HIG – Navigation bars](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) – Spezifikationen für Kopfzeilen, Titel-Zustände (Large vs. Inline) und das Verhalten von Zurück-Buttons.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
