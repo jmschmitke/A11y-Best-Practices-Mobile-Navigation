@@ -288,6 +288,9 @@ Wird noch erstellt...
   * [Apple HIG – Sheets](https://developer.apple.com/design/human-interface-guidelines/sheets) – Richtlinien für von unten einschiebbare Dialoge, Dimensionierung und das Schließen-Verhalten.
   * [Apple HIG – Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts) – Vorgaben für kritische Zwei-Button-Dialoge bei Fehlern oder unumkehrbaren Nutzeraktionen.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+  
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
