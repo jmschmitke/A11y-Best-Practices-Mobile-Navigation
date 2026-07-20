@@ -214,7 +214,8 @@ Wird noch erstellt...
   * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Richtlinien für den Einsatz von Gesten zur Bedienung von Elementen.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/design-system/carousel - Karussel Pattern
     
 ---
 
