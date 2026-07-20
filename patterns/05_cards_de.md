@@ -234,6 +234,9 @@ Wird noch erstellt...
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Spezifikationen zu Platzierung, Abständen und dem Umbruchverhalten von Rastern und Listen auf iOS-Geräten.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
