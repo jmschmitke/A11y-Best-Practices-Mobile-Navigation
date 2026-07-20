@@ -220,6 +220,9 @@ Wird noch erstellt...
   * [Apple HIG – Toggles](https://developer.apple.com/design/human-interface-guidelines/toggles) – Best Practices für Schalter, die Zustände umschalten.
   * [Apple HIG – Segmented controls](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) – Vorgaben für eine Umschaltung zwischen Segmenten.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
