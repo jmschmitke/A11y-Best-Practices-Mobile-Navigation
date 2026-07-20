@@ -289,7 +289,8 @@ Wird noch erstellt...
   * [Apple HIG – Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts) – Vorgaben für kritische Zwei-Button-Dialoge bei Fehlern oder unumkehrbaren Nutzeraktionen.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/design-system/modal - Modal Pattern
   
 ---
 
