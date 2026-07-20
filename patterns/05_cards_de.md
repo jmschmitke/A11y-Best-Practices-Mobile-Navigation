@@ -1,5 +1,7 @@
 # 05: Cards
 
+[← Zurück zur Übersicht](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: tbd
@@ -229,3 +231,7 @@ Wird noch erstellt...
 * **Apple Human Interface Guidelines (HIG):**
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Spezifikationen zu Platzierung, Abständen und dem Umbruchverhalten von Rastern und Listen auf iOS-Geräten.
+
+---
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
