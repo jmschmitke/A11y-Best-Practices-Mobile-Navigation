@@ -235,7 +235,8 @@ Wird noch erstellt...
   * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Spezifikationen zu Platzierung, Abständen und dem Umbruchverhalten von Rastern und Listen auf iOS-Geräten.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/design-system/card  - Card Pattern
     
 ---
 
