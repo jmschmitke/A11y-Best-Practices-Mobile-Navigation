@@ -356,7 +356,8 @@ Wird noch erstellt...
   * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Richtlinien für adaptive, orientierungsunabhängige Layoutzonen.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/components/navigation  - Navigation Pattern
     
 ---
 
