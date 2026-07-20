@@ -213,6 +213,9 @@ Wird noch erstellt...
   * [Apple HIG – Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views) – Best Practices für die Handhabung von Inhalten außerhalb des sichtbaren Bereichs.
   * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Richtlinien für den Einsatz von Gesten zur Bedienung von Elementen.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
