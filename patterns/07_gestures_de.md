@@ -1,5 +1,7 @@
 # 07: Gesten
 
+[← Zurück zur Übersicht](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: tbd
@@ -188,3 +190,7 @@ Wird noch erstellt...
 * **Apple Human Interface Guidelines (HIG):**
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Richtlinien für den Einsatz von Gesten zur Bedienung von Elementen.
+
+---
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
