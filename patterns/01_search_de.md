@@ -1,6 +1,6 @@
 # 01: Suche
 
-[← Zurück zur Hauptseite](../README.md)
+[← Zurück zur Übersicht](../README.md)
 
 Ausgewählte Sprache: Deutsch
 
