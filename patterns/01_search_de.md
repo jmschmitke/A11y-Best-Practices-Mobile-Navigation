@@ -1,5 +1,7 @@
 # 01: Suche
 
+[← Zurück zur Hauptseite](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: [Englisch](01_search_en.md)
@@ -192,3 +194,6 @@ Wird noch erstellt...
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG – Searching](https://developer.apple.com/design/human-interface-guidelines/searching) – Übergreifende Design-Prinzipien und Platzierung von Suchfunktionen in iOS.
   * [Apple HIG – Search fields](https://developer.apple.com/design/human-interface-guidelines/search-fields) – Spezifikationen für die visuelle Gestaltung, Platzhalter und Interaktion von Suchfeldern.
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
+  
