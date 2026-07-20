@@ -195,5 +195,7 @@ Wird noch erstellt...
   * [Apple HIG – Searching](https://developer.apple.com/design/human-interface-guidelines/searching) – Übergreifende Design-Prinzipien und Platzierung von Suchfunktionen in iOS.
   * [Apple HIG – Search fields](https://developer.apple.com/design/human-interface-guidelines/search-fields) – Spezifikationen für die visuelle Gestaltung, Platzhalter und Interaktion von Suchfeldern.
 
+---
+
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
   
