@@ -277,7 +277,8 @@ Wird noch erstellt...
   * [Apple HIG – Navigation bars](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) – Spezifikationen für Kopfzeilen, Titel-Zustände (Large vs. Inline) und das Verhalten von Zurück-Buttons.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/components/footer  - Footer Pattern
 
 ---
 
