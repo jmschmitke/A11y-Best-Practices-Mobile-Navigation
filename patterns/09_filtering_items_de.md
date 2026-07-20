@@ -1,5 +1,7 @@
 # 09: Filter
 
+[← Zurück zur Übersicht](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: tbd
@@ -215,3 +217,7 @@ Wird noch erstellt...
   * [Apple HIG – Sliders](https://developer.apple.com/design/human-interface-guidelines/sliders) – Vorgaben zur Zugänglichkeit und präzisen Steuerung von Schiebereglern.
   * [Apple HIG – Toggles](https://developer.apple.com/design/human-interface-guidelines/toggles) – Best Practices für Schalter, die Zustände umschalten.
   * [Apple HIG – Segmented controls](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) – Vorgaben für eine Umschaltung zwischen Segmenten.
+
+---
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
