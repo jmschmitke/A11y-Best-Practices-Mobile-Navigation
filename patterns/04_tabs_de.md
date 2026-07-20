@@ -227,7 +227,8 @@ Wird noch erstellt...
   * [Apple HIG – Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) – Abgrenzung zur In-Page-Navigation: Spezifikationen für die primäre App-Navigation am unteren Rand.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/design-system/tabs - Tabs Pattern
     
 ---
 
