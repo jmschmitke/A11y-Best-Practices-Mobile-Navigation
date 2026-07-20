@@ -1,5 +1,7 @@
 # 10: Eingabefehler
 
+[← Zurück zur Übersicht](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: tbd
@@ -219,3 +221,7 @@ Wird noch erstellt...
   * [Apple HIG - Text Fields](https://developer.apple.com/design/human-interface-guidelines/text-fields) - Richtlinien für die Darstellung von Eingabefeldern.
   * [Apple HIG – Feedback](https://developer.apple.com/design/human-interface-guidelines/feedback) – Vorgaben für die Bereitstellung von klaren Rückmeldungen an den Nutzer.
   * [Apple HIG - Entering data](https://developer.apple.com/design/human-interface-guidelines/entering-data) - Best Practice für die Verarbeitung von Daten bei Eingabe.
+
+---
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
