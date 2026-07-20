@@ -224,6 +224,9 @@ Wird noch erstellt...
   * [Apple HIG – Feedback](https://developer.apple.com/design/human-interface-guidelines/feedback) – Vorgaben für die Bereitstellung von klaren Rückmeldungen an den Nutzer.
   * [Apple HIG - Entering data](https://developer.apple.com/design/human-interface-guidelines/entering-data) - Best Practice für die Verarbeitung von Daten bei Eingabe.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
