@@ -225,7 +225,8 @@ Wird noch erstellt...
   * [Apple HIG - Entering data](https://developer.apple.com/design/human-interface-guidelines/entering-data) - Best Practice für die Verarbeitung von Daten bei Eingabe.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/flows/showing-input-error - Eingabefehler Pattern
     
 ---
 
