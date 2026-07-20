@@ -1,5 +1,7 @@
 # 02: Fußzeile & Kopfzeile
 
+[← Zurück zur Übersicht](../README.md)
+
 Ausgewählte Sprache: Deutsch
 
 Andere Sprachen: tbd
@@ -271,3 +273,7 @@ Wird noch erstellt...
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG – Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) – Richtlinien zur Strukturierung, Element-Anzahl und Platzierung der Hauptnavigation in der Fußzeile.
   * [Apple HIG – Navigation bars](https://developer.apple.com/design/human-interface-guidelines/navigation-bars) – Spezifikationen für Kopfzeilen, Titel-Zustände (Large vs. Inline) und das Verhalten von Zurück-Buttons.
+
+---
+
+[← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
