@@ -1,6 +1,8 @@
-# 02: Fußzeile & Kopfzeile
-
 [← Zurück zur Übersicht](../README.md)
+
+---
+
+# 02: Fußzeile & Kopfzeile
 
 Ausgewählte Sprache: Deutsch
 
