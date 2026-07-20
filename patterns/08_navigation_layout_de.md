@@ -355,6 +355,9 @@ Wird noch erstellt...
   * [Apple HIG – Navigation & Search](https://developer.apple.com/design/human-interface-guidelines/navigation-and-search) – Best Practices für verschiedene Navigationsstrukturen.
   * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Richtlinien für adaptive, orientierungsunabhängige Layoutzonen.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
