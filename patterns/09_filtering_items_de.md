@@ -221,7 +221,8 @@ Wird noch erstellt...
   * [Apple HIG – Segmented controls](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) – Vorgaben für eine Umschaltung zwischen Segmenten.
 
 * **Pattern-Referenz:**
-  * https://www.checklist.design
+  * https://www.checklist.design - Hauptseite
+  * https://www.checklist.design/flows/filtering-items - Filter Pattern
     
 ---
 
