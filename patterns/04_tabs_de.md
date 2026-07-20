@@ -226,6 +226,9 @@ Wird noch erstellt...
   * [Apple HIG – Segmented controls](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) – Richtlinien für die Segmentierung und das Umschalten von Inhalten innerhalb eines Screens.
   * [Apple HIG – Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) – Abgrenzung zur In-Page-Navigation: Spezifikationen für die primäre App-Navigation am unteren Rand.
 
+* **Pattern-Referenz:**
+  * https://www.checklist.design
+    
 ---
 
 [← Zurück zur Übersicht](../README.md) | [↑ Nach oben springen](#01_suche)
