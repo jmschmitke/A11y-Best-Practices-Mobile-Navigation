@@ -1,6 +1,8 @@
-# 10: Eingabefehler
-
 [← Zurück zur Übersicht](../README.md)
+
+---
+
+# 10: Eingabefehler
 
 Ausgewählte Sprache: Deutsch
 
