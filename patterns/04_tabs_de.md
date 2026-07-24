@@ -225,6 +225,7 @@ Wird noch erstellt...
   * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
   * [Apple HIG – Segmented controls](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) – Richtlinien für die Segmentierung und das Umschalten von Inhalten innerhalb eines Screens.
   * [Apple HIG – Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars) – Abgrenzung zur In-Page-Navigation: Spezifikationen für die primäre App-Navigation am unteren Rand.
+  * [Apple HIG - Pickers](https://developer.apple.com/design/human-interface-guidelines/pickers) - Verschiedene Layouts von Pickers, unter anderem auch zur Darstellung von Tabs.
 
 * **Pattern-Referenz:**
   * https://www.checklist.design - Hauptseite
