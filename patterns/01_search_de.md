@@ -88,7 +88,9 @@ Die folgende Tabelle zeigt den Zusammenhang zwischen technischen Erfolgskriterie
 Dieses Beispiel zeigt eine empfohlene, barrierefreie Implementierung einer Suchleiste, welche native Komponenten nach den Apple Human Interface Guidelines verwendet.
 
 <figure>
-  <img src="screenshots_swiftui_de/01good.png" alt="Screenshot des Positivbeispiels mit nativer Implementierung auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche. Am unteren Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%">
+  <img src="screenshots_swiftui_de/01good.png" alt="Screenshot des Positivbeispiels
+    mit nativer Implementierung auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche.
+    Am unteren Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%">
   <figcaption>Abb. 1.1: Barrierefreie Implementierung der Suchfunktion in SwiftUI.</figcaption>
 </figure>
 
