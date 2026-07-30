@@ -6,7 +6,7 @@
 
 Selected Language: English
 
-Other Languages: [German](01_search_en.md)
+Other Languages: [German](01_search_de.md)
 
 ---
 
