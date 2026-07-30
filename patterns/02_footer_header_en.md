@@ -89,7 +89,7 @@ The following table shows the relationship between technical success criteria of
 This example shows a recommended, accessible implementation of a footer and header using native components according to the Apple Human Interface Guidelines.
 
 <figure>
-  <img src="screenshots_swiftui_en/02good.png" alt="Screenshot of the good example with a native implementation showing an overview. The header contains a Back button, a heading with Account Details, and a Settings icon. The main area contains a list of transactions. The footer contains the navigation for Overview, which is currently selected, and another menu for Cards." width="20%">
+  <img src="screenshots_swiftui_de/02good.png" alt="Screenshot of the good example with a native implementation showing an overview. The header contains a Back button, a heading with Account Details, and a Settings icon. The main area contains a list of transactions. The footer contains the navigation for Overview, which is currently selected, and another menu for Cards." width="20%">
   <figcaption>Fig. 2.1: Accessible implementation of footer/header in SwiftUI.</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ struct GoodHeaderFooterView: View {
 This example shows a typical flawed implementation of a footer and header. It ignores key guidelines regarding button heights, native syntax implementation, and screen reader focus management.
 
 <figure>
-  <img src="screenshots_swiftui_en/02bad.png" alt="Screenshot of the bad example showing an overview. The header contains a left arrow key, a heading with Account Details and Settings, and a Settings icon. The main area contains a list of transactions. The footer contains navigation for Overview. The current page is highlighted in blue." width="20%">
+  <img src="screenshots_swiftui_de/02bad.png" alt="Screenshot of the bad example showing an overview. The header contains a left arrow key, a heading with Account Details and Settings, and a Settings icon. The main area contains a list of transactions. The footer contains navigation for Overview. The current page is highlighted in blue." width="20%">
   <figcaption>Fig. 2.2: Inaccessible implementation of footer/header in SwiftUI.</figcaption>
 </figure>
 
