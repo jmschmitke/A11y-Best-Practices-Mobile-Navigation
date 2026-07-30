@@ -11,7 +11,7 @@ Other Languages: [German](01_search_de.md)
 ---
 
 <details>
-  <summary><b>Table of Content: Pattern</b> (Klicken zum Ausklappen)</summary>
+  <summary><b>Table of Content: Pattern</b> (Click to expand)</summary>
   <br>
 
   * Search <b>(Aktuell ausgewählt)</b>
