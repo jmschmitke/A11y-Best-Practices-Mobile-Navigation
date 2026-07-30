@@ -14,7 +14,7 @@ Other Languages: [German](01_search_de.md)
   <summary><b>Table of Content: Pattern</b> (Click to expand)</summary>
   <br>
 
-  * Search <b>(Aktuell ausgewählt)</b>
+  * Search <b>(Currently selected)</b>
   * [Footer & Header](02_footer_header_en.md)
   * [Popup](03_modals_en.md)
   * [Tabs](04_tabs_en.md)
