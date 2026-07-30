@@ -21,8 +21,8 @@ Other Languages: [German](01_search_de.md)
   * [Cards](05_cards_en.md)
   * [Carousel](06_carousel_en.md)
   * [Gestures](07_gestures_en.md)
-  * [Navigations Structure & Layout](08_navigation_layout_en.md)
-  * [Filtering](09_filtering_items_en.md)
+  * [Navigation Structure & Layout](08_navigation_layout_en.md)
+  * [Filter](09_filtering_items_en.md)
   * [Input Errors](10_showing_input_error_en.md)
 
 </details>
