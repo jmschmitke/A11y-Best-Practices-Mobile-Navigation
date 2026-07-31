@@ -185,12 +185,12 @@ To be created...
 ## 6. Sources and Further Links
 
 * **International Standards:**
-  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines.
-  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European standard for accessibility requirements.
+  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines
+  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European standard for accessibility requirements
 
 * **Apple Human Interface Guidelines (HIG):**
-  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions.
-  * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Guidelines for using gestures to interact with elements.
+  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions
+  * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Guidelines for using gestures to interact with elements
 
 * **Pattern Reference:**
   * https://www.checklist.design - Main site
