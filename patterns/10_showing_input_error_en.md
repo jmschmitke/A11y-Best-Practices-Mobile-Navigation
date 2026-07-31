@@ -1,4 +1,4 @@
-[← Back to overview](../README.md)
+[← Back to overview](../README_en.md)
 
 ---
 
@@ -87,7 +87,7 @@ The following table shows the connection between technical success criteria of *
 This example uses a multi-channel display (color + icon + text). The error message is precisely phrased, strictly coupled to the input field via `.accessibilityLabel` and `.accessibilityHint`, and directly announced via screen reader announcements when an error occurs.
 
 <figure>
-  <img src="screenshots_swiftui_de/10good.png" alt="Screenshot of the positive example with native implementation showing an invalid input on an email field. The field is outlined in red, and below it is text describing the error along with a button to complete registration." width="20%">
+  <img src="screenshots_swiftui_en/10good.png" alt="Screenshot of the positive example with native implementation showing an invalid input on an email field. The field is outlined in red, and below it is text describing the error along with a button to complete registration." width="20%">
   <figcaption>Fig. 10.1: Accessible implementation of input errors</figcaption>
 </figure>
 
@@ -167,7 +167,7 @@ struct GoodErrorView: View {
 This example relies exclusively on the color red to indicate an error. In addition, the error message is not programmatically associated with the input field, and the screen reader receives no feedback upon submission failure.
 
 <figure>
-  <img src="screenshots_swiftui_de/10bad.png" alt="Screenshot of the negative example showing an invalid input on an email field. The field is merely outlined in red without an error description, along with a Submit button." width="20%">
+  <img src="screenshots_swiftui_en/10bad.png" alt="Screenshot of the negative example showing an invalid input on an email field. The field is merely outlined in red without an error description, along with a Submit button." width="20%">
   <figcaption>Fig. 10.2: Inaccessible implementation of input errors</figcaption>
 </figure>
 
@@ -230,4 +230,4 @@ To be created...
     
 ---
 
-[← Back to overview](../README.md) | [↑ Jump to top](#10-input-errors)
+[← Back to overview](../README_en.md) | [↑ Jump to top](#10-input-errors)
