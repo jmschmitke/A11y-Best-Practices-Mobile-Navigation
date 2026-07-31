@@ -1,4 +1,4 @@
-[← Back to overview](../README.md)
+[← Back to overview](../README_en.md)
 
 ---
 
@@ -82,11 +82,11 @@ The following table shows the relationship between technical success criteria of
 
 ## 4. Implementation (SwiftUI)
 
-### Good Pattern (Positive Example)
+### Good Pattern
 This example demonstrates an accessible implementation. The entire card is a single touch target. Inner text elements are combined for the screen reader, the image is hidden as decorative, and the favorite button is cleanly accessible as a separate element.
 
 <figure>
-  <img src="screenshots_swiftui_de/05good.png" alt="Screenshot of the positive example featuring a native implementation showing a card with a heading and text as well as a heart icon as a favorite button in the bottom right corner of the card." width="20%">
+  <img src="screenshots_swiftui_en/05good.png" alt="Screenshot of the positive example featuring a native implementation showing a card with a heading and text as well as a heart icon as a favorite button in the bottom right corner of the card." width="20%">
   <figcaption>Fig. 5.1: Accessible implementation of the card.</figcaption>
 </figure>
 
@@ -157,11 +157,11 @@ struct GoodCardView: View {
 }
 ```
 
-### Bad Pattern (Negative Example)
+### Bad Pattern
 This example demonstrates a flawed implementation using rigid containers, undeclared image alternative text, and a lack of focus combination.
 
 <figure>
-  <img src="screenshots_swiftui_de/05bad.png" alt="Screenshot of the negative example showing a card with a heading and text as well as a heart icon as a favorite button in the bottom left corner of the card and a Learn More button on the bottom right." width="20%">
+  <img src="screenshots_swiftui_en/05bad.png" alt="Screenshot of the negative example showing a card with a heading and text as well as a heart icon as a favorite button in the bottom left corner of the card and a Learn More button on the bottom right." width="20%">
   <figcaption>Fig. 5.2: Accessibility-impaired implementation of the card.</figcaption>
 </figure>
 
@@ -239,4 +239,4 @@ To be created...
 
 ---
 
-[← Back to overview](../README.md) | [↑ Jump to top](#05-cards)
+[← Back to overview](../README_en.md) | [↑ Jump to top](#05-cards)
