@@ -6,7 +6,7 @@
 
 Selected Language: English
 
-Other Languages: tbd
+Other Languages: [German](04_tabs_de.md)
 
 ---
 
