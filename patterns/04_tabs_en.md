@@ -1,4 +1,4 @@
-[← Back to overview](../README.md)
+[← Back to overview](../README_en.md)
 
 ---
 
@@ -83,11 +83,11 @@ The following table shows the relationship between technical success criteria of
 
 ## 4. Implementation (SwiftUI)
 
-### Good Pattern (Positive Example)
+### Good Pattern
 This example demonstrates the recommended, accessible implementation using the native `TabView`. It automatically meets all requirements for role, value, keyboard focus, and Dynamic Type.
 
 <figure>
-  <img src="screenshots_swiftui_de/04good.png" alt="Screenshot of the positive example featuring a native implementation showing a profile overview page with a navigation bar at the bottom of the screen for Profile and Settings. The Profile page is selected and highlighted." width="20%">
+  <img src="screenshots_swiftui_en/04good.png" alt="Screenshot of the positive example featuring a native implementation showing a profile overview page with a navigation bar at the bottom of the screen for Profile and Settings. The Profile page is selected and highlighted." width="20%">
   <figcaption>Fig. 4.1: Accessible implementation of tabs.</figcaption>
 </figure>
 
@@ -143,11 +143,11 @@ struct TabTwoContentView: View {
 }
 ```
 
-### Bad Pattern (Negative Example)
+### Bad Pattern
 This example demonstrates a flawed custom implementation using an `HStack` and standard buttons. It creates massive accessibility barriers for keyboard and screen reader users.
 
 <figure>
-  <img src="screenshots_swiftui_de/04bad.png" alt="Screenshot of the negative example showing a profile overview page with a navigation bar at the top of the screen for Profile and Settings. The Profile page is selected and highlighted with color." width="20%">
+  <img src="screenshots_swiftui_en/04bad.png" alt="Screenshot of the negative example showing a profile overview page with a navigation bar at the top of the screen for Profile and Settings. The Profile page is selected and highlighted with color." width="20%">
   <figcaption>Fig. 4.2: Accessibility-impaired implementation of tabs.</figcaption>
 </figure>
 
@@ -233,4 +233,4 @@ To be created...
 
 ---
 
-[← Back to overview](../README.md) | [↑ Jump to top](#04-tabs)
+[← Back to overview](../README_en.md) | [↑ Jump to top](#04-tabs)
