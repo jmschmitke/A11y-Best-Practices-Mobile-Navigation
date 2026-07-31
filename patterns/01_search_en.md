@@ -1,4 +1,4 @@
-[← Back to Overview](../README.md)
+[← Back to Overview](../README_en.md)
 
 ---
 
@@ -88,7 +88,7 @@ The following table shows the relationship between technical success criteria of
 This example shows a recommended accessible implementation of a search bar using native components according to the Apple Human Interface Guidelines.
 
 <figure>
-  <img src="screenshots_swiftui_de/01good.png" alt="Screenshot of the good example with a native implementation showing a catalog with entries for Apple, Banana, and Cherry. At the bottom of the screen, there is a search field to search the catalog" width="20%">
+  <img src="screenshots_swiftui_en/01good.png" alt="Screenshot of the good example with a native implementation showing a catalog with entries for Apple, Banana, and Cherry. At the bottom of the screen, there is a search field to search the catalog" width="20%">
   <figcaption>Fig. 1.1: Accessible implementation of the search function in SwiftUI.</figcaption>
 </figure>
 
@@ -126,7 +126,7 @@ struct GoodNativeSearchView: View {
 This example shows a typical flawed implementation of a search bar. It ignores key requirements regarding semantics, keyboard control, and minimum sizes for touch targets.
 
 <figure>
-  <img src="screenshots_swiftui_de/01bad.png" alt="Screenshot of the negative example, showing a catalog with entries for apple, banana, and cherry. At the top of the screen, there is a search field for searching the catalog." width="20%">
+  <img src="screenshots_swiftui_en/01bad.png" alt="Screenshot of the negative example, showing a catalog with entries for apple, banana, and cherry. At the top of the screen, there is a search field for searching the catalog." width="20%">
   <figcaption>Fig. 1.2: Implementation of the search function in SwiftUI with accessibility issues.</figcaption>
 </figure>
 
@@ -203,5 +203,5 @@ To be added...
 
 ---
 
-[← Back to overview](../README.md) | [↑ Jump to top](#01_search)
+[← Back to overview](../README_en.md) | [↑ Jump to top](#01_search)
   
