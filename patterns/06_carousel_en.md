@@ -203,14 +203,14 @@ To be created...
 ## 6. Sources and Further Reading
 
 * **International Standards:**
-  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines.
-  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European norm for accessibility requirements for ICT products and services.
+  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines
+  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European norm for accessibility requirements for ICT products and services
 
 * **Apple Human Interface Guidelines (HIG):**
-  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions.
-  * [Apple HIG – Page controls](https://developer.apple.com/design/human-interface-guidelines/page-controls) – Guidelines for usage and accessible behavior of page indicators (dots).
-  * [Apple HIG – Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views) – Best practices for managing off-screen content.
-  * [Apple HIG – Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) – Guidelines for using gestures to operate interface elements.
+  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions
+  * [Apple HIG – Page controls](https://developer.apple.com/design/human-interface-guidelines/page-controls) – Guidelines for usage and accessible behavior of page indicators (dots)
+  * [Apple HIG – Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views) – Best practices for managing off-screen content
+  * [Apple HIG – Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) – Guidelines for using gestures to operate interface elements
 
 * **Pattern References:**
   * https://www.checklist.design – Main page
