@@ -19,7 +19,7 @@ Andere Sprachen: [Englisch](08_navigation_layout_en.md)
   * [Popup](03_modals_de.md)
   * [Tabs](04_tabs_de.md)
   * [Cards](05_cards_de.md)
-  * [Karussel](06_carousel_de.md)
+  * [Karussell](06_carousel_de.md)
   * [Gesten](07_gestures_de.md)
   * Navigationsstruktur & Layout <b>(Aktuell ausgewählt)</b>
   * [Filter](09_filtering_items_de.md)
