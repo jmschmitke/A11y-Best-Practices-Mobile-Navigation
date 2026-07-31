@@ -1,8 +1,8 @@
-# Accessible Mobile Navigation Pattern Library
+# A11y Best Practices Mobile Navigation
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: [English](README-en.md)
+Andere Sprachen: [English](README_en.md)
 
 ---
 
