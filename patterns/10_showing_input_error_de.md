@@ -6,7 +6,7 @@
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: tbd
+Andere Sprachen: [Englisch](10_showing_input_error_en.md)
 
 ---
 
