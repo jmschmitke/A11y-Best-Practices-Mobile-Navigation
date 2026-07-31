@@ -6,7 +6,7 @@
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: tbd
+Andere Sprachen: [Englisch](08_navigation_layout_en.md)
 
 ---
 
