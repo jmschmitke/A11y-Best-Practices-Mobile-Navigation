@@ -32,7 +32,7 @@ Hier findest du die Dokumentation der einzelnen UI-Komponenten und Navigationsst
 *   **[03: Popup](patterns/03_modals_de.md)**
 *   **[04: Tabs](patterns/04_tabs_de.md)**
 *   **[05: Cards](patterns/05_cards_de.md)**
-*   **[06: Karussel](patterns/06_carousel_de.md)**
+*   **[06: Karussell](patterns/06_carousel_de.md)**
 *   **[07: Gesten](patterns/07_gestures_de.md)**
 *   **[08: Navigationsstruktur & Layout](patterns/08_navigation_layout_de.md)**
 *   **[09: Filter](patterns/09_filtering_items_de.md)**
