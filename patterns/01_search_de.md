@@ -126,7 +126,7 @@ struct GoodNativeSearchView: View {
 Dieses Beispiel zeigt eine typisch fehlerhafte Implementierung einer Suchleiste. Sie ignoriert zentrale Vorgaben bezüglich Semantik, Tastatursteuerung und Mindestgrößen für Touch-Ziele.
 
 <figure>
-  <img src="screenshots_swiftui_de/01bad.png" alt="Screenshot des Negativbeispiels auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche. Am oberen Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%">
+  <img src="screenshots_swiftui_de/01bad.png" alt="Screenshot des Negativbeispiels auf welchem ein Katalog zu sehen ist mit den Einträgen für Apfel, Banane und Kirsche. Am oberen Bildschirmrand gibt es ein Suchfeld, um den Katalog zu durchsuchen" width="20%" style="border: 1px solid #ccc;">
   <figcaption>Abb. 1.2: Barrierebehaftete Implementierung der Suchfunktion in SwiftUI.</figcaption>
 </figure>
 
