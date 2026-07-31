@@ -1,4 +1,4 @@
-[← Back to overview](../README.md)
+[← Back to overview](../README_en.md)
 
 ---
 
@@ -87,7 +87,7 @@ The following table shows the relationship between technical success criteria of
 This example demonstrates an accessible implementation. It utilizes a page-style `TabView`. Off-screen pages are natively hidden from the screen reader. In addition, explicit, sufficiently sized control buttons are implemented, and the entire component is exposed to the screen reader as a logical group.
 
 <figure>
-  <img src="screenshots_swiftui_de/06good.png" alt="Screenshot of the good pattern implementation showing a carousel with various offer cards. Arrow buttons below allow navigating between cards." width="20%">
+  <img src="screenshots_swiftui_en/06good.png" alt="Screenshot of the good pattern implementation showing a carousel with various offer cards. Arrow buttons below allow navigating between cards." width="20%">
   <figcaption>Fig. 6.1: Accessible implementation of the carousel</figcaption>
 </figure>
 
@@ -143,7 +143,7 @@ struct GoodCarouselView: View {
 This example demonstrates a flawed implementation using an `HStack`-based `ScrollView`. It forces swiping, fails to hide off-screen elements from VoiceOver, and relies on undersized custom dots placed outside standard gesture patterns.
 
 <figure>
-  <img src="screenshots_swiftui_de/06bad.png" alt="Screenshot of the bad pattern implementation showing a carousel with various offer cards. Navigation is only possible via swipe gesture." width="20%">
+  <img src="screenshots_swiftui_en/06bad.png" alt="Screenshot of the bad pattern implementation showing a carousel with various offer cards. Navigation is only possible via swipe gesture." width="20%">
   <figcaption>Fig. 6.2: Inaccessible implementation of the carousel</figcaption>
 </figure>
 
@@ -218,4 +218,4 @@ To be created...
 
 ---
 
-[← Back to overview](../README.md) | [↑ Back to top](#06-carousel)
+[← Back to overview](../README_en.md) | [↑ Back to top](#06-carousel)
