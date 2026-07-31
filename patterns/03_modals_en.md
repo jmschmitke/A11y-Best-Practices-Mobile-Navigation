@@ -170,7 +170,7 @@ extension View {
 SwiftUI's native `.sheet` automatically encapsulates the view so screen reader users cannot accidentally activate elements in the background (Focus Trap):
 
 ```swift
-struct MainContentView: View {
+struct MainContentViewGood: View {
     @State private var showModal = false
     
     var body: some View {
@@ -245,7 +245,7 @@ The Bad Pattern popup is invoked by the following view:
 ```swift
 import SwiftUI
 
-struct MainContentView: View {
+struct MainContentViewBad: View {
     @State private var showBadModal = false
     
     var body: some View {
