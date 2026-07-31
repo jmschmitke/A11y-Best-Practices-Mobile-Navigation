@@ -1,4 +1,4 @@
-[← Back to Overview](../README.md)
+[← Back to Overview](../README_en.md)
 
 ---
 
@@ -85,7 +85,7 @@ The following table shows the relationship between technical success criteria of
 This example uses native toggle components grouped together. The hit count is read out accessibly, and state changes are reported directly to the screen reader via AccessibilityNotification.
 
 <figure>
-  <img src="screenshots_swiftui_de/09good.png" alt="Screenshot of the positive example featuring a native implementation displaying a filter menu with choices for Electronics, Fashion, and Books. Electronics is selected. Below, it indicates that 12 results were found." width="20%">
+  <img src="screenshots_swiftui_en/09good.png" alt="Screenshot of the positive example featuring a native implementation displaying a filter menu with choices for Electronics, Fashion, and Books. Electronics is selected. Below, it indicates that 12 results were found." width="20%">
   <figcaption>Fig. 9.1: Accessible implementation of filters.</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ struct GoodFilteringView: View {
 This example filters the list in the background without blind users noticing. The hit count is incompletely labeled, the touch area is far too small, and the rigid layout leads to layout errors with larger text sizes.
 
 <figure>
-  <img src="screenshots_swiftui_de/09bad.png" alt="Screenshot of the negative example displaying a filter menu with choices for Electronics, Fashion, and Books. Fashion is selected and marked with a small checkmark. Below, it indicates that results are being displayed, but not how many." width="20%">
+  <img src="screenshots_swiftui_en/09bad.png" alt="Screenshot of the negative example displaying a filter menu with choices for Electronics, Fashion, and Books. Fashion is selected and marked with a small checkmark. Below, it indicates that results are being displayed, but not how many." width="20%">
   <figcaption>Fig. 9.2: Filter implementation with accessibility barriers.</figcaption>
 </figure>
 
@@ -225,4 +225,4 @@ To be created...
     
 ---
 
-[← Back to Overview](../README.md) | [↑ Jump to top](#09-filter)
+[← Back to Overview](../README_en.md) | [↑ Jump to top](#09-filter)
