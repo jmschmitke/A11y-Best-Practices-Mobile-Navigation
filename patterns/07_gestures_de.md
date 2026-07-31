@@ -6,7 +6,7 @@
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: tbd
+Andere Sprachen: [Englisch](07_gestures_en.md)
 
 ---
 
