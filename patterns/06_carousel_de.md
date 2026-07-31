@@ -204,14 +204,14 @@ Wird noch erstellt...
 ## 6. Quellen und weiterführende Links
 
 * **Internationale Standards:**
-  * [WCAG 2.2 Richtlinien (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines.
-  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – Europäische Norm für Barrierefreiheitsanforderungen.
+  * [WCAG 2.2 Richtlinien (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines
+  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – Europäische Norm für Barrierefreiheitsanforderungen
 
 * **Apple Human Interface Guidelines (HIG):**
-  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen.
-  * [Apple HIG – Page controls](https://developer.apple.com/design/human-interface-guidelines/page-controls) – Richtlinien für die Verwendung und das barrierefreie Verhalten von Seitenindikatoren (Dots).
-  * [Apple HIG – Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views) – Best Practices für die Handhabung von Inhalten außerhalb des sichtbaren Bereichs.
-  * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Richtlinien für den Einsatz von Gesten zur Bedienung von Elementen.
+  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Grundlagen für inklusive und intuitive Plattform-Interaktionen
+  * [Apple HIG – Page controls](https://developer.apple.com/design/human-interface-guidelines/page-controls) – Richtlinien für die Verwendung und das barrierefreie Verhalten von Seitenindikatoren (Dots)
+  * [Apple HIG – Scroll views](https://developer.apple.com/design/human-interface-guidelines/scroll-views) – Best Practices für die Handhabung von Inhalten außerhalb des sichtbaren Bereichs
+  * [Apple HIG - Gestures](https://developer.apple.com/design/human-interface-guidelines/gestures) - Richtlinien für den Einsatz von Gesten zur Bedienung von Elementen
 
 * **Pattern-Referenz:**
   * https://www.checklist.design - Hauptseite
