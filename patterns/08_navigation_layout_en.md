@@ -1,4 +1,4 @@
-[← Back to Overview](../README.md)
+[← Back to Overview](../README_en.md)
 
 ---
 
@@ -87,7 +87,7 @@ The following table shows the relationship between technical WCAG 2.2 success cr
 This example uses native components NavigationStack and TabView. As a result, regions are automatically translated correctly for screen readers, the page title is communicated dynamically, and the layout does not collapse with large text sizes or in landscape mode.
 
 <figure>
-  <img src="screenshots_swiftui_de/08good.png" alt="Screenshot of the positive example with native implementation showing a navigation structure at the bottom of the screen with Home and Settings. The Home page is currently selected and highlighted accordingly. The title of the page is Dashboard." width="20%">
+  <img src="screenshots_swiftui_en/08good.png" alt="Screenshot of the positive example with native implementation showing a navigation structure at the bottom of the screen with Home and Settings. The Home page is currently selected and highlighted accordingly. The title of the page is Dashboard." width="20%">
   <figcaption>Fig. 8.1: Accessible implementation of navigation structure and layout.</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ struct GoodNavigationView: View {
 This example enforces fixed heights, which clips text with large fonts (Dynamic Type). It artificially locks the app into portrait mode via code and ignores native, consistent navigation elements in favor of an unlabeled custom bar.
 
 <figure>
-  <img src="screenshots_swiftui_de/08bad.png" alt="Screenshot of the negative example showing a navigation structure at the bottom of the screen with pure icons for Home and Settings. The Home page is currently selected, but only slightly highlighted. The title of the page is My Dashboard." width="20%">
+  <img src="screenshots_swiftui_en/08bad.png" alt="Screenshot of the negative example showing a navigation structure at the bottom of the screen with pure icons for Home and Settings. The Home page is currently selected, but only slightly highlighted. The title of the page is My Dashboard." width="20%">
   <figcaption>Fig. 8.2: Inaccessible implementation of navigation structure and layout.</figcaption>
 </figure>
 
@@ -199,4 +199,4 @@ To be created...
 
 ---
 
-[← Back to Overview](../README.md) | [↑ Jump to top](#08-navigation-structure--layout)
+[← Back to Overview](../README_en.md) | [↑ Jump to top](#08-navigation-structure--layout)
