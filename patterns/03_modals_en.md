@@ -1,4 +1,4 @@
-[← Back to overview](../README.md)
+[← Back to overview](../README_en.md)
 
 ---
 
@@ -88,7 +88,7 @@ The following table shows the relationship between technical success criteria of
 This example shows a recommended accessible implementation of a popup using native components according to the Apple Human Interface Guidelines.
 
 <figure>
-  <img src="screenshots_swiftui_de/03good.png" alt="Screenshot of the good example with a native implementation showing a popup. The heading reads Delete Entry. Next to it is an X button to close the popup. Below it is text asking if you really want to delete the entry. A highlighted button reading Permanently delete entry, as well as a Cancel button." width="20%">
+  <img src="screenshots_swiftui_en/03good.png" alt="Screenshot of the good example with a native implementation showing a popup. The heading reads Delete Entry. Next to it is an X button to close the popup. Below it is text asking if you really want to delete the entry. A highlighted button reading Permanently delete entry, as well as a Cancel button." width="20%">
   <figcaption>Fig. 3.1: Accessible implementation of the popup in SwiftUI.</figcaption>
 </figure>
 
@@ -193,7 +193,7 @@ struct MainContentViewGood: View {
 This example shows a typical flawed implementation of a popup. It ignores key guidelines regarding accessibility labels, focus trap management, and a missing close button.
 
 <figure>
-  <img src="screenshots_swiftui_de/03bad.png" alt="Screenshot of the bad example with a native implementation showing a popup. The heading reads Delete Entry. Below it is text asking if you really want to delete the entry. A highlighted Delete button is located below." width="20%">
+  <img src="screenshots_swiftui_en/03bad.png" alt="Screenshot of the bad example with a native implementation showing a popup. The heading reads Delete Entry. Below it is text asking if you really want to delete the entry. A highlighted Delete button is located below." width="20%">
   <figcaption>Fig. 3.2: Inaccessible implementation of the popup in SwiftUI.</figcaption>
 </figure>
 
@@ -297,4 +297,4 @@ To be added...
 
 ---
 
-[← Back to overview](../README.md) | [↑ Jump to top](#03_popup)
+[← Back to overview](../README_en.md) | [↑ Jump to top](#03_popup)
