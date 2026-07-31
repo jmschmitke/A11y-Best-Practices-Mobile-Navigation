@@ -81,7 +81,7 @@ The following table shows the relationship between technical success criteria of
 
 ## 4. Implementation (SwiftUI)
 
-### Good Pattern (Positive Example)
+### Good Pattern
 This example uses native toggle components grouped together. The hit count is read out accessibly, and state changes are reported directly to the screen reader via AccessibilityNotification.
 
 <figure>
@@ -153,7 +153,7 @@ struct GoodFilteringView: View {
 ```
 
 
-### Bad Pattern (Negative Example)
+### Bad Pattern
 This example filters the list in the background without blind users noticing. The hit count is incompletely labeled, the touch area is far too small, and the rigid layout leads to layout errors with larger text sizes.
 
 <figure>
