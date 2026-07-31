@@ -226,12 +226,12 @@ To be created...
 ## 6. Sources and Further Reading
 
 * **International Standards:**
-  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines.
-  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European standard for accessibility requirements for ICT products and services.
+  * [WCAG 2.2 Guidelines (W3C)](https://www.w3.org/TR/WCAG2) – Web Content Accessibility Guidelines
+  * [EN 301 549 Standard (ETSI)](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) – European standard for accessibility requirements for ICT products and services
 
 * **Apple Human Interface Guidelines (HIG):**
-  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions.
-  * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Specifications for placement, spacing, and reflow behavior of grids and lists on iOS devices.
+  * [Apple HIG – Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) – Fundamentals for inclusive and intuitive platform interactions
+  * [Apple HIG – Layout](https://developer.apple.com/design/human-interface-guidelines/layout) – Specifications for placement, spacing, and reflow behavior of grids and lists on iOS devices
 
 * **Pattern Reference:**
   * https://www.checklist.design – Main page
