@@ -6,7 +6,7 @@
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: tbd
+Andere Sprachen: [Englisch](09_filtering_items_en.md)
 
 ---
 
