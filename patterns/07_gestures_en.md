@@ -1,4 +1,4 @@
-[← Back to Overview](../README.md)
+[← Back to Overview](../README_en.md)
 
 ---
 
@@ -79,11 +79,11 @@ The following table shows the relationship between technical success criteria of
 
 ## 4. Implementation (SwiftUI)
 
-### Good Pattern (Positive Example)
+### Good Pattern
 This example uses native SwiftUI list mechanisms. As a result, the swipe gesture is automatically translated into an accessible VoiceOver action. Additionally, the two-way principle is served via a permanently visible, sufficiently sized button.
 
 <figure>
-  <img src="screenshots_swiftui_de/07good.png" alt="Screenshot of the positive example with native implementation showing a list of emails. Next to each email is a delete icon. Also, the second email in the list is currently swiped left to confirm deletion." width="20%">
+  <img src="screenshots_swiftui_en/07good.png" alt="Screenshot of the positive example with native implementation showing a list of emails. Next to each email is a delete icon. Also, the second email in the list is currently swiped left to confirm deletion." width="20%">
   <figcaption>Fig. 7.1: Accessible implementation of gestures</figcaption>
 </figure>
 
@@ -130,11 +130,11 @@ struct GoodGestureView: View {
 ```
 
 
-### Bad Pattern (Negative Example)
+### Bad Pattern
 This example implements swiping via a custom-built drag gesture. It forces motor-impaired users to perform a complex path movement, fails completely when VoiceOver is active, and incorrectly triggers immediately upon initial contact.
 
 <figure>
-  <img src="screenshots_swiftui_de/07bad.png" alt="Screenshot of the negative example showing a list of emails. These can only be deleted via a swipe gesture without confirmation." width="20%">
+  <img src="screenshots_swiftui_en/07bad.png" alt="Screenshot of the negative example showing a list of emails. These can only be deleted via a swipe gesture without confirmation." width="20%">
   <figcaption>Fig. 7.2: Inaccessible implementation of gestures</figcaption>
 </figure>
 
@@ -198,4 +198,4 @@ To be created...
     
 ---
 
-[← Back to Overview](../README.md) | [↑ Jump to top](#07-gestures)
+[← Back to Overview](../README_en.md) | [↑ Jump to top](#07-gestures)
