@@ -6,7 +6,7 @@
 
 Ausgewählte Sprache: Deutsch
 
-Andere Sprachen: tbd
+Andere Sprachen: [Englisch](02_footer_header_en.md)
 
 ---
 
